@@ -106,7 +106,7 @@ RNAccountKit.configure({
 
 ### Examples
 
-See the [sample](https://github.com/underscopeio/react-native-facebook-account-kit/sample)
+See the [sample](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/sample)
 
 ### License
 
