@@ -1,0 +1,277 @@
+package io.underscope.react.fbak;
+
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
+
+import com.facebook.accountkit.AccessToken;
+import com.facebook.accountkit.Account;
+import com.facebook.accountkit.AccountKit;
+import com.facebook.accountkit.AccountKitCallback;
+import com.facebook.accountkit.AccountKitError;
+import com.facebook.accountkit.AccountKitLoginResult;
+import com.facebook.accountkit.ui.AccountKitActivity;
+import com.facebook.accountkit.ui.AccountKitConfiguration;
+import com.facebook.accountkit.ui.LoginType;
+import com.facebook.react.bridge.ActivityEventListener;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.WritableMap;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RNAccountKitModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+
+    private ReactApplicationContext reactContext;
+    private Promise pendingPromise;
+    private ReadableMap options;
+
+    public static int APP_REQUEST_CODE = 99;
+    public static String REACT_CLASS = "RNAccountKit";
+
+    public RNAccountKitModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+
+        this.reactContext = reactContext;
+        this.reactContext.addActivityEventListener(this);
+
+
+        AccountKit.initialize(reactContext.getApplicationContext());
+    }
+
+    @Override
+    public String getName() {
+        return REACT_CLASS;
+    }
+
+
+    /**
+     * Activity event listeners
+     */
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == APP_REQUEST_CODE) {
+            AccountKitLoginResult loginResult = data.getParcelableExtra(AccountKitLoginResult.RESULT_KEY);
+
+            if (loginResult.getError() != null) {
+                rejectPromise("error", new Error(loginResult.getError().getErrorType().getMessage()));
+            } else if (loginResult.wasCancelled()) {
+                rejectPromise("cancel", new Error("Login cancelled"));
+            } else {
+                if (loginResult.getAccessToken() != null) {
+                    resolvePromise(mapToken(loginResult.getAccessToken()));
+                } else {
+                    WritableMap map = Arguments.createMap();
+                    map.putString("code", loginResult.getAuthorizationCode());
+                    map.putString("state", loginResult.getFinalAuthorizationState());
+
+                    resolvePromise(map);
+                }
+            }
+        }
+    }
+
+
+
+    /**
+     * Exposed React's methods
+     */
+
+    @ReactMethod
+    public void login(final String type, final Promise promise) {
+        if (!AccountKit.isInitialized()) {
+            Log.w(REACT_CLASS, "AccountKit not initialized yet. `login` call discarded");
+            return;
+        }
+
+        if (this.options == null) {
+            Log.e(REACT_CLASS, "You must call `configure` method providing configure options first");
+            return;
+        }
+
+        this.pendingPromise = promise;
+
+        final LoginType loginType = LoginType.valueOf(type.toUpperCase());
+        final Intent intent = new Intent(this.reactContext.getApplicationContext(), AccountKitActivity.class);
+        final AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
+                createAccountKitConfiguration(loginType);
+        intent.putExtra(AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION, configurationBuilder.build());
+        this.reactContext.startActivityForResult(intent, APP_REQUEST_CODE, new Bundle());
+    }
+
+    @ReactMethod
+    public void logout(final Promise promise) {
+        if (!AccountKit.isInitialized()) {
+            Log.w(REACT_CLASS, "AccountKit not initialized yet. `logout` call discarded");
+            return;
+        }
+
+        AccountKit.logOut();
+        promise.resolve(null);
+    }
+
+    @ReactMethod
+    public void getCurrentAccessToken(final Promise promise) {
+        if (!AccountKit.isInitialized()) {
+            Log.w(REACT_CLASS, "AccountKit not initialized yet. `getCurrentAccessToken` call discarded");
+            return;
+        }
+
+        AccessToken token = AccountKit.getCurrentAccessToken();
+        promise.resolve(token != null ? mapToken(token) : null);
+    }
+
+    @ReactMethod
+    public void getCurrentAccount(final Promise promise) {
+        if (!AccountKit.isInitialized()) {
+            Log.w(REACT_CLASS, "AccountKit not initialized yet. `getCurrentAccount` call discarded");
+            return;
+        }
+
+        AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
+            @Override
+            public void onSuccess(Account account) {
+                WritableMap map = Arguments.createMap();
+
+                map.putString("id", account.getId());
+                map.putString("email", account.getEmail());
+                
+                WritableMap phoneNumber = null;
+                if (account.getPhoneNumber() != null) {
+                    phoneNumber = Arguments.createMap();
+                    phoneNumber.putString("number", account.getPhoneNumber().getPhoneNumber());
+                    phoneNumber.putString("countryCode", account.getPhoneNumber().getCountryCode());
+                }
+                map.putMap("phoneNumber", phoneNumber);
+                
+                promise.resolve(map);
+            }
+
+            @Override
+            public void onError(AccountKitError error) {
+                promise.reject("error", new Error(error.getErrorType().getMessage()));
+            }
+        });
+
+    }
+
+    /**
+     * Set configuration params for Account Kit.
+     * Validation and defaults values expected to be done in React side.
+     *
+     * @param options attrs are:
+     *     responseType                 :'CODE|TOKEN'
+     *     titleType                    :'APP_NAME|LOGIN'
+     *     initialAuthState             :String
+     *     facebookNotificationsEnabled :Boolean
+     *     readPhoneStateEnabled        :Boolean
+     *     receiveSMS                   :Boolean
+     *     SMSBlacklist                 :String[]
+     *     SMSWhitelist                 :String[]
+     */
+
+    @ReactMethod
+    public void configure(final ReadableMap options) {
+        this.options = options;
+    }
+
+
+    /**
+     * Private methods
+     */
+
+    private AccountKitConfiguration.AccountKitConfigurationBuilder createAccountKitConfiguration(
+            final LoginType loginType) {
+        AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
+                new AccountKitConfiguration.AccountKitConfigurationBuilder(loginType,
+                        AccountKitActivity.ResponseType.valueOf(
+                                this.options.getString("responseType").toUpperCase()));
+
+        configurationBuilder.setTitleType(
+                AccountKitActivity.TitleType.valueOf(this.options.getString("titleType").toUpperCase()));
+
+        String initialAuthState = this.options.getString(("initialAuthState"));
+        if (!initialAuthState.isEmpty()) {
+            configurationBuilder.setInitialAuthState(initialAuthState);
+        }
+
+        configurationBuilder.setFacebookNotificationsEnabled(
+                this.options.getBoolean("facebookNotificationsEnabled"));
+
+        boolean readPhoneStateEnabled = this.options.getBoolean("readPhoneStateEnabled");
+        if (readPhoneStateEnabled && PackageManager.PERMISSION_DENIED == ContextCompat.checkSelfPermission(
+                        reactContext.getApplicationContext(), Manifest.permission.READ_PHONE_STATE)) {
+            Log.w(REACT_CLASS, "To allow reading phone number add READ_PHONE_STATE permission in your app's manifest");
+            configurationBuilder.setReadPhoneStateEnabled(false);
+        } else {
+            configurationBuilder.setReadPhoneStateEnabled(readPhoneStateEnabled);
+        }
+
+        boolean receiveSMS = this.options.getBoolean("receiveSMS");
+        if (receiveSMS && PackageManager.PERMISSION_DENIED == ContextCompat.checkSelfPermission(
+                reactContext.getApplicationContext(), Manifest.permission.RECEIVE_SMS)) {
+            Log.w(REACT_CLASS, "To allow extracting code from SMS add RECEIVE_SMS permission in your app's manifest");
+            configurationBuilder.setReceiveSMS(false);
+        } else {
+            configurationBuilder.setReceiveSMS(receiveSMS);
+        }
+
+        String[] blacklist = formatSMSList(this.options.getArray("SMSBlacklist"));
+        if (blacklist.length > 0) {
+            configurationBuilder.setSMSBlacklist(blacklist);
+        }
+
+        String[] whitelist = formatSMSList(this.options.getArray("SMSWhitelist"));
+        if (whitelist.length > 0) {
+            configurationBuilder.setSMSWhitelist(whitelist);
+        }
+
+        return configurationBuilder;
+    }
+
+    private void rejectPromise(String code, Error err) {
+        if (this.pendingPromise != null) {
+            this.pendingPromise.reject(code, err);
+            this.pendingPromise = null;
+        }
+    }
+
+    private void resolvePromise(Object data) {
+        if (this.pendingPromise != null) {
+            this.pendingPromise.resolve(data);
+            this.pendingPromise = null;
+        }
+    }
+
+    private WritableMap mapToken(AccessToken token) {
+        WritableMap map = Arguments.createMap();
+
+        map.putString("accountId", token.getAccountId());
+        map.putString("appId", token.getApplicationId());
+        map.putString("token", token.getToken());
+        map.putString("lastRefresh", Long.toString(token.getLastRefresh().getTime()));
+        map.putString("refreshIntervalSeconds", Long.toString(token.getTokenRefreshIntervalSeconds()));
+
+        return map;
+    }
+
+    private String[] formatSMSList(ReadableArray list) {
+        List<String> pre = new ArrayList<>();
+        for (int i=0,n=list.size();i<n;i++) {
+            pre.add(list.getString(i));
+        }
+
+        String[] out = new String[pre.size()];
+        return pre.toArray(out);
+    }
+}

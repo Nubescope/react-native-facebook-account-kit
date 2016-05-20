@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D252DDFA1CD39E54005BE160 /* RNAccountKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */; };
+		D25ABA461CD84CD100678BA3 /* RNAccountKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D25ABA451CD84CD100678BA3 /* RNAccountKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2C7C68E1CD1552900C9B392 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D252DDF81CD39E54005BE160 /* RNAccountKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAccountKitViewController.h; sourceTree = "<group>"; };
+		D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAccountKitViewController.m; sourceTree = "<group>"; };
+		D25ABA451CD84CD100678BA3 /* RNAccountKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAccountKit.m; sourceTree = "<group>"; };
+		D2C7C6901CD1552900C9B392 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAccountKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F9099D1CD25E6D009B28E2 /* react-native-facebook-account-kit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "react-native-facebook-account-kit.podspec"; sourceTree = "<group>"; };
+		D2F9099E1CD26033009B28E2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../../../FacebookSDKs-iOS-20160412/AccountKit.framework"; sourceTree = "<group>"; };
+		D2F909BC1CD28F09009B28E2 /* RNAccountKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAccountKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2C7C68D1CD1552900C9B392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D252DDF71CD394D8005BE160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F9099E1CD26033009B28E2 /* AccountKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C7C6871CD1552900C9B392 = {
+			isa = PBXGroup;
+			children = (
+				D252DDF81CD39E54005BE160 /* RNAccountKitViewController.h */,
+				D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */,
+				D2F909BC1CD28F09009B28E2 /* RNAccountKit.h */,
+				D25ABA451CD84CD100678BA3 /* RNAccountKit.m */,
+				D2F9099D1CD25E6D009B28E2 /* react-native-facebook-account-kit.podspec */,
+				D2C7C6911CD1552900C9B392 /* Products */,
+				D252DDF71CD394D8005BE160 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2C7C6911CD1552900C9B392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2C7C6901CD1552900C9B392 /* libRNAccountKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2C7C68F1CD1552900C9B392 /* RNAccountKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C7C6991CD1552900C9B392 /* Build configuration list for PBXNativeTarget "RNAccountKit" */;
+			buildPhases = (
+				D2C7C68C1CD1552900C9B392 /* Sources */,
+				D2C7C68D1CD1552900C9B392 /* Frameworks */,
+				D2C7C68E1CD1552900C9B392 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNAccountKit;
+			productName = RNAccountKit;
+			productReference = D2C7C6901CD1552900C9B392 /* libRNAccountKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2C7C6881CD1552900C9B392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Underscope;
+				TargetAttributes = {
+					D2C7C68F1CD1552900C9B392 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = D2C7C68B1CD1552900C9B392 /* Build configuration list for PBXProject "RNAccountKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2C7C6871CD1552900C9B392;
+			productRefGroup = D2C7C6911CD1552900C9B392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2C7C68F1CD1552900C9B392 /* RNAccountKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2C7C68C1CD1552900C9B392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25ABA461CD84CD100678BA3 /* RNAccountKit.m in Sources */,
+				D252DDFA1CD39E54005BE160 /* RNAccountKitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D2C7C6971CD1552900C9B392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2C7C6981CD1552900C9B392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2C7C69A1CD1552900C9B392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/**",
+					"${SRCROOT}/../node_modules",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../sample/node_modules/react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2C7C69B1CD1552900C9B392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/**",
+					"${SRCROOT}/../node_modules",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../sample/node_modules/react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2C7C68B1CD1552900C9B392 /* Build configuration list for PBXProject "RNAccountKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C7C6971CD1552900C9B392 /* Debug */,
+				D2C7C6981CD1552900C9B392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C7C6991CD1552900C9B392 /* Build configuration list for PBXNativeTarget "RNAccountKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C7C69A1CD1552900C9B392 /* Debug */,
+				D2C7C69B1CD1552900C9B392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2C7C6881CD1552900C9B392 /* Project object */;
+}

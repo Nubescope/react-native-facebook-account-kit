@@ -1,0 +1,5 @@
+rootProject.name = 'RNAccountKitSample'
+
+include ':app', ':RNAccountKit'
+
+project(':RNAccountKit').projectDir = new File(rootProject.projectDir, '../../android')
