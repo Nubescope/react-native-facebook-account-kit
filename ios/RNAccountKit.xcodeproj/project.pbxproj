@@ -175,6 +175,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -216,6 +217,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -233,6 +235,7 @@
 					"${SRCROOT}/../node_modules",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../sample/node_modules/react-native/React/**",
@@ -252,6 +255,7 @@
 					"${SRCROOT}/../node_modules",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../sample/node_modules/react-native/React/**",
