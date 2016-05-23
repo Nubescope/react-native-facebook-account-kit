@@ -1,4 +1,5 @@
-import React, { NativeModules, DeviceEventEmitter, Component, TouchableHighlight, Text, Platform } from 'react-native'
+import React, { Component } from 'react';
+import { NativeModules, DeviceEventEmitter, TouchableHighlight, Text, Platform } from 'react-native'
 
 const RNAccountKitNative = NativeModules.RNAccountKit
 
