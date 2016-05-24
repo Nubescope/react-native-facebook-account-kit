@@ -21,9 +21,9 @@ If you are using Cocoapods add the following line to your Podfile
 pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit'
 ```
 
-If you are **not** using Cocoapods:
-1. Open your project in XCode, right click on `Libraries` and click `Add Files to "Your Project Name"` Look under `node_modules/react-native-facebook-account-kit` and add `RNAccountKit.xcodeproj`.
-1. Add `libRNAccountKit.a` to `Build Phases -> Link Binary With Libraries`.
+If you are **not** using Cocoapods:  
+1. Open your project in XCode, right click on `Libraries` and click `Add Files to "Your Project Name"` Look under `node_modules/react-native-facebook-account-kit` and add `RNAccountKit.xcodeproj`.  
+2. Add `libRNAccountKit.a` to `Build Phases -> Link Binary With Libraries`.
 
 ### For Android
 
