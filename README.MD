@@ -6,7 +6,7 @@ A Facebook Account Kit SDK wrapper for react-native (*>= 0.19.0*)
 
 We strongly recommend you to use [`rnpm`](https://github.com/rnpm/rnpm) that automatically installs the module from npm and links their native dependencies (for Android and/or iOS) with just one command:
 
-`rnpm link react-native-facebook-account-kit`
+`rnpm install react-native-facebook-account-kit`
 
 Anyway, you can do it manually following the steps described below:
 
