@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Quay lại";
+"com_accountkit_button_begin" = "Bắt đầu";
+"com_accountkit_button_cancel" = "Hủy";
+"com_accountkit_button_confirm" = "Xác nhận";
+"com_accountkit_button_continue" = "Tiếp tục";
+"com_accountkit_button_log_in" = "Đăng nhập";
+"com_accountkit_button_next" = "Tiếp";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Gửi mã mới";
+"com_accountkit_button_resend_sms" = "Gửi lại SMS";
+"com_accountkit_button_send" = "Gửi";
+"com_accountkit_button_send_code_in_fb" = "Gửi mã trong Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Nhấn vào Gửi mã trong Facebook để gửi thông báo đến tài khoản Facebook được liên kết với số điện thoại bạn đã nhập.";
+"com_accountkit_button_start" = "Bắt đầu";
+"com_accountkit_button_start_over" = "Thử lại";
+"com_accountkit_button_submit" = "Gửi";
+"com_accountkit_check_email" = "Mở email của bạn";
+"com_accountkit_confirmation_code_agreement" = "Nhấn %1$@ để chấp nhận <a href=\"%2$@\">Điều khoản</a>, <a href=\"%3$@\">Chính sách dữ liệu</a> và <a href=\"%4$@\">sử dụng cookie</a> của Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Nhấn %1$@ để chấp nhận <a href=\"%2$@\">Điều khoản</a>, <a href=\"%3$@\">Chính sách dữ liệu</a>, <a href=\"%4$@\">sử dụng cookie</a> của Facebook và <a href=\"%5$@\">Chính sách quyền riêng tư</a> của %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Nhấn %1$@ để chấp nhận <a href=\"%2$@\">Điều khoản</a>, <a href=\"%3$@\">Chính sách dữ liệu</a>, <a href=\"%4$@\">sử dụng cookie</a> của Facebook và <a href=\"%5$@\">Chính sách quyền riêng tư</a>, <a href=\"%6$@\">Điều khoản dịch vụ</a> của %7$@.";
+"com_accountkit_confirmation_code_text" = "Gửi lại mã";
+"com_accountkit_confirmation_code_title" = "Nhập mã của bạn";
+"com_accountkit_country_code_title" = "Chọn quốc gia của bạn";
+"com_accountkit_email_invalid" = "Email này không chính xác. Vui lòng thử lại.";
+"com_accountkit_email_loading_title" = "Đang gửi email\U2026";
+"com_accountkit_email_login_retry_title" = "Xác nhận email của bạn";
+"com_accountkit_email_login_text" = "Nhấn vào %1$@ để nhận email xác nhận từ Account Kit của Facebook. %2$@ dùng cách này để giúp bạn đăng nhập, nhưng bạn không cần tài khoản Facebook. <a href=\"%3$@\">Tìm hiểu thêm.</a>";
+"com_accountkit_email_login_title" = "Nhập địa chỉ email của bạn";
+"com_accountkit_email_not_received" = "Gửi lại email";
+"com_accountkit_email_verify_title" = "Hãy mở email mà chúng tôi đã gửi và xác nhận địa chỉ của bạn";
+"com_accountkit_error_title" = "Rất tiếc, đã xảy ra lỗi.";
+"com_accountkit_facebook_code_entry_title" = "Nhập mã của bạn từ Facebook";
+"com_accountkit_phone_loading_title" = "Đang gửi mã của bạn\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Số";
+"com_accountkit_phone_login_retry_title" = "Xác nhận số điện thoại của bạn";
+"com_accountkit_phone_login_text" = "Nhấn vào %1$@ để nhận xác nhận bằng SMS từ Account Kit của Facebook. %2$@ dùng cách này để giúp bạn đăng nhập, nhưng bạn không cần tài khoản Facebook. Bạn có thể bị tính cước tin nhắn và dữ liệu. <a href=\"%3$@\">Tìm hiểu thêm.</a>";
+"com_accountkit_phone_login_title" = "Nhập số điện thoại của bạn";
+"com_accountkit_resend_email_text" = "Gửi email mới";
+"com_accountkit_resend_title" = "Chúng tôi rất tiếc. Hãy thử những tùy chọn này để tiếp tục.";
+"com_accountkit_return_title" = "Đưa bạn quay lại %1$@\U2026";
+"com_accountkit_sent_title" = "Đã gửi!";
+"com_accountkit_success_title" = "Xong!";
+"com_accountkit_toolbar_title" = "Đăng nhập vào %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Chúng tôi không thể xác minh mã của bạn.\nVui lòng thử lại:";
+"com_accountkit_verify_title" = "Đang xác minh mã của bạn\U2026";

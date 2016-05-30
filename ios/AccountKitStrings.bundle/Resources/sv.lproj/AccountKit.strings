@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Tillbaka";
+"com_accountkit_button_begin" = "Börja";
+"com_accountkit_button_cancel" = "Avbryt";
+"com_accountkit_button_confirm" = "Bekräfta";
+"com_accountkit_button_continue" = "Fortsätt";
+"com_accountkit_button_log_in" = "Logga in";
+"com_accountkit_button_next" = "Nästa";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Skicka ny kod";
+"com_accountkit_button_resend_sms" = "Skicka om sms:et";
+"com_accountkit_button_send" = "Skicka";
+"com_accountkit_button_send_code_in_fb" = "Skicka kod på Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Tryck på Skicka kod på Facebook om du vill skicka en avisering till Facebook-kontot som är kopplat till det telefonnummer du angett.";
+"com_accountkit_button_start" = "Start";
+"com_accountkit_button_start_over" = "Försök igen";
+"com_accountkit_button_submit" = "Skicka";
+"com_accountkit_check_email" = "Öppna din e-post";
+"com_accountkit_confirmation_code_agreement" = "Tryck på %1$@ för att godkänna Facebooks <a href=\"%2$@\">villkor</a>, <a href=\"%3$@\">datapolicy</a> och <a href=\"%4$@\">cookiesanvändning</a>.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Tryck på %1$@ för att godkänna Facebooks <a href=\"%2$@\">villkor</a>, <a href=\"%3$@\">datapolicy</a>, <a href=\"%4$@\">cookiesanvändning</a> och <a href=\"%5$@\">sekretesspolicyn</a> för %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Tryck på %1$@ för att godkänna Facebooks <a href=\"%2$@\">villkor</a>, <a href=\"%3$@\">datapolicy</a>, <a href=\"%4$@\">cookiesanvändning</a> samt <a href=\"%5$@\">sekretesspolicyn</a> och <a href=\"%6$@\">användarvillkoren</a> för %7$@.";
+"com_accountkit_confirmation_code_text" = "Skicka koden igen";
+"com_accountkit_confirmation_code_title" = "Skriv in din kod";
+"com_accountkit_country_code_title" = "Välj land";
+"com_accountkit_email_invalid" = "Den här e-postadressen är fel. Försök igen.";
+"com_accountkit_email_loading_title" = "Skickar e-post \U2026";
+"com_accountkit_email_login_retry_title" = "Bekräfta e-postadressen";
+"com_accountkit_email_login_text" = "Tryck på %1$@ och få ett bekräftelsemeddelande via e-post av Account Kit från Facebook. %2$@ använder detta för att hjälpa dig logga in, men du behöver inget Facebook-konto. <a href=\"%3$@\">Läs mer.</a>";
+"com_accountkit_email_login_title" = "Ange din e-postadress";
+"com_accountkit_email_not_received" = "Skicka meddelandet igen";
+"com_accountkit_email_verify_title" = "Öppna e-postmeddelandet som vi skickade och bekräfta din adress";
+"com_accountkit_error_title" = "Ett fel har uppstått.";
+"com_accountkit_facebook_code_entry_title" = "Ange din kod från Facebook";
+"com_accountkit_phone_loading_title" = "Skickar din kod\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Nummer";
+"com_accountkit_phone_login_retry_title" = "Bekräfta ditt telefonnummer";
+"com_accountkit_phone_login_text" = "Tryck på %1$@ och få en sms-bekräftelse av Account Kit från Facebook. %2$@ använder detta för att hjälpa dig logga in, men du behöver inget Facebook-konto. Meddelande- och dataavgifter kan tillkomma. <a href=\"%3$@\">Läs mer.</a>";
+"com_accountkit_phone_login_title" = "Ange ditt telefonnummer";
+"com_accountkit_resend_email_text" = "Skicka ny e-post";
+"com_accountkit_resend_title" = "Vi ber om ursäkt. Testa de här alternativen om du vill fortsätta.";
+"com_accountkit_return_title" = "Tar dig tillbaka till %1$@\U2026";
+"com_accountkit_sent_title" = "Skickat!";
+"com_accountkit_success_title" = "Klart!";
+"com_accountkit_toolbar_title" = "Logga in på %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Det gick inte att verifiera din kod.\nFörsök igen:";
+"com_accountkit_verify_title" = "Verifierar din kod\U2026";

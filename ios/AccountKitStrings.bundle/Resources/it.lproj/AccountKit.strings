@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Indietro";
+"com_accountkit_button_begin" = "Inizia";
+"com_accountkit_button_cancel" = "Annulla";
+"com_accountkit_button_confirm" = "Conferma";
+"com_accountkit_button_continue" = "Continua";
+"com_accountkit_button_log_in" = "Accedi";
+"com_accountkit_button_next" = "Avanti";
+"com_accountkit_button_ok" = "Ok";
+"com_accountkit_button_resend" = "Invia nuovo codice";
+"com_accountkit_button_resend_sms" = "Invia nuovamente l'SMS";
+"com_accountkit_button_send" = "Invia";
+"com_accountkit_button_send_code_in_fb" = "Invia il codice su Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Tocca Invia codice su Facebook per inviare una notifica all'account Facebook associato al numero di telefono che hai inserito.";
+"com_accountkit_button_start" = "Avvia";
+"com_accountkit_button_start_over" = "Riprova";
+"com_accountkit_button_submit" = "Invia";
+"com_accountkit_check_email" = "Apri la tua e-mail";
+"com_accountkit_confirmation_code_agreement" = "Tocca %1$@ per accettare le <a href=\"%2$@\">Condizioni</a>, la <a href=\"%3$@\">Normativa sui dati</a> e l'<a href=\"%4$@\">uso dei cookie</a> di Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Tocca %1$@ per accettare le <a href=\"%2$@\">Condizioni</a>, la <a href=\"%3$@\">Normativa sui dati</a> e l'<a href=\"%4$@\">uso dei cookie</a> di Facebook e la <a href=\"%5$@\">Normativa sulla privacy</a> di %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Tocca %1$@ per accettare le <a href=\"%2$@\">Condizioni</a>, la <a href=\"%3$@\">Normativa sui dati</a> e l'<a href=\"%4$@\">uso dei cookie</a>  di Facebook e la <a href=\"%5$@\">Normativa sulla privacy</a> e le <a href=\"%6$@\">Condizioni d'uso</a> di %7$@.";
+"com_accountkit_confirmation_code_text" = "Invia nuovamente il codice";
+"com_accountkit_confirmation_code_title" = "Inserisci il tuo codice";
+"com_accountkit_country_code_title" = "Seleziona il tuo Paese";
+"com_accountkit_email_invalid" = "Questo indirizzo e-mail non è corretto. Riprova.";
+"com_accountkit_email_loading_title" = "Invio dell'e-mail\U2026";
+"com_accountkit_email_login_retry_title" = "Conferma il tuo indirizzo e-mail";
+"com_accountkit_email_login_text" = "Tocca %1$@ per ricevere un'e-mail di conferma da Account Kit di Facebook. %2$@ usa questa tecnologia per consentirti di effettuare l'accesso, ma non è necessario avere un account Facebook. <a href=\"%3$@\">Scopri di più</a>.";
+"com_accountkit_email_login_title" = "Inserisci il tuo indirizzo e-mail";
+"com_accountkit_email_not_received" = "Invia nuovamente e-mail";
+"com_accountkit_email_verify_title" = "Apri l'e-mail che ti abbiamo inviato e conferma il tuo indirizzo";
+"com_accountkit_error_title" = "Spiacenti, si è verificato un errore.";
+"com_accountkit_facebook_code_entry_title" = "Inserisci il codice ricevuto da Facebook";
+"com_accountkit_phone_loading_title" = "Invio del codice\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Numero";
+"com_accountkit_phone_login_retry_title" = "Conferma il tuo numero di telefono";
+"com_accountkit_phone_login_text" = "Tocca %1$@ per ricevere un SMS di conferma da Account Kit di Facebook. %2$@ usa questa tecnologia per consentirti di effettuare l'accesso, ma non è necessario avere un account Facebook. Potrebbero essere applicati i costi per l'invio di messaggi e la trasmissione di dati. <a href=\"%3$@\">Scopri di più</a>.";
+"com_accountkit_phone_login_title" = "Inserisci il tuo numero di telefono";
+"com_accountkit_resend_email_text" = "Invia nuova e-mail";
+"com_accountkit_resend_title" = "Spiacenti. Prova queste opzioni per continuare.";
+"com_accountkit_return_title" = "Reindirizzamento a %1$@\U2026";
+"com_accountkit_sent_title" = "Invio riuscito!";
+"com_accountkit_success_title" = "Operazione completata!";
+"com_accountkit_toolbar_title" = "Accedi a %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Non ci è stato possibile verificare il tuo codice.\nRiprova:";
+"com_accountkit_verify_title" = "Verifica del tuo codice\U2026";

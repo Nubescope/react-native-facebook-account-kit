@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "返回";
+"com_accountkit_button_begin" = "開始";
+"com_accountkit_button_cancel" = "取消";
+"com_accountkit_button_confirm" = "確認";
+"com_accountkit_button_continue" = "繼續";
+"com_accountkit_button_log_in" = "登入";
+"com_accountkit_button_next" = "下一步";
+"com_accountkit_button_ok" = "確定";
+"com_accountkit_button_resend" = "傳送新代碼";
+"com_accountkit_button_resend_sms" = "重新傳送短訊";
+"com_accountkit_button_send" = "傳送";
+"com_accountkit_button_send_code_in_fb" = "在 Facebook 內傳送代碼";
+"com_accountkit_button_send_code_in_fb_disclosure" = "在 Facebook 內點按「傳送代碼」，以便將通知傳送至與您輸入的手機號碼連結的 Facebook 帳戶。";
+"com_accountkit_button_start" = "開始";
+"com_accountkit_button_start_over" = "再試一次";
+"com_accountkit_button_submit" = "送出";
+"com_accountkit_check_email" = "開啟您的電郵";
+"com_accountkit_confirmation_code_agreement" = "點按 %1$@ 以接受 Facebook 的<a href=\"%2$@\">條款</a>、<a href=\"%3$@\">數據使用政策</a>以及 <a href=\"%4$@\">Cookie 使用</a>。";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "點按 %1$@ 以接受 Facebook 的<a href=\"%2$@\">條款</a>、<a href=\"%3$@\">數據使用政策</a>、<a href=\"%4$@\">Cookie 使用</a>以及 %6$@ 的<a href=\"%5$@\">私隱政策</a>。";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "點按 %1$@ 以接受 Facebook 的<a href=\"%2$@\">條款</a>、<a href=\"%3$@\">數據使用政策</a>、<a href=\"%4$@\">Cookie 使用</a>以及 %7$@ 的<a href=\"%5$@\">私隱政策</a>及<a href=\"%6$@\">服務條款</a>。";
+"com_accountkit_confirmation_code_text" = "重新傳送代碼";
+"com_accountkit_confirmation_code_title" = "輸入您的代碼";
+"com_accountkit_country_code_title" = "選擇您的國家／地區";
+"com_accountkit_email_invalid" = "此電郵有誤。請稍後再試。";
+"com_accountkit_email_loading_title" = "電郵傳送中\U2026";
+"com_accountkit_email_login_retry_title" = "確認您的電郵";
+"com_accountkit_email_login_text" = "點按 %1$@ 以便從 Facebook 提供的 Account Kit 取得確認電郵。%2$@ 能使用此方式協助您登入，且您不需擁有 Facebook 帳戶。<a href=\"%3$@\">瞭解詳情。</a>";
+"com_accountkit_email_login_title" = "輸入您的電郵地址";
+"com_accountkit_email_not_received" = "重新傳送電郵";
+"com_accountkit_email_verify_title" = "請開啟我們傳送給您的電郵以確認您的電郵地址";
+"com_accountkit_error_title" = "抱歉，發生問題。";
+"com_accountkit_facebook_code_entry_title" = "輸入您的 Facebook 代碼";
+"com_accountkit_phone_loading_title" = "正在傳送您的代碼\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "電話";
+"com_accountkit_phone_login_retry_title" = "確認您的手機號碼";
+"com_accountkit_phone_login_text" = "點按 %1$@ 以便從 Facebook 提供的 Account Kit 取得確認短訊。%2$@ 能使用此方式協助您登入，且您不需擁有 Facebook 帳戶。可能會產生短訊及數據傳輸費用。<a href=\"%3$@\">瞭解詳情。</a>";
+"com_accountkit_phone_login_title" = "輸入您的手機號碼";
+"com_accountkit_resend_email_text" = "傳送新電郵";
+"com_accountkit_resend_title" = "很抱歉，請嘗試這些選項以便繼續操作。";
+"com_accountkit_return_title" = "正在返回 %1$@\U2026";
+"com_accountkit_sent_title" = "已傳送！";
+"com_accountkit_success_title" = "完成！";
+"com_accountkit_toolbar_title" = "登入 %1$@";
+"com_accountkit_verify_confirmation_code_title" = "我們無法驗證您的代碼，請重新輸入一次：";
+"com_accountkit_verify_title" = "正在驗證您的代碼\U2026";

@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Πίσω";
+"com_accountkit_button_begin" = "Έναρξη";
+"com_accountkit_button_cancel" = "Άκυρο";
+"com_accountkit_button_confirm" = "Επιβεβαίωση";
+"com_accountkit_button_continue" = "Συνέχεια";
+"com_accountkit_button_log_in" = "Σύνδεση";
+"com_accountkit_button_next" = "Επόμενο";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Αποστολή νέου κωδικού";
+"com_accountkit_button_resend_sms" = "Επανάληψη αποστολής SMS";
+"com_accountkit_button_send" = "Αποστολή";
+"com_accountkit_button_send_code_in_fb" = "Αποστολή κωδικού στο Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Πατήστε Στείλτε τον κωδικό στο Facebook για να σταλεί μια ειδοποίηση στο λογαριασμό Facebook που είναι συνδεδεμένος με τον αριθμό τηλεφώνου τον οποίο καταχωρήσατε.";
+"com_accountkit_button_start" = "Έναρξη";
+"com_accountkit_button_start_over" = "Προσπαθήστε ξανά.";
+"com_accountkit_button_submit" = "Υποβολή";
+"com_accountkit_check_email" = "Ανοίξτε το email σας";
+"com_accountkit_confirmation_code_agreement" = "Πατήστε %1$@ για να δηλώσετε ότι συμφωνείτε με τους <a href=\"%2$@\">Όρους</a>, την <a href=\"%3$@\">Πολιτική δεδομένων</a> και τη <a href=\"%4$@\">χρήση των cookies</a> του Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Πατήστε %1$@ για να δηλώσετε ότι συμφωνείτε με τους <a href=\"%2$@\">Όρους</a>, την <a href=\"%3$@\">Πολιτική δεδομένων</a>, τη <a href=\"%4$@\">χρήση των cookies</a> και την <a href=\"%5$@\">Πολιτική απορρήτου</a> του Facebook του %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Πατήστε %1$@ για να δηλώσετε ότι συμφωνείτε με τους <a href=\"%2$@\">Όρους</a>, την <a href=\"%3$@\">Πολιτική δεδομένων</a>, τη <a href=\"%4$@\">χρήση των cookies</a>, την <a href=\"%5$@\">Πολιτική απορρήτου</a> και τους <a href=\"%6$@\">Όρους της υπηρεσίας</a> του Facebook του %7$@.";
+"com_accountkit_confirmation_code_text" = "Ξαναστείλτε τον κωδικό";
+"com_accountkit_confirmation_code_title" = "Εισαγάγετε τον κωδικό σας";
+"com_accountkit_country_code_title" = "Επιλέξτε τη χώρα σας";
+"com_accountkit_email_invalid" = "Αυτό το email δεν είναι σωστό. Προσπαθήστε ξανά.";
+"com_accountkit_email_loading_title" = "Αποστολή email\U2026";
+"com_accountkit_email_login_retry_title" = "Επιβεβαιώστε το email σας";
+"com_accountkit_email_login_text" = "Πατήστε %1$@ για να λάβετε ένα email επιβεβαίωσης από το Account Kit που παρέχεται από το Facebook. Το %2$@ χρησιμοποιεί αυτή τη λειτουργία για να σας βοηθήσει να συνδεθείτε αλλά δεν χρειάζεστε λογαριασμό Facebook. <a href=\"%3$@\">Μάθετε περισσότερα.</a>";
+"com_accountkit_email_login_title" = "Γράψτε τη διεύθυνση email σας";
+"com_accountkit_email_not_received" = "Επανάληψη αποστολής email";
+"com_accountkit_email_verify_title" = "Ανοίξτε το email που σας στείλαμε και επιβεβαιώστε τη διεύθυνσή σας";
+"com_accountkit_error_title" = "Λυπούμαστε, παρουσιάστηκε κάποιο πρόβλημα.";
+"com_accountkit_facebook_code_entry_title" = "Εισαγάγετε τον κωδικό σας από το Facebook";
+"com_accountkit_phone_loading_title" = "Γίνεται αποστολή του κωδικού σας\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Αριθμός";
+"com_accountkit_phone_login_retry_title" = "Επιβεβαιώστε τον αριθμό τηλεφώνου σας";
+"com_accountkit_phone_login_text" = "Πατήστε %1$@ για να λάβετε ένα SMS επιβεβαίωσης από το Account Kit που παρέχεται από το Facebook. Το %2$@ χρησιμοποιεί αυτή τη λειτουργία για να σας βοηθήσει να συνδεθείτε αλλά δεν χρειάζεστε λογαριασμό Facebook. Ίσως ισχύσουν χρεώσεις μηνυμάτων και δεδομένων. <a href=\"%3$@\">Μάθετε περισσότερα.</a>";
+"com_accountkit_phone_login_title" = "Γράψτε τον αριθμό τηλεφώνου σας";
+"com_accountkit_resend_email_text" = "Αποστολή νέου email";
+"com_accountkit_resend_title" = "Λυπούμαστε. Δοκιμάστε αυτές τις επιλογές για να συνεχίσετε.";
+"com_accountkit_return_title" = "Επιστροφή στο %1$@\U2026";
+"com_accountkit_sent_title" = "Στάλθηκε!";
+"com_accountkit_success_title" = "Ολοκληρώθηκε!";
+"com_accountkit_toolbar_title" = "Συνδεθείτε στο %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Δεν μπορέσαμε να\nεπαληθεύσουμε τον κωδικό σας.\nΠροσπαθήστε ξανά:";
+"com_accountkit_verify_title" = "Γίνεται επαλήθευση του κωδικού σας\U2026";
