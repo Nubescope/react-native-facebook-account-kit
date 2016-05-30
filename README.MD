@@ -21,7 +21,36 @@ If you prefer you can do it manually following [these steps](#manual-installatio
 
 ### For iOS
 
-> Will be defined soon, pull request are welcome ;)
+1. First, link the AccountKit SDK to your project following these steps
+  - Open with XCode your project  
+  - Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder  
+  - Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)  
+
+2. Add your Facebook credentials to your project's `Info.plist` file
+```
+    <plist version="1.0">
+      <dict>
+        ...
+        <key>FacebookAppID</key>
+        <string>{your-app-id}</string>
+        <key>AccountKitClientToken</key>
+        <string>{your-account-kit-client-token}</string>
+        <key>CFBundleURLTypes</key>
+        <array>
+          <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+              <string>ak{your-app-id}</string>
+            </array>
+          </dict>
+        </array>
+        ...
+      </dict>
+    </plist>
+```
+3. Done! Now run your project from XCode or with `react-native run-ios` from your terminal  
+
+This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
 
 ### For Android
 
