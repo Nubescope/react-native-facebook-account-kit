@@ -21,8 +21,8 @@ class RNAccountKit {
 
   configure(options) {
     const configOptions = {
+      ...RNAccountKit.configDefaults,
       ...options,
-      ...RNAccountKit.configDefaults
     }
 
     return RNAccountKitNative.configure(configOptions)
