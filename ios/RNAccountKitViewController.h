@@ -6,6 +6,7 @@
 @interface RNAccountKitViewController : UIViewController<AKFViewControllerDelegate>
 
 @property(nonatomic, strong) RNAccountKitViewController *instance;
+@property(nonatomic, strong) AKFTheme *theme;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 
