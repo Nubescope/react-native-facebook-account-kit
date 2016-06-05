@@ -31,6 +31,9 @@
 - (void)_prepareLoginViewController:(UIViewController<AKFViewController> *)viewController
 {
     viewController.delegate = self;
+    if(self.theme != nil) {
+        viewController.theme = self.theme;
+    }
 }
 
 - (void)loginWithPhone: (RCTPromiseResolveBlock)resolve

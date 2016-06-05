@@ -1,5 +1,6 @@
-import React, { Component, StyleSheet, Text, View, TouchableHighlight } from 'react-native'
-import AccountKit, { LoginButton } from 'react-native-facebook-account-kit'
+import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
+import React, { Component } from 'react'
+import AccountKit, { LoginButton, Color } from 'react-native-facebook-account-kit'
 
 class AccountKitSample extends Component {
   state = {
@@ -58,7 +59,7 @@ class AccountKitSample extends Component {
 
   renderUserLogged() {
     const { id, email, phoneNumber } = this.state.loggedAccount;
-    
+
     return (
       <View>
         <TouchableHighlight style={styles.button} onPress={() => this.onLogoutPressed()}>
