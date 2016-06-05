@@ -5,7 +5,6 @@
 #import "RNAccountKit.h"
 #import "RCTBridge.h"
 #import "RNAccountKitViewController.h"
-#import <AccountKit/AccountKit.h>
 #import "RCTRootView.h"
 #import "RCTLog.h"
 
@@ -23,7 +22,7 @@ RCT_EXPORT_METHOD(login:(NSString *)type
 {
     @try {
         RNAccountKitViewController* a = [[RNAccountKitViewController alloc] initWithAccountKit: [self getAccountKit]];
-        
+        a.theme = [self getTheme];
         if ([type isEqual: @"phone"]) {
             [a loginWithPhone: resolve rejecter: reject];
         } else {
@@ -33,7 +32,7 @@ RCT_EXPORT_METHOD(login:(NSString *)type
     @catch (NSException * e) {
         reject(@"login_failed", @"Could not login", [self errorFromException:e]);
     }
-    
+
 }
 
 RCT_EXPORT_METHOD(logout: (RCTPromiseResolveBlock)resolve
@@ -61,18 +60,18 @@ RCT_EXPORT_METHOD(getCurrentAccessToken: (RCTPromiseResolveBlock)resolve
 {
     @try {
         id<AKFAccessToken> accessToken = [[self getAccountKit] currentAccessToken];
-        
+
         if (![accessToken accountID]) {
             return resolve(nil);
         }
-        
+
         NSMutableDictionary *accessTokenData =[[NSMutableDictionary alloc] init];
         accessTokenData[@"accountId"] = [accessToken accountID];
         accessTokenData[@"appId"] = [accessToken applicationID];
         accessTokenData[@"token"] = [accessToken tokenString];
         accessTokenData[@"lastRefresh"] = [NSNumber numberWithDouble: ([[accessToken lastRefresh] timeIntervalSince1970] * 1000)];
         accessTokenData[@"refreshIntervalSeconds"] = [NSNumber numberWithDouble: [accessToken tokenRefreshInterval]];
-        
+
         resolve(accessTokenData);
     }
     @catch (NSException * e) {
@@ -93,6 +92,32 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
     }];
 }
 
+- (AKFTheme *)getTheme {
+    AKFTheme *theme = [AKFTheme defaultTheme];
+    NSDictionary *themeOptions = [self.options objectForKey:@"theme"];
+    if(themeOptions == nil) {
+      return theme;
+    }
+    NSArray *colorOptions = @[@"backgroundColor",@"buttonBackgroundColor",@"buttonBorderColor",
+                              @"buttonTextColor",@"headerBackgroundColor",@"headerTextColor",
+                              @"iconColor",@"inputBackgroundColor",@"inputBorderColor",
+                              @"inputTextColor",@"textColor",@"titleColor"];
+    for(NSString *key in themeOptions) {
+        UIColor *color;
+        if([colorOptions containsObject:key]) {
+            NSDictionary *value = [themeOptions valueForKey:key];
+            color = [UIColor colorWithRed:[[value valueForKey:@"r"] floatValue]
+                                    green:[[value valueForKey:@"g"] floatValue]
+                                     blue:[[value valueForKey:@"b"] floatValue]
+                                    alpha:[[value valueForKey:@"a"] floatValue]];
+            [theme setValue:color forKey:key];
+        } else if([key isEqualToString:@"backgroundImage"]) {
+            theme.backgroundImage = [UIImage imageNamed:[themeOptions objectForKey:key]];
+        }
+    }
+    return theme;
+}
+
 - (AKFAccountKit*) getAccountKit
 {
     if (_accountKit == nil) {
@@ -101,7 +126,7 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
         AKFResponseType responseType = useAccessToken ? AKFResponseTypeAccessToken : AKFResponseTypeAuthorizationCode;
         _accountKit = [[AKFAccountKit alloc] initWithResponseType:responseType];
     }
-    
+
     return _accountKit;
 }
 
@@ -110,14 +135,14 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
     NSMutableDictionary *result =[[NSMutableDictionary alloc] init];
     result[@"id"] = account.accountID;
     result[@"email"] = account.emailAddress;
-    
+
     if (account.phoneNumber && account.phoneNumber.phoneNumber) {
         result[@"phoneNumber"] = @{
             @"number": account.phoneNumber.phoneNumber,
             @"countryCode": account.phoneNumber.countryCode
         };
     }
-    
+
     return result;
 }
 
@@ -130,7 +155,7 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
         @"callStackSymbols": exception.callStackSymbols,
         @"userInfo": exception.userInfo
     };
-    
+
     return [[NSError alloc] initWithDomain: @"RNAccountKit"
                                       code: 0
                                   userInfo: exceptionInfo];
