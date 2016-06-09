@@ -60,12 +60,12 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
    <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
    <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
    ```
-   
+
 2. In `android/app/src/main/AndroidManifest.xml`
   ```
   ...
   <application>
-  
+
       ...
       <meta-data
           android:name="com.facebook.sdk.ApplicationId"
@@ -125,14 +125,15 @@ RNAccountKit.configure({
   facebookNotificationsEnabled: true|false, // true by default
   readPhoneStateEnabled: true|false, // true by default,
   receiveSMS: true|false, // true by default,
-  SMSBlacklist: ['US'], // [] by default
-  SMSWhitelist: ['AR'] // [] by default
+  countryWhitelist: ['AR'], // [] by default
+  countryBlacklist: ['US'], // [] by default
+  defaultCountry: 'AR'
 })
 ```
 
 ## Examples
 
-Try the [sample](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/sample) 
+Try the [sample](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/sample)
 
 ```bash
 git clone https://github.com/underscopeio/react-native-facebook-account-kit
