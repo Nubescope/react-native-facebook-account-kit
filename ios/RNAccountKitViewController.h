@@ -7,6 +7,9 @@
 
 @property(nonatomic, strong) RNAccountKitViewController *instance;
 @property(nonatomic, strong) AKFTheme *theme;
+@property(nonatomic, strong) NSArray<NSString *> *countryWhitelist;
+@property(nonatomic, strong) NSArray<NSString *> *countryBlacklist;
+@property(nonatomic, strong) NSString *defaultCountry;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 

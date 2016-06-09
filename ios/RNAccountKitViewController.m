@@ -34,6 +34,14 @@
     if(self.theme != nil) {
         viewController.theme = self.theme;
     }
+    if (self.countryWhitelist != nil) {
+        viewController.whitelistedCountryCodes = self.countryWhitelist;
+    }
+    if (self.countryBlacklist != nil) {
+        viewController.blacklistedCountryCodes = self.countryBlacklist;
+    }
+    viewController.defaultCountryCode = self.defaultCountry;
+    
 }
 
 - (void)loginWithPhone: (RCTPromiseResolveBlock)resolve
