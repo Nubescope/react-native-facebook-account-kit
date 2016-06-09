@@ -1,5 +1,14 @@
-import React, { Component } from 'react';
-import { NativeModules, DeviceEventEmitter, TouchableHighlight, Text, Platform } from 'react-native'
+import React, {
+  Component
+} from 'react'
+
+import {
+  NativeModules,
+  DeviceEventEmitter,
+  TouchableOpacity,
+  Text,
+  Platform
+} from 'react-native'
 
 const RNAccountKitNative = NativeModules.RNAccountKit
 
@@ -11,16 +20,18 @@ class RNAccountKit {
     facebookNotificationsEnabled: true,
     readPhoneStateEnabled: true,
     receiveSMS: true,
-    SMSBlacklist: [],
-    SMSWhitelist: [],
     theme: {}
-  };
+  }
 
   constructor() {
     this.configure()
   }
 
-  configure(options) {
+  configure(options = {}) {
+    for(key of Object.keys(options)) {
+      options[key] || delete options[key]
+    }
+
     const configOptions = {
       ...RNAccountKit.configDefaults,
       ...options,
@@ -87,9 +98,9 @@ export class LoginButton extends Component {
 
   render() {
     return (
-      <TouchableHighlight style={this.props.style} onPress={() => { this.onPress() }}>
+      <TouchableOpacity style={this.props.style} onPress={() => { this.onPress() }}>
         {this.props.children}
-      </TouchableHighlight>
+      </TouchableOpacity>
     )
   }
 }

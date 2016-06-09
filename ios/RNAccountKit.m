@@ -23,6 +23,10 @@ RCT_EXPORT_METHOD(login:(NSString *)type
     @try {
         RNAccountKitViewController* a = [[RNAccountKitViewController alloc] initWithAccountKit: [self getAccountKit]];
         a.theme = [self getTheme];
+        a.countryWhitelist = [self.options valueForKey:@"countryWhitelist"];
+        a.countryBlacklist = [self.options valueForKey:@"countryBlacklist"];
+        a.defaultCountry = [self.options valueForKey:@"defaultCountry"];
+
         if ([type isEqual: @"phone"]) {
             [a loginWithPhone: resolve rejecter: reject];
         } else {

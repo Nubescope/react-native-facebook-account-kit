@@ -176,8 +176,9 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
      *     facebookNotificationsEnabled :Boolean
      *     readPhoneStateEnabled        :Boolean
      *     receiveSMS                   :Boolean
-     *     SMSBlacklist                 :String[]
-     *     SMSWhitelist                 :String[]
+     *     countryBlacklist             :String[]
+     *     countryWhitelist             :String[]
+     *     defaultCountry               :String
      */
 
     @ReactMethod
@@ -226,15 +227,17 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
             configurationBuilder.setReceiveSMS(receiveSMS);
         }
 
-        String[] blacklist = formatSMSList(this.options.getArray("SMSBlacklist"));
-        if (blacklist.length > 0) {
+        if (this.options.hasKey("countryBlacklist")) {
+            String[] blacklist = formatCountryList(this.options.getArray("countryBlacklist"));
             configurationBuilder.setSMSBlacklist(blacklist);
         }
 
-        String[] whitelist = formatSMSList(this.options.getArray("SMSWhitelist"));
-        if (whitelist.length > 0) {
+        if (this.options.hasKey("countryWhitelist")) {
+            String[] whitelist = formatCountryList(this.options.getArray("countryWhitelist"));
             configurationBuilder.setSMSWhitelist(whitelist);
         }
+
+        configurationBuilder.setDefaultCountryCode(this.options.getString("defaultCountry"));
 
         return configurationBuilder;
     }
@@ -265,7 +268,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         return map;
     }
 
-    private String[] formatSMSList(ReadableArray list) {
+    private String[] formatCountryList(ReadableArray list) {
         List<String> pre = new ArrayList<>();
         for (int i=0,n=list.size();i<n;i++) {
             pre.add(list.getString(i));

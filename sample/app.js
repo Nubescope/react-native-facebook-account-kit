@@ -1,6 +1,19 @@
-import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
-import React, { Component } from 'react'
-import AccountKit, { LoginButton, Color } from 'react-native-facebook-account-kit'
+import React, {
+  Component
+} from 'react'
+
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Switch
+} from 'react-native'
+
+import AccountKit, {
+  LoginButton,
+  Color
+} from 'react-native-facebook-account-kit'
 
 class AccountKitSample extends Component {
   state = {
@@ -9,6 +22,8 @@ class AccountKitSample extends Component {
   }
 
   componentWillMount() {
+    this.configureAccountKit()
+
     AccountKit.getCurrentAccessToken()
       .then((token) => {
         if (token) {
@@ -24,6 +39,30 @@ class AccountKitSample extends Component {
         }
       })
       .catch((e) => console.log('Failed to get current access token', e))
+  }
+
+  configureAccountKit() {
+    AccountKit.configure({
+      theme: {
+        //backgroundColor:       Color.rgba(0,120,0,0.1),
+        //buttonBackgroundColor: Color.rgba(0, 153, 0, 1.00),
+        //buttonDisabledBackgroundColor: Color.rgba(100, 153, 0, 0.5),
+        //buttonBorderColor:     Color.rgba(0,255,0,1),
+        //buttonTextColor:       Color.rgba(0,255,0,1),
+        //headerBackgroundColor: Color.rgba(0, 153, 0, 1.00),
+        //headerTextColor:       Color.rgba(0,255,0,1),
+        //iconColor:             Color.rgba(0,255,0,1),
+        //inputBackgroundColor:  Color.rgba(0,255,0,1),
+        //inputBorderColor:      Color.hex('#ccc'),
+        //inputTextColor:        Color.hex('#0f0'),
+        //textColor:             Color.hex('#0f0'),
+        //titleColor:            Color.hex('#0f0'),
+        //backgroundImage:       "background.png"
+      },
+      //countryWhitelist: [ "AR", "BR", "US" ],
+      //countryBlacklist: [ "BR" ],
+      //defaultCountry: "AR"
+    })
   }
 
   onLogin(token) {
@@ -62,9 +101,9 @@ class AccountKitSample extends Component {
 
     return (
       <View>
-        <TouchableHighlight style={styles.button} onPress={() => this.onLogoutPressed()}>
+        <TouchableOpacity style={styles.button} onPress={() => this.onLogoutPressed()}>
           <Text style={styles.buttonText}>Logout</Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
 
         <Text style={styles.label}>Account Kit Id</Text>
         <Text style={styles.text}>{id}</Text>
@@ -84,9 +123,9 @@ class AccountKitSample extends Component {
           <Text style={styles.buttonText}>SMS</Text>
         </LoginButton>
 
-        <TouchableHighlight style={styles.button} onPress={() => this.onEmailLoginPressed()}>
+        <TouchableOpacity style={styles.button} onPress={() => this.onEmailLoginPressed()}>
           <Text style={styles.buttonText}>Email</Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
       </View>
     )
   }
