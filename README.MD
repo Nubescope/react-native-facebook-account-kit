@@ -27,27 +27,27 @@ If you prefer you can do it manually following [these steps](#manual-installatio
   - Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)  
 
 2. Add your Facebook credentials to your project's `Info.plist` file
-```
-    <plist version="1.0">
-      <dict>
-        ...
-        <key>FacebookAppID</key>
-        <string>{your-app-id}</string>
-        <key>AccountKitClientToken</key>
-        <string>{your-account-kit-client-token}</string>
-        <key>CFBundleURLTypes</key>
-        <array>
-          <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-              <string>ak{your-app-id}</string>
-            </array>
-          </dict>
-        </array>
-        ...
-      </dict>
-    </plist>
-```
+  ```
+      <plist version="1.0">
+        <dict>
+          ...
+          <key>FacebookAppID</key>
+          <string>{your-app-id}</string>
+          <key>AccountKitClientToken</key>
+          <string>{your-account-kit-client-token}</string>
+          <key>CFBundleURLTypes</key>
+          <array>
+            <dict>
+              <key>CFBundleURLSchemes</key>
+              <array>
+                <string>ak{your-app-id}</string>
+              </array>
+            </dict>
+          </array>
+          ...
+        </dict>
+      </plist>
+  ```
 3. Done! Now run your project from XCode or with `react-native run-ios` from your terminal  
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
@@ -83,6 +83,7 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
 This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide.
 
 ## Usage
+> If you have issues with the method signatures you may be using an older version. Check the [Releases Notes]( https://github.com/underscopeio/react-native-facebook-account-kit/releases) for breaking changes
 
 ```javascript
 import RNAccountKit from 'react-native-facebook-account-kit'
