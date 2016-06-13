@@ -237,7 +237,9 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
             configurationBuilder.setSMSWhitelist(whitelist);
         }
 
-        configurationBuilder.setDefaultCountryCode(this.options.getString("defaultCountry"));
+        if (this.options.hasKey("defaultCountry")) {
+            configurationBuilder.setDefaultCountryCode(this.options.getString("defaultCountry"));
+        }
 
         return configurationBuilder;
     }
