@@ -22,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		D20BD73F1D0EF0A700F2932F /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D20BD73E1D0EF0A700F2932F /* AccountKitStrings.bundle */; };
 		F0C6C8C61CDB73900026C601 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C6C8C51CDB73900026C601 /* AccountKit.framework */; };
 		F0C6C8D31CDB73FF0026C601 /* libRNAccountKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D25ABA2D1CD8109500678BA3 /* libRNAccountKit.a */; };
 /* End PBXBuildFile section */
@@ -135,6 +136,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		D20BD73E1D0EF0A700F2932F /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AccountKitStrings.bundle; path = ../../ios/AccountKitStrings.bundle; sourceTree = "<group>"; };
 		D25ABA281CD8109500678BA3 /* RNAccountKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAccountKit.xcodeproj; path = ../../ios/RNAccountKit.xcodeproj; sourceTree = "<group>"; };
 		F0C6C8C51CDB73900026C601 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = ../../ios/AccountKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,6 +303,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D20BD73E1D0EF0A700F2932F /* AccountKitStrings.bundle */,
 				D252DE151CD3B4EE005BE160 /* Frameworks */,
 				13B07FAE1A68108700A75B9A /* AccountKitSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -547,6 +550,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20BD73F1D0EF0A700F2932F /* AccountKitStrings.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
