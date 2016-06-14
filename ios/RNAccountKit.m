@@ -105,6 +105,7 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
     NSArray *colorOptions = @[@"backgroundColor",@"buttonBackgroundColor",@"buttonBorderColor",
                               @"buttonTextColor",@"headerBackgroundColor",@"headerTextColor",
                               @"iconColor",@"inputBackgroundColor",@"inputBorderColor",
+                              @"buttonDisabledBackgroundColor",
                               @"inputTextColor",@"textColor",@"titleColor"];
     for(NSString *key in themeOptions) {
         UIColor *color;
