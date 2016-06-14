@@ -102,11 +102,11 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
     if(themeOptions == nil) {
       return theme;
     }
-    NSArray *colorOptions = @[@"backgroundColor",@"buttonBackgroundColor",@"buttonBorderColor",
-                              @"buttonTextColor",@"headerBackgroundColor",@"headerTextColor",
-                              @"iconColor",@"inputBackgroundColor",@"inputBorderColor",
-                              @"buttonDisabledBackgroundColor",
-                              @"inputTextColor",@"textColor",@"titleColor"];
+    NSArray *colorOptions = @[@"backgroundColor",@"headerBackgroundColor",@"headerTextColor",
+                              @"buttonBackgroundColor",@"buttonBorderColor",@"buttonTextColor",
+                              @"buttonDisabledBackgroundColor",@"buttonDisabledBorderColor",
+                              @"buttonDisabledTextColor",@"iconColor",@"inputBackgroundColor",
+                              @"inputBorderColor",@"inputTextColor",@"textColor",@"titleColor"];
     for(NSString *key in themeOptions) {
         UIColor *color;
         if([colorOptions containsObject:key]) {
