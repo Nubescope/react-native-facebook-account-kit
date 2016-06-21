@@ -21,23 +21,70 @@
 #import <AccountKit/AKFAccessToken.h>
 #import <AccountKit/AKFAdvancedUIManaging.h>
 #import <AccountKit/AKFConfiguring.h>
+#import <AccountKit/AKFLoginType.h>
 #import <AccountKit/AKFTheming.h>
 
 @protocol AKFViewControllerDelegate;
 
+/*!
+ @protocol
+
+ @abstract A view controller for Account Kit that reports the status of the login through the delegate.
+ */
 @protocol AKFViewController <AKFAdvancedUIManaging, AKFConfiguring, AKFTheming>
 
+/*!
+ @abstract The delegate for the receiver.
+ */
 @property (nonatomic, weak) id<AKFViewControllerDelegate> delegate;
+
+/*!
+ @abstract The type of login that the receiver controls.
+ */
+@property (nonatomic, assign, readonly) AKFLoginType loginType;
 
 @end
 
+/*!
+ @protocol
+
+ @abstract Receives callbacks from the View Controller when the login flow completes.
+ */
 @protocol AKFViewControllerDelegate <NSObject>
 
 @optional
 
+/*!
+ @abstract Called when the login completes with an authorization code response type.
+
+ @param viewController the AKFViewController that was used
+ @param code the authorization code that can be exchanged for an access token with the app secret
+ @param state the state param value that was passed in at the beginning of the flow
+ */
 - (void)viewController:(UIViewController<AKFViewController> *)viewController didCompleteLoginWithAuthorizationCode:(NSString *)code state:(NSString *)state;
+
+/*!
+ @abstract Called when the login completes with an access token response type.
+
+ @param viewController the AKFViewController that was used
+ @param accessToken the access token for the logged in account
+ @param state the state param value that was passed in at the beginning of the flow
+ */
 - (void)viewController:(UIViewController<AKFViewController> *)viewController didCompleteLoginWithAccessToken:(id<AKFAccessToken>)accessToken state:(NSString *)state;
+
+/*!
+ @abstract Called when the login failes with an error
+
+ @param viewController the AKFViewController that was used
+ @param error the error that occurred
+ */
 - (void)viewController:(UIViewController<AKFViewController> *)viewController didFailWithError:(NSError *)error;
+
+/*!
+ @abstract Called when the login flow is cancelled through the UI.
+
+ @param viewController the AKFViewController that was used
+ */
 - (void)viewControllerDidCancel:(UIViewController<AKFViewController> *)viewController;
 
 @end

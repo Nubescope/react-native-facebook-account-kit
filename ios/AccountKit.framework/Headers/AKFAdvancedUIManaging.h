@@ -20,8 +20,16 @@
 
 #import <AccountKit/AKFAdvancedUIManager.h>
 
+/*!
+ @protocol
+
+ @abstract Protocol for classes that manage Advanced UI.
+ */
 @protocol AKFAdvancedUIManaging <NSObject>
 
+/*!
+ @abstract The advanced UI manager.
+ */
 @property (nonatomic, strong) id<AKFAdvancedUIManager> advancedUIManager;
 
 @end

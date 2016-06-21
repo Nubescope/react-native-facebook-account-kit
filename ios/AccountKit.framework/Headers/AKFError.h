@@ -41,31 +41,38 @@ extern NSString *const AKFErrorUserMessageKey;
 extern NSString *const AKFErrorObjectKey;
 
 /*!
+ @typedef AKFErrorCode
+
  @abstract Top level error codes from the AccountKit framework.
+
  @discussion Use the NSUnderlyingErrorKey to retrieve underlying errors with more details if necessary.
  */
 typedef NS_ENUM(NSInteger, AKFErrorCode)
 {
   /*!
    @abstract A request failed due to a network error.
+
    @discussion It is generally suitable to present UI to check the network connection when this error code is received.
    */
   AKFNetworkConnectionError = 100,
 
   /*!
    @abstract Server generated an error.
+
    @discussion Use AKFErrorDeveloperMessageKey to retrieve the details of the server error from the underlying error.
    */
   AKFServerError = 200,
 
   /*!
    @abstract The existing login request has become invalid.
+
    @discussion A new login request must be initiated. See AKFLoginRequestInvalidatedErrorCode for underlying error codes.
    */
   AKFLoginRequestInvalidatedError = 300,
 
   /*!
    @abstract A parameter value that is entered is invalid.
+
    @discussion The data passed into the SDK has an invalid value. In most cases this can be resolved by presenting UI to
    re-enter the data correctly. See AKFInvalidParameterValueErrorCode for underlying error codes.
    */

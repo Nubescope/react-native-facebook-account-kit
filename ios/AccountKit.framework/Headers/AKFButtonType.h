@@ -19,6 +19,8 @@
 #import <UIKit/UIKit.h>
 
 /*!
+ @typedef AKFButtonType
+
  @abstract The button types that can be used within the Account Kit UI.
  */
 typedef NS_ENUM(NSUInteger, AKFButtonType)
@@ -26,7 +28,7 @@ typedef NS_ENUM(NSUInteger, AKFButtonType)
   /*!
    @abstract The default button text will be used for the current context.
    */
-  AKFButtonTypeDefault,
+  AKFButtonTypeDefault = 0,
 
   /*!
    @abstract "Begin" (localized)

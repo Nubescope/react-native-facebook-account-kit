@@ -20,6 +20,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*!
+ @protocol
+
+ @abstract The protocol that represents an Access Token.
+ */
 @protocol AKFAccessToken <NSObject, NSCopying, NSSecureCoding>
 
 /*!

@@ -25,15 +25,26 @@ NS_ASSUME_NONNULL_BEGIN
  */
 extern NSString *const AKFServerErrorDomain;
 
+/*!
+ @typedef AKFServerErrorCode
+
+ @abstract Detail error codes for server errors.
+ */
 typedef NS_ENUM(NSInteger, AKFServerErrorCode)
 {
   /*!
    @abstract An invalid parameter value was found.
+
    @discussion The SDK does not know how to handle this parameter value from the server.
    */
   AKFInvalidServerParameterValueError = 201,
 };
 
+/*!
+ @typedef AKFLoginRequestInvalidatedErrorCode
+
+ @abstract Detail error codes for login request invalidated errors.
+ */
 typedef NS_ENUM(NSInteger, AKFLoginRequestInvalidatedErrorCode)
 {
   /*!
@@ -42,6 +53,11 @@ typedef NS_ENUM(NSInteger, AKFLoginRequestInvalidatedErrorCode)
   AKFLoginRequestExpiredError = 301,
 };
 
+/*!
+ @typedef AKFInvalidParameterValueErrorCode
+
+ @abstract Detail error codes for invalid parameter errors.
+ */
 typedef NS_ENUM(NSInteger, AKFInvalidParameterValueErrorCode)
 {
   /*!
@@ -80,6 +96,11 @@ typedef NS_ENUM(NSInteger, AKFInvalidParameterValueErrorCode)
   AKFOperationNotSuccessful = 407,
 };
 
+/*!
+ @typedef AKFServerResponseErrorCode
+
+ @abstract Detail error codes for server response errors.
+ */
 typedef NS_ENUM(NSInteger, AKFServerResponseErrorCode)
 {
   AKFServerResponseErrorCodeInvalidConfirmationCode = 15003,

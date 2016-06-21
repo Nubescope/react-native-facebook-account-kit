@@ -20,8 +20,11 @@
 
 #import <AccountKit/AKFButtonType.h>
 #import <AccountKit/AKFLoginFlowState.h>
+#import <AccountKit/AKFTextPosition.h>
 
 /*!
+ @protocol
+
  @abstract A controller that exposes actions to the AKFAdvancedUIManager
  */
 @protocol AKFAdvancedUIActionController <NSObject>
@@ -31,9 +34,16 @@
  */
 - (void)back;
 
+/*!
+ @abstract Triggers the login flow to cancel.
+ */
+- (void)cancel;
+
 @end
 
 /*!
+ @protocol
+
  @abstract Manager for advanced UI configuration.
  */
 @protocol AKFAdvancedUIManager <NSObject>
@@ -104,5 +114,14 @@
  @param error the error
  */
 - (void)setError:(nonnull NSError *)error;
+
+/*!
+ @abstract Returns the position of the text relative to the content body view.
+
+ @param state the current state of the login flow
+
+ @return a text position
+ */
+- (AKFTextPosition)textPositionForState:(AKFLoginFlowState)state;
 
 @end

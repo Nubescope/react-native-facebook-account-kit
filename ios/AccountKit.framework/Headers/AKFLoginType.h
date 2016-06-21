@@ -18,27 +18,19 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 /*!
- @abstract AccountKit application settings.
+ @typedef AKFLoginType
+
+ @abstract The type of login.
  */
-@interface AKFSettings : NSObject
+typedef NS_ENUM(NSUInteger, AKFLoginType) {
+  /*!
+   @abstract Log in with an email address.
+   */
+  AKFLoginTypeEmail = 0,
 
-/*!
- @abstract Get the Account Kit Client Token used by the SDK.
-
- @discussion If not explicitly set, the default will be read from the application's plist (AccountKitClientToken).
- */
-+ (NSString *)clientToken;
-
-/*!
- @abstract Set the Account Kit Client Token used by the SDK.
-
- @param clientToken The Account Kit Client Token to be used by the SDK.
- */
-+ (void)setClientToken:(NSString *)clientToken;
-
-@end
-
-NS_ASSUME_NONNULL_END
+  /*!
+   @abstract Log in with a phone number.
+   */
+  AKFLoginTypePhone,
+};

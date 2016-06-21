@@ -29,6 +29,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /*!
+ @typedef AKFRequestAccountHandler
+
  @abstract Callback that receives AccountKit account information.
  */
 typedef void (^AKFRequestAccountHandler)(id<AKFAccount> _Nullable account, NSError *_Nullable error);
@@ -88,6 +90,7 @@ NS_DESIGNATED_INITIALIZER;
 
 /*!
  @abstract Returns a view controller to be presented to initiate an email login.
+
  @param email the email to be used for login.
  @param state the state for the login request.
  */
@@ -101,6 +104,7 @@ NS_DESIGNATED_INITIALIZER;
 
 /*!
  @abstract Returns a view controller to be presented to initiate a phone login.
+
  @param phoneNumber the phone number to be used for login.
  @param state the state for the login request.
  */

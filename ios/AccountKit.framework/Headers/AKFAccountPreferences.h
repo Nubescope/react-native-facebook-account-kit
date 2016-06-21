@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract Accesses Account preferences that are stored on the Account Kit servers for the associated app and account.
+
  @discussion Get an instance of this class through AKFAccountKit `accountPreferences`
  */
 @interface AKFAccountPreferences : NSObject
@@ -40,27 +41,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract Deletes a single preference.
+
  @param key The key for the preference.
  */
 - (void)deletePreferenceForKey:(NSString *)key;
 
 /*!
  @abstract Loads a single preference.
+
  @param key The key for the preference.
+
  @discussion The loaded preference is sent to the delegate after it has loaded.
  */
 - (void)loadPreferenceForKey:(NSString *)key;
 
 /*!
  @abstract Loads all preferences.
+
  @discussion The loaded preferences are sent to the delegate after they are loaded.
  */
 - (void)loadPreferences;
 
 /*!
  @abstract Writes a single preference.
+
  @param key The key for the preference.
  @param value The value for the preference.
+
  @discussion Setting a value of null will instead invoke `deletePreferenceForKey:`.  Any existing value will be
  overwritten.
  Keys must be ASCII letters, digits or the underscore character and be 1-100 characters in length.
@@ -70,12 +77,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/*!
+ @protocol
+
+ @abstract The delegate the receives messages from `AKFAccountPreferences`.
+ */
 @protocol AKFAccountPreferencesDelegate <NSObject>
 
 @optional
 
 /*!
  @abstract Notifies the delegate that a single preference was deleted.
+
  @param accountPreferences The AKFAccountPreferences instance that deleted the preference.
  @param key The key for the deleted preference.
  @param error The error if the preference could not be deleted.
@@ -86,6 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract Notifies the delegate that preferences were loaded.
+
  @param accountPreferences The AKFAccountPreferences instance that loaded the preferences.
  @param preferences The dictionary of preferences.
  @param error The error if the preferences could not be loaded.
@@ -96,6 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract Notifies the delegate that a single preference was loaded.
+
  @param accountPreferences The AKFAccountPreferences instance that loaded the preference.
  @param key The key for the loaded preference.
  @param value The value for the loaded preference.
@@ -108,6 +123,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @abstract Notifies the delegate that a single preference was set.
+
  @param accountPreferences The AKFAccountPreferences instance that set the preference.
  @param key The key for the set preference.
  @param value The value for the set preference.

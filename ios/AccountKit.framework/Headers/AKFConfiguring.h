@@ -18,6 +18,11 @@
 
 #import <Foundation/Foundation.h>
 
+/*!
+ @protocol
+
+ @abstract Defines the properties that can be configured for the Account Kit UI.
+ */
 @protocol AKFConfiguring
 
 /*!

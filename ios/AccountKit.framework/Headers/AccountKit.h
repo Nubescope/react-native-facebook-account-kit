@@ -23,12 +23,14 @@
 #import <AccountKit/AKFAdvancedUIManager.h>
 #import <AccountKit/AKFAdvancedUIManaging.h>
 #import <AccountKit/AKFButtonType.h>
+#import <AccountKit/AKFConfiguring.h>
 #import <AccountKit/AKFError.h>
 #import <AccountKit/AKFErrorDetail.h>
 #import <AccountKit/AKFLoginFlowState.h>
 #import <AccountKit/AKFPhoneNumber.h>
 #import <AccountKit/AKFResponseType.h>
 #import <AccountKit/AKFSettings.h>
+#import <AccountKit/AKFTextPosition.h>
 #import <AccountKit/AKFTheme.h>
 #import <AccountKit/AKFTheming.h>
 #import <AccountKit/AKFViewController.h>

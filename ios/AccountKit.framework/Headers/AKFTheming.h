@@ -22,6 +22,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*!
+ @protocol
+
+ @abstract The receiver can be themed.
+ */
 @protocol AKFTheming
 
 @property (null_resettable, nonatomic, copy) AKFTheme *theme UI_APPEARANCE_SELECTOR;

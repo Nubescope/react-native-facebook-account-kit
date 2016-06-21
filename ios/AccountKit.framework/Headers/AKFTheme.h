@@ -20,22 +20,62 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*!
+ @typedef AKFHeaderTextType
+
+ @abstract The type of header text to use within the UI.
+ */
 typedef NS_ENUM(NSUInteger, AKFHeaderTextType)
 {
-  AKFHeaderTextTypeLogin,
+  AKFHeaderTextTypeLogin = 0,
   AKFHeaderTextTypeAppName,
 };
 
 extern const NSUInteger AKFHeaderTextTypeCount;
 
+/*!
+ @abstract A theme for the Account Kit UI
+ */
 @interface AKFTheme : NSObject <NSCopying>
 
+/*!
+ @abstract Returns the default theme.
+
+ @discussion This theme can be used as a starting point and then updated as desired.
+ */
 + (instancetype)defaultTheme;
+
+/*!
+ @abstract Returns a default theme that uses an outline style instead of filled in components.
+ */
 + (instancetype)outlineTheme;
+
+/*!
+ @abstract Returns a theme that uses an outline style with simple color groups that will be applied to the theme.
+
+ @param primaryColor The color used for `buttonBackgroundColor`, `buttonBorderColor`, `buttonDisabledBorderColor`,
+ `buttonDisabledTextColor`, `buttonHighlightedBackgroundColor`, `buttonHighlightedBorderColor`,
+ `headerBackgroundColor`, `iconColor`, `inputBorderColor`
+ @param primaryTextColor The color used for `buttonHighlightedTextColor`, `buttonTextColor`, `headerTextColor`.
+ @param secondaryTextColor The color used for `inputTextColor`, `textColor`, `titleColor`.
+ @param statusBarStyle The style to use for the status bar.
+ */
 + (instancetype)outlineThemeWithPrimaryColor:(UIColor *)primaryColor
                             primaryTextColor:(UIColor *)primaryTextColor
                           secondaryTextColor:(UIColor *)secondaryTextColor
                               statusBarStyle:(UIStatusBarStyle)statusBarStyle;
+
+/*!
+ @abstract Returns a theme with simple color groups that will be applied to the theme.
+
+ @param primaryColor The color used for `buttonBackgroundColor`, `buttonBorderColor`,
+ `buttonHighlightedBackgroundColor`, `buttonHighlightedBorderColor`, `headerBackgroundColor`, `iconColor`.
+ @param primaryTextColor The color used for `buttonHighlightedTextColor`, `buttonTextColor`, `headerTextColor`.
+ @param secondaryColor The color used for `buttonDisabledBackgroundColor`, `buttonDisabledBorderColor`,
+ `inputBackgroundColor`, `inputBorderColor`.
+ @param secondaryTextColor The color used for `buttonDisabledTextColor`, `inputTextColor`, `textColor`, `titleColor`.
+ @param statusBarStyle The style to use for the status bar.
+ */
 + (instancetype)themeWithPrimaryColor:(UIColor *)primaryColor
                      primaryTextColor:(UIColor *)primaryTextColor
                        secondaryColor:(UIColor *)secondaryColor
@@ -53,7 +93,18 @@ extern const NSUInteger AKFHeaderTextTypeCount;
 @property (nonatomic, copy) UIColor *buttonHighlightedBorderColor;
 @property (nonatomic, copy) UIColor *buttonHighlightedTextColor;
 @property (nonatomic, copy) UIColor *buttonTextColor;
+@property (nonatomic, assign) NSUInteger contentBodyLayoutWeight;
+@property (nonatomic, assign) NSUInteger contentBottomLayoutWeight;
+@property (nonatomic, assign) NSUInteger contentFooterLayoutWeight;
+@property (nonatomic, assign) NSUInteger contentHeaderLayoutWeight;
+@property (nonatomic, assign) CGFloat contentMarginLeft;
+@property (nonatomic, assign) CGFloat contentMarginRight;
+@property (nonatomic, assign) CGFloat contentMaxWidth;
+@property (nonatomic, assign) CGFloat contentMinHeight;
+@property (nonatomic, assign) NSUInteger contentTextLayoutWeight;
+@property (nonatomic, assign) NSUInteger contentTopLayoutWeight;
 @property (nonatomic, copy) UIColor *headerBackgroundColor;
+@property (nonatomic, strong) UIColor *headerButtonTextColor;
 @property (nonatomic, copy) UIColor *headerTextColor;
 @property (nonatomic, assign) AKFHeaderTextType headerTextType;
 @property (nonatomic, copy) UIColor *iconColor;

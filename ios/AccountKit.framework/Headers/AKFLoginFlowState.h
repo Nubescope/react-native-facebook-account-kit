@@ -19,6 +19,8 @@
 #import <UIKit/UIKit.h>
 
 /*!
+ @typedef AKFLoginFlowState
+
  @abstract States for the login flow.
  */
 typedef NS_ENUM(NSUInteger, AKFLoginFlowState)
@@ -26,7 +28,7 @@ typedef NS_ENUM(NSUInteger, AKFLoginFlowState)
   /*!
    @abstract No flow state is available.
    */
-  AKFLoginFlowStateNone,
+  AKFLoginFlowStateNone = 0,
 
   /*!
    @abstract The phone number is being entered.

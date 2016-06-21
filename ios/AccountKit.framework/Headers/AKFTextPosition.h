@@ -18,27 +18,26 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 /*!
- @abstract AccountKit application settings.
+ @typedef AKFTextPosition
+
+ @abstract Specifies the position of the text component relative to the body component.
  */
-@interface AKFSettings : NSObject
+typedef NS_ENUM(NSUInteger, AKFTextPosition) {
+  /*!
+   @abstract The default text position will be used.
+   */
+  AKFTextPositionDefault = 0,
 
-/*!
- @abstract Get the Account Kit Client Token used by the SDK.
+  /*!
+   @abstract Places the text above the body.
+   */
+  AKFTextPositionAboveBody,
 
- @discussion If not explicitly set, the default will be read from the application's plist (AccountKitClientToken).
- */
-+ (NSString *)clientToken;
+  /*!
+   @abstract Places the text below the body.
+   */
+  AKFTextPositionBelowBody,
+};
 
-/*!
- @abstract Set the Account Kit Client Token used by the SDK.
-
- @param clientToken The Account Kit Client Token to be used by the SDK.
- */
-+ (void)setClientToken:(NSString *)clientToken;
-
-@end
-
-NS_ASSUME_NONNULL_END
+extern const NSUInteger AKFTextPositionCount;

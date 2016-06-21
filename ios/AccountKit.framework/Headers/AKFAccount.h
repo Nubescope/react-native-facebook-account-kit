@@ -22,6 +22,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*!
+ @protocol
+
+ @abstract The protocol that represents an Account.
+ */
 @protocol AKFAccount <NSObject, NSCopying, NSSecureCoding>
 
 /*!
