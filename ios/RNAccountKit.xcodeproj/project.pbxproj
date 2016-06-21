@@ -29,7 +29,7 @@
 		D25ABA451CD84CD100678BA3 /* RNAccountKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAccountKit.m; sourceTree = "<group>"; };
 		D2C7C6901CD1552900C9B392 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAccountKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F9099D1CD25E6D009B28E2 /* react-native-facebook-account-kit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "react-native-facebook-account-kit.podspec"; sourceTree = "<group>"; };
-		D2F9099E1CD26033009B28E2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../../../FacebookSDKs-iOS-20160412/AccountKit.framework"; sourceTree = "<group>"; };
+		D2F9099E1CD26033009B28E2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "AccountKit.framework"; sourceTree = "<group>"; };
 		D2F909BC1CD28F09009B28E2 /* RNAccountKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAccountKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
