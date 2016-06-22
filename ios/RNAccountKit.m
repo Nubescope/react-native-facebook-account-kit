@@ -86,8 +86,13 @@ RCT_EXPORT_METHOD(getCurrentAccessToken: (RCTPromiseResolveBlock)resolve
 RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
                   rejecter: (RCTPromiseRejectBlock)reject)
 {
+    __block bool callbackCalled = false;
     [_accountKit requestAccount:^(id<AKFAccount> account, NSError *error) {
-        // account ID
+        if (callbackCalled) {
+            return;
+        }
+        callbackCalled = true;
+        
         if (error) {
             reject(@"request_account", @"Could not get account data", error);
         } else {
