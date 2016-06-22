@@ -92,7 +92,13 @@
   didCompleteLoginWithAuthorizationCode:(NSString *)code
                                   state:(NSString *)state
 {
-    if (_resolve) _resolve(code);
+    if (_resolve) {
+        NSMutableDictionary *authorizationCodeData =[[NSMutableDictionary alloc] init];
+        authorizationCodeData[@"code"] = code;
+        authorizationCodeData[@"state"] = state;
+        
+        _resolve(authorizationCodeData);
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
