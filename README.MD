@@ -91,13 +91,21 @@ import RNAccountKit from 'react-native-facebook-account-kit'
 // Shows the Facebook Account Kit view for login via SMS
 RNAccountKit.loginWithPhone()
   .then((token) => {
-    console.log(`Logged with phone. Token: ${token}`)
+    if (!token) {
+      console.log('Login cancelled')
+    } else {
+      console.log(`Logged with phone. Token: ${token}`)
+    }
   })
 
 // Shows the Facebook Account Kit view for login via email
 RNAccountKit.loginWithEmail()
   .then((token) => {
-    console.log(`Logged with email. Token: ${token}`)
+    if (!token) {
+      console.log('Login cancelled')
+    } else {
+      console.log(`Logged with email. Token: ${token}`)
+    }
   })
 
 // Logouts the user, so getCurrentAccessToken() will retrieve null

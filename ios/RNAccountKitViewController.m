@@ -113,8 +113,8 @@
 
 - (void)viewControllerDidCancel:(UIViewController<AKFViewController> *)viewController
 {
-    if (_reject) {
-        _reject(@"login_controller_cancel", @"Login controller was canceled", nil);
+    if (_resolve) {
+        _resolve(nil);
     }
 }
 

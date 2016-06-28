@@ -66,13 +66,18 @@ class AccountKitSample extends Component {
   }
 
   onLogin(token) {
-    AccountKit.getCurrentAccount()
-      .then((account) => {
-        this.setState({
-          authToken: token,
-          loggedAccount: account
+    if (!token) {
+      console.warn('User canceled login')
+      this.setState({})
+    } else {
+      AccountKit.getCurrentAccount()
+        .then((account) => {
+          this.setState({
+            authToken: token,
+            loggedAccount: account
+          })
         })
-      })
+    }
   }
 
   onLoginError(e) {
