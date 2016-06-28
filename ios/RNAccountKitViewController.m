@@ -108,9 +108,7 @@
 
 - (void)viewController:(UIViewController<AKFViewController> *)viewController didFailWithError:(NSError *)error
 {
-    if (_reject) {
-        _reject(@"login_controller_error", @"Login controller did fail with error", error);
-    }
+    // TODO: should display the error message somewhere
 }
 
 - (void)viewControllerDidCancel:(UIViewController<AKFViewController> *)viewController
