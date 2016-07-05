@@ -115,7 +115,7 @@ RNAccountKit.configure({
 ```
 ### Android
 For Android you need to follow this steps:
-> Check https://github.com/underscopeio/react-native-facebook-account-kit/commit/77df35ae20f251e7c29285e8820da2ff498d9400 to see how it's done in our sample app
+> Check [this commit](https://github.com/underscopeio/react-native-facebook-account-kit/commit/77df35ae20f251e7c29285e8820da2ff498d9400) to see how it's done in our sample app
 
 1. In your application _styles.xml_ file (usually located in _android/app/src/main/res/values_ folder) create a **Theme** with the following schema
   ```xml
