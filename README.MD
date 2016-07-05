@@ -82,6 +82,70 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide.
 
+## Themes
+Regarding the theming, Account Kit way to customize styles differs between platforms.
+### iOS
+For iOS you must use the field `theme` on the configure payload and set the properties you want to overwrite.
+```javascript
+import RNAccountKit, {
+  Color
+} from 'react-native-facebook-account-kit'
+
+RNAccountKit.configure({
+  ...,
+  theme: {
+    backgroundColor: Color.rgba(0,120,0,0.1),
+    buttonBackgroundColor: Color.rgba(0, 153, 0, 1.00),
+    buttonBorderColor: Color.rgba(0,255,0,1),
+    buttonTextColor: Color.rgba(0,255,0,1),
+    buttonDisabledBackgroundColor: Color.rgba(100, 153, 0, 0.5),
+    buttonDisabledBorderColor: Color.rgba(100, 153, 0, 0.5),
+    buttonDisabledTextColor: Color.rgba(100, 153, 0, 0.5),
+    headerBackgroundColor: Color.rgba(0, 153, 0, 1.00),
+    headerTextColor: Color.rgba(0,255,0,1),
+    iconColor: Color.rgba(0,255,0,1),
+    inputBackgroundColor: Color.rgba(0,255,0,1),
+    inputBorderColor: Color.hex('#ccc'),
+    inputTextColor: Color.hex('#0f0'),
+    textColor: Color.hex('#0f0'),
+    titleColor: Color.hex('#0f0'),
+    backgroundImage: 'background.png',
+  }
+})
+```
+### Android
+For Android you need to follow this steps:
+> Check https://github.com/underscopeio/react-native-facebook-account-kit/commit/77df35ae20f251e7c29285e8820da2ff498d9400 to see how it's done in our sample app
+
+1. In your application _styles.xml_ file (usually located in _android/app/src/main/res/values_ folder) create a **Theme** with the following schema
+  ```xml
+  <style name="LoginThemeYellow" parent="Theme.AccountKit">
+      <item name="com_accountkit_primary_color">#f4bf56</item>
+      <item name="com_accountkit_primary_text_color">@android:color/white</item>
+      <item name="com_accountkit_secondary_text_color">#44566b</item>
+      <item name="com_accountkit_status_bar_color">#ed9d00</item>
+
+      <item name="com_accountkit_input_accent_color">?attr/com_accountkit_primary_color</item>
+      <item name="com_accountkit_input_border_color">?attr/com_accountkit_primary_color</item>
+  </style>
+  ```
+  > See the full set of customizable fields [here](https://developers.facebook.com/docs/accountkit/android/customizing)
+
+2. In your app _AndroidManifest.xml_ file (usually under _android/app/src/main_ folder) set that **Theme** to the **AccountKitActivity**
+  ```xml
+  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools" <-- Add this line
+      ...>
+
+      <!-- Set the AccountKitActivity theme -->
+      <activity
+        tools:replace="android:theme"
+        android:name="com.facebook.accountkit.ui.AccountKitActivity"
+        android:theme="@style/LoginThemeYellow" />
+
+  </manifest>
+  ```
+
 ## Usage
 > If you have issues with the method signatures you may be using an older version. Check the [Releases Notes]( https://github.com/underscopeio/react-native-facebook-account-kit/releases) for breaking changes
 
@@ -136,7 +200,8 @@ RNAccountKit.configure({
   receiveSMS: true|false, // true by default,
   countryWhitelist: ['AR'], // [] by default
   countryBlacklist: ['US'], // [] by default
-  defaultCountry: 'AR'
+  defaultCountry: 'AR',
+  theme: {...} // for iOS only, see the Theme section
 })
 ```
 
