@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.accountkitsample"
     android:versionCode="1"
     android:versionName="1.0">
@@ -31,6 +32,11 @@
         </activity>
 
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+        <activity
+            tools:replace="android:theme"
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:theme="@style/LoginThemeYellow" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
