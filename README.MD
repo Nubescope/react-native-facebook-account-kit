@@ -259,7 +259,7 @@ If you are **not** using Cocoapods:
 3. And finally, in `android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` add:
    ```java
    //...
-   import io.underscope.react.RNAccountKit; // <--- This!
+   import io.underscope.react.fbak.RNAccountKitPackage; // <--- This!
    //...
    @Override
    protected List<ReactPackage> getPackages() {
