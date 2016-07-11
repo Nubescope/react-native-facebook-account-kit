@@ -265,7 +265,7 @@ If you are **not** using Cocoapods:
    protected List<ReactPackage> getPackages() {
      return Arrays.<ReactPackage>asList(
        new MainReactPackage(),
-       new RNAccountKit() // <---- and This!
+       new RNAccountKitPackage() // <---- and This!
      );
   }
    ```
