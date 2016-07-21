@@ -122,4 +122,9 @@ export class Color {
   }
 }
 
+export const StatusBarStyle = {
+  Default: 0,
+  LightContent: 1,
+}
+
 export default AccountKit

@@ -124,6 +124,14 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
             [theme setValue:color forKey:key];
         } else if([key isEqualToString:@"backgroundImage"]) {
             theme.backgroundImage = [UIImage imageNamed:[themeOptions objectForKey:key]];
+        } else if([key isEqualToString:@"statusBarStyle"]) {
+            int statusBarStyle = ((NSNumber*)[themeOptions valueForKey:key]).intValue;
+            if (UIStatusBarStyleDefault == statusBarStyle) {
+                theme.statusBarStyle = UIStatusBarStyleDefault;
+            }
+            if (UIStatusBarStyleLightContent == statusBarStyle) {
+                theme.statusBarStyle = UIStatusBarStyleLightContent;
+            }
         }
     }
     return theme;

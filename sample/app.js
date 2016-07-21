@@ -12,7 +12,8 @@ import {
 
 import AccountKit, {
   LoginButton,
-  Color
+  Color,
+  StatusBarStyle,
 } from 'react-native-facebook-account-kit'
 
 class AccountKitSample extends Component {
@@ -51,13 +52,15 @@ class AccountKitSample extends Component {
         //buttonTextColor:       Color.rgba(0,255,0,1),
         //headerBackgroundColor: Color.rgba(0, 153, 0, 1.00),
         //headerTextColor:       Color.rgba(0,255,0,1),
+        //headerButtonTextColor: Color.rgba(0,255,0,1),
         //iconColor:             Color.rgba(0,255,0,1),
         //inputBackgroundColor:  Color.rgba(0,255,0,1),
         //inputBorderColor:      Color.hex('#ccc'),
         //inputTextColor:        Color.hex('#0f0'),
         //textColor:             Color.hex('#0f0'),
         //titleColor:            Color.hex('#0f0'),
-        //backgroundImage:       "background.png"
+        //backgroundImage:       "background.png",
+        //statusBarStyle:        StatusBarStyle.LightContent,
       },
       //countryWhitelist: [ "AR", "BR", "US" ],
       //countryBlacklist: [ "BR" ],
