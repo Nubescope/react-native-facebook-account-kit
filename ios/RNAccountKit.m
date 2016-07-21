@@ -107,7 +107,8 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
     if(themeOptions == nil) {
       return theme;
     }
-    NSArray *colorOptions = @[@"backgroundColor",@"headerBackgroundColor",@"headerTextColor",
+    NSArray *colorOptions = @[@"backgroundColor",
+                              @"headerBackgroundColor",@"headerTextColor",@"headerButtonTextColor",
                               @"buttonBackgroundColor",@"buttonBorderColor",@"buttonTextColor",
                               @"buttonDisabledBackgroundColor",@"buttonDisabledBorderColor",
                               @"buttonDisabledTextColor",@"iconColor",@"inputBackgroundColor",
