@@ -19,6 +19,10 @@ android {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:0.19.+'
-    compile 'com.facebook.android:account-kit-sdk:4.+'
+    compile 'com.facebook.react:react-native:+'
+    compile ('com.facebook.android:account-kit-sdk:4.+'){
+        exclude group: 'com.parse.bolts', module: 'bolts-android';
+        exclude group: 'com.parse.bolts', module: 'bolts-applinks';
+        exclude group: 'com.parse.bolts', module: 'bolts-tasks';
+    }
 }
