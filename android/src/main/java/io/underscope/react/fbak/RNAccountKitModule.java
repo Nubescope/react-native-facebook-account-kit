@@ -279,4 +279,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         String[] out = new String[pre.size()];
         return pre.toArray(out);
     }
+    
+    public void onNewIntent(Intent intent) {
+    }    
 }
