@@ -7,12 +7,12 @@
 @implementation RNAccountKitViewController
 {
     RNAccountKitViewController *instance;
-    
+
     AKFAccountKit *_accountKit;
     UIViewController<AKFViewController> *_pendingLoginViewController;
     NSString *_authorizationCode;
     BOOL *isUserLoggedIn;
-    
+
     RCTPromiseResolveBlock _resolve;
     RCTPromiseRejectBlock _reject;
 }
@@ -21,10 +21,10 @@
 {
     self = [super init];
     _accountKit = accountKit;
-    
+
     _pendingLoginViewController = [_accountKit viewControllerForLoginResume];
     instance = self;
-    
+
     return self;
 }
 
@@ -41,7 +41,7 @@
         viewController.blacklistedCountryCodes = self.countryBlacklist;
     }
     viewController.defaultCountryCode = self.defaultCountry;
-    
+
 }
 
 - (void)loginWithPhone: (RCTPromiseResolveBlock)resolve
@@ -49,13 +49,15 @@
 {
     _resolve = resolve;
     _reject = reject;
-    
     NSString *inputState = [[NSUUID UUID] UUIDString];
-    UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:nil state:inputState];
-    
-    [self _prepareLoginViewController:viewController];
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    [rootViewController presentViewController:viewController animated:YES completion:NULL];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:nil state:inputState];
+
+        [self _prepareLoginViewController:viewController];
+        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        [rootViewController presentViewController:viewController animated:YES completion:NULL];
+    });
 }
 
 - (void)loginWithEmail: (RCTPromiseResolveBlock)resolve
@@ -63,13 +65,15 @@
 {
     _resolve = resolve;
     _reject = reject;
-    
     NSString *prefillEmail = nil;
     NSString *inputState = [[NSUUID UUID] UUIDString];
-    UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:prefillEmail state:inputState];
-    [self _prepareLoginViewController:viewController];
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    [rootViewController presentViewController:viewController animated:YES completion:NULL];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:prefillEmail state:inputState];
+        [self _prepareLoginViewController:viewController];
+        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        [rootViewController presentViewController:viewController animated:YES completion:NULL];
+    });
 }
 
 - (void)viewController:(UIViewController<AKFViewController> *)viewController
@@ -83,7 +87,7 @@
         accessTokenData[@"token"] = [accessToken tokenString];
         accessTokenData[@"lastRefresh"] = [NSNumber numberWithDouble: ([[accessToken lastRefresh] timeIntervalSince1970] * 1000)];
         accessTokenData[@"refreshIntervalSeconds"] = [NSNumber numberWithDouble: [accessToken tokenRefreshInterval]];
-        
+
         _resolve(accessTokenData);
     }
 }
@@ -96,7 +100,7 @@
         NSMutableDictionary *authorizationCodeData =[[NSMutableDictionary alloc] init];
         authorizationCodeData[@"code"] = code;
         authorizationCodeData[@"state"] = state;
-        
+
         _resolve(authorizationCodeData);
     }
 }
