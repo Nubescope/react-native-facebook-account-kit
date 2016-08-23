@@ -92,7 +92,7 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
             return;
         }
         callbackCalled = true;
-        
+
         if (error) {
             reject(@"request_account", @"Could not get account data", error);
         } else {
