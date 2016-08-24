@@ -4,18 +4,10 @@ A Facebook Account Kit SDK wrapper for react-native (*>= 0.19.0*)
 
 ## Installation
 
-If you already didn't install `rnpm`
 ```bash
-npm install -g rnpm
+npm install --save react-native-facebook-account-kit
+react-native link react-native-facebook-account-kit
 ```
-Then install `react-native-facebook-account-kit` using `rnpm`
-```bash
-rnpm install react-native-facebook-account-kit
-```
-
-> We **strongly** recommend you to use [`rnpm`](https://github.com/rnpm/rnpm) that automatically installs the module from npm and links their native dependencies (for Android and/or iOS) with just one command:
-
-If you prefer you can do it manually following [these steps](#manual-installation)
 
 ## Configuration
 
@@ -232,53 +224,3 @@ react-native run-ios # or react-native run-android
 ## License
 
 License is MIT
-
-
-## Manual Installation
-First, install the module from npm
-
-```
-npm install react-native-facebook-account-kit --save
-```
-
-### For iOS
-
-If you are using Cocoapods add the following line to your Podfile
-```
-pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit'
-```
-
-If you are **not** using Cocoapods:  
-1. Open your project in XCode, right click on `Libraries` and click `Add Files to "Your Project Name"` Look under `node_modules/react-native-facebook-account-kit` and add `RNAccountKit.xcodeproj`.  
-2. Add `libRNAccountKit.a` to `Build Phases -> Link Binary With Libraries`.
-
-### For Android
-
-1. In `android/settings.gradle`
-   ```
-   ...
-   include ':react-native-facebook-account-kit'
-   project(':react-native-facebook-account-kit').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-facebook-account-kit/android')
-   ```
-
-2. In `android/app/build.gradle` add:
-   ```
-   dependencies {
-       ...
-       compile project(':react-native-facebook-account-kit')
-   }
-   ```
-
-3. And finally, in `android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` add:
-   ```java
-   //...
-   import io.underscope.react.fbak.RNAccountKitPackage; // <--- This!
-   //...
-   @Override
-   protected List<ReactPackage> getPackages() {
-     return Arrays.<ReactPackage>asList(
-       new MainReactPackage(),
-       new RNAccountKitPackage() // <---- and This!
-     );
-  }
-   ```
