@@ -44,6 +44,7 @@ RCT_EXPORT_METHOD(logout: (RCTPromiseResolveBlock)resolve
 {
     @try {
         [_accountKit logOut];
+        resolve(nil);
     }
     @catch (NSException * e) {
         reject(@"logout_error", @"Could not logout", [self errorFromException:e]);
