@@ -1,5 +1,6 @@
 package io.underscope.react.fbak;
 
+import android.app.Activity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -59,7 +60,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
      */
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
         if (requestCode == APP_REQUEST_CODE) {
             AccountKitLoginResult loginResult = data.getParcelableExtra(AccountKitLoginResult.RESULT_KEY);
 
