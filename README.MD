@@ -212,11 +212,12 @@ RNAccountKit.configure({
 
 ## Examples
 
-Try the [sample](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/sample)
+Try the [examples](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/examples).
+They are related to different React Native versions.
 
 ```bash
 git clone https://github.com/underscopeio/react-native-facebook-account-kit
-cd react-native-facebook-account-kit/sample
+cd react-native-facebook-account-kit/examples/RN033 # or /RN024
 npm install
 react-native run-ios # or react-native run-android
 ```
