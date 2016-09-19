@@ -26,6 +26,16 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+      <meta-data
+          android:name="com.facebook.sdk.ApplicationId"
+          android:value="@string/app_id" />
+      <meta-data
+          android:name="com.facebook.accountkit.ApplicationName"
+          android:value="@string/app_name" />
+      <meta-data
+          android:name="com.facebook.accountkit.ClientToken"
+          android:value="@string/client_token" />
     </application>
 
 </manifest>
