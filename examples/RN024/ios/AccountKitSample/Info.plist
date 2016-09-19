@@ -4,8 +4,6 @@
 <dict>
 	<key>AccountKitClientToken</key>
 	<string>b895234af645976dee1e39a60fdd0592</string>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
