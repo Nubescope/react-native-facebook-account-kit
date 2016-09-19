@@ -29,8 +29,5 @@
     "url": "https://github.com/underscopeio/react-native-facebook-account-kit.git"
   },
   "author": "Underscope",
-  "license": "MIT",
-  "devDependencies": {
-    "react-native": "0.24.1"
-  }
+  "license": "MIT"
 }
