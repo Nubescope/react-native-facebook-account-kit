@@ -17,6 +17,7 @@ class RNAccountKit {
     responseType: 'token',
     titleType: 'login',
     initialAuthState: '',
+    initialEmail: '',
     facebookNotificationsEnabled: true,
     readPhoneStateEnabled: true,
     receiveSMS: true,
