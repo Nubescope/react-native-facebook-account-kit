@@ -1,6 +1,7 @@
 # react-native-facebook-account-kit
 
-A Facebook Account Kit SDK wrapper for react-native (*>= 0.19.0*)
+A Facebook Account Kit SDK wrapper for react-native.
+> We will support the latest version of React Native on each release. For older RN versions you may use an older version of this module compatible with that RN version.
 
 ## Installation
 
