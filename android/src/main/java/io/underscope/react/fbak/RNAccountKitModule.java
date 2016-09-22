@@ -207,8 +207,8 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
             configurationBuilder.setInitialAuthState(initialAuthState);
         }
 
-        String initialEmail = this.options.getString(("initialEmail"));
-        if (!initialEmail.isEmpty()) {
+        String initialEmail = this.options.getString("initialEmail");
+        if (initialEmail != null && !initialEmail.isEmpty()) {
             configurationBuilder.setInitialEmail(initialEmail);
         }
 
