@@ -26,6 +26,7 @@ RCT_EXPORT_METHOD(login:(NSString *)type
         a.countryWhitelist = [self.options valueForKey:@"countryWhitelist"];
         a.countryBlacklist = [self.options valueForKey:@"countryBlacklist"];
         a.defaultCountry = [self.options valueForKey:@"defaultCountry"];
+        a.initialEmail = [self.options valueForKey:@"initialEmail"];
 
         if ([type isEqual: @"phone"]) {
             [a loginWithPhone: resolve rejecter: reject];

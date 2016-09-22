@@ -10,6 +10,7 @@
 @property(nonatomic, strong) NSArray<NSString *> *countryWhitelist;
 @property(nonatomic, strong) NSArray<NSString *> *countryBlacklist;
 @property(nonatomic, strong) NSString *defaultCountry;
+@property(nonatomic, strong) NSString *initialEmail;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 

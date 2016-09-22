@@ -62,6 +62,7 @@ class RN033 extends Component {
         //backgroundImage:       "background.png",
         //statusBarStyle:        StatusBarStyle.LightContent,
       },
+      //initialEmail: "a@a.com",
       //countryWhitelist: [ "AR", "BR", "US" ],
       //countryBlacklist: [ "BR" ],
       //defaultCountry: "AR"

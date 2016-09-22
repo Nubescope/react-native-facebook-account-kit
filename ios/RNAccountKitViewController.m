@@ -65,7 +65,7 @@
 {
     _resolve = resolve;
     _reject = reject;
-    NSString *prefillEmail = nil;
+    NSString *prefillEmail = self.initialEmail;
     NSString *inputState = [[NSUUID UUID] UUIDString];
 
     dispatch_async(dispatch_get_main_queue(), ^{
