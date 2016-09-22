@@ -15,9 +15,9 @@ react-native link react-native-facebook-account-kit
 ### For iOS
 
 1. First, link the AccountKit SDK to your project following these steps
-  - Open with XCode your project  
-  - Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder  
-  - Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)  
+  - Open with XCode your project
+  - Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder
+  - Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)
 
 2. Add your Facebook credentials to your project's `Info.plist` file
   ```
@@ -41,7 +41,7 @@ react-native link react-native-facebook-account-kit
         </dict>
       </plist>
   ```
-3. Done! Now run your project from XCode or with `react-native run-ios` from your terminal  
+3. Done! Now run your project from XCode or with `react-native run-ios` from your terminal
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
 
@@ -116,7 +116,7 @@ RNAccountKit.configure({
   }
 })
 ```
-> To see the statusBarStyle reflected you must set the **UIViewControllerBasedStatusBarAppearance** property to **true** on your app's _Info.plist_ file. 
+> To see the statusBarStyle reflected you must set the **UIViewControllerBasedStatusBarAppearance** property to **true** on your app's _Info.plist_ file.
 > You can do it from XCode <img width="507" alt="screen shot 2016-08-02 at 11 44 07 am" src="https://cloud.githubusercontent.com/assets/1652196/17332979/0fa632b2-58a7-11e6-9aa3-a669ae44f2e6.png">
 
 ### Android
@@ -201,6 +201,7 @@ RNAccountKit.configure({
   responseType: 'token'|'code' // 'token' by default,
   titleType: 'login',
   initialAuthState: '',
+  initialEmail: 'some.initial@email.com',
   facebookNotificationsEnabled: true|false, // true by default
   readPhoneStateEnabled: true|false, // true by default,
   receiveSMS: true|false, // true by default,
