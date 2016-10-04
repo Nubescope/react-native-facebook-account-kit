@@ -4,8 +4,7 @@ Before submit a new issue be sure about the following points
 
 - [ ] You're using the latest release of this module: https://github.com/underscopeio/react-native-facebook-account-kit/releases
 
-- [ ] You've searched through existing issues: https://github.com/underscopeio/react-native-facebook-account-kit/issues
-      And the issue is not already reported.
+- [ ] You've searched through existing issues: https://github.com/underscopeio/react-native-facebook-account-kit/issues and the issue is not already reported.
 
 - [ ] You have filled out the template below, or provided an equivalent amount of detail.
 
