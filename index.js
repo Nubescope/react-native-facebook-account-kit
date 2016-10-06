@@ -25,7 +25,7 @@ class RNAccountKit {
   }
 
   constructor() {
-    this.configure()
+    RNAccountKitNative && this.configure()
   }
 
   configure(options = {}) {
