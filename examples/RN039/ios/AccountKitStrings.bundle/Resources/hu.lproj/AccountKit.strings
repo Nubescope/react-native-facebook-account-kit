@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Vissza";
+"com_accountkit_button_begin" = "Kezdés";
+"com_accountkit_button_cancel" = "Mégsem";
+"com_accountkit_button_confirm" = "Visszaigazolás";
+"com_accountkit_button_continue" = "Folytatás";
+"com_accountkit_button_log_in" = "Bejelentkezés";
+"com_accountkit_button_next" = "Tovább";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Új kód küldése";
+"com_accountkit_button_resend_sms" = "SMS újraküldése";
+"com_accountkit_button_send" = "Küldd el.";
+"com_accountkit_button_send_code_in_fb" = "Kód küldése a Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "A Kód küldése a Facebook pontra koppintva értesítést küldhetsz a megadott telefonszámhoz kapcsolt Facebook-fióknak.";
+"com_accountkit_button_start" = "Indítás";
+"com_accountkit_button_start_over" = "Újra";
+"com_accountkit_button_submit" = "Küldés";
+"com_accountkit_check_email" = "Nyisd meg a levelezésedet.";
+"com_accountkit_confirmation_code_agreement" = "Koppints a %1$@ gombra a Facebook <a href=\"%2$@\">használati feltételeinek</a>, <a href=\"%3$@\">adatkezelési szabályzatának</a> és <a href=\"%4$@\">a cookie-k használatáról szóló tájékoztatásának</a> elfogadásához.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Koppints a %1$@ gombra a Facebook <a href=\"%2$@\">használati feltételeinek</a>, <a href=\"%3$@\">adatkezelési szabályzatának</a>, <a href=\"%4$@\">a cookie-k használatáról szóló tájékoztatásának</a>, valamint a(z) %6$@ <a href=\"%5$@\">adatvédelmi szabályzatának</a> elfogadásához.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Koppints a %1$@ gombra a Facebook <a href=\"%2$@\">használati feltételeinek</a>, <a href=\"%3$@\">adatkezelési szabályzatának</a>, <a href=\"%4$@\">a cookie-k használatáról szóló tájékoztatásának</a>, valamint a(z) %7$@ <a href=\"%5$@\">adatvédelmi szabályzatának</a> és <a href=\"%6$@\">használati feltételeinek</a> elfogadásához.";
+"com_accountkit_confirmation_code_text" = "Kód újraküldése";
+"com_accountkit_confirmation_code_title" = "Írd be a kódot";
+"com_accountkit_country_code_title" = "Válaszd ki az országodat.";
+"com_accountkit_email_invalid" = "Ez az e-mail cím helytelen. Kérjük, próbáld meg újra.";
+"com_accountkit_email_loading_title" = "E-mail küldése\U2026";
+"com_accountkit_email_login_retry_title" = "Az e-mail cím megerősítése";
+"com_accountkit_email_login_text" = "Koppints a %1$@ gombra, és a Facebook technológiájával működő Account Kit megerősítő e-mailt küld. A(z) %2$@ ennek használatával könnyíti meg a bejelentkezést, de nincs szükséged hozzá Facebook-fiókra. <a href=\"%3$@\">További tudnivalók.</a>";
+"com_accountkit_email_login_title" = "Add meg az e-mail címedet.";
+"com_accountkit_email_not_received" = "E-mail újraküldése";
+"com_accountkit_email_verify_title" = "Nyisd meg az általunk küldött e-mailt, és erősítsd meg a címedet.";
+"com_accountkit_error_title" = "Sajnos hiba történt.";
+"com_accountkit_facebook_code_entry_title" = "Írd be a Facebooktól kapott kódot.";
+"com_accountkit_phone_loading_title" = "A kód elküldése folyamatban van\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Szám";
+"com_accountkit_phone_login_retry_title" = "Erősítsd meg a telefonszámodat.";
+"com_accountkit_phone_login_text" = "Koppints a %1$@ gombra, és a Facebook technológiájával működő Account Kit megerősítő SMS-t küld. A(z) %2$@ ennek használatával könnyíti meg a bejelentkezést, de nincs szükséged hozzá Facebook-fiókra. Ez üzenet- és adatforgalmi szolgáltatási díjakkal járhat. <a href=\"%3$@\">További tudnivalók.</a>";
+"com_accountkit_phone_login_title" = "Add meg a telefonszámodat.";
+"com_accountkit_resend_email_text" = "Új e-mail küldése";
+"com_accountkit_resend_title" = "Elnézést kérünk. A folytatáshoz próbálkozz ezekkel a lehetőségekkel.";
+"com_accountkit_return_title" = "Visszalépés: %1$@\U2026";
+"com_accountkit_sent_title" = "Elküldve!";
+"com_accountkit_success_title" = "Kész!";
+"com_accountkit_toolbar_title" = "Bejelentkezés a(z) %1$@ alkalmazásba";
+"com_accountkit_verify_confirmation_code_title" = "A kódot nem sikerült ellenőrizni.\nPróbáld meg újra:";
+"com_accountkit_verify_title" = "A kód ellenőrzése\U2026";

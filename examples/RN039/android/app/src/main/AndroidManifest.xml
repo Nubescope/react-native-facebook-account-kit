@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.rn039"
     android:versionCode="1"
     android:versionName="1.0">
@@ -16,6 +17,22 @@
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:theme="@style/AppTheme">
+
+      <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/fb_app_id" />
+      <meta-data
+        android:name="com.facebook.accountkit.ApplicationName"
+        android:value="@string/app_name" />
+      <meta-data
+        android:name="com.facebook.accountkit.ClientToken"
+        android:value="@string/ak_client_token" />
+
+      <activity
+        tools:replace="android:theme"
+        android:name="com.facebook.accountkit.ui.AccountKitActivity"
+        android:theme="@style/Bicycle" />
+
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

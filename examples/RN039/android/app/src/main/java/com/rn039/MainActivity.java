@@ -1,6 +1,7 @@
 package com.rn039;
 
 import com.facebook.react.ReactActivity;
+import io.underscope.react.fbak.RNAccountKitPackage;
 
 public class MainActivity extends ReactActivity {
 

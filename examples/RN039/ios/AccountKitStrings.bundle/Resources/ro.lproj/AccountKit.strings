@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Înapoi";
+"com_accountkit_button_begin" = "Începe";
+"com_accountkit_button_cancel" = "Renunță";
+"com_accountkit_button_confirm" = "Confirmă";
+"com_accountkit_button_continue" = "Continuă";
+"com_accountkit_button_log_in" = "Conectare";
+"com_accountkit_button_next" = "Continuare";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Trimite un cod nou";
+"com_accountkit_button_resend_sms" = "Retrimite SMS";
+"com_accountkit_button_send" = "Trimite";
+"com_accountkit_button_send_code_in_fb" = "Trimite un cod în Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Atinge „Trimite cod” pe Facebook pentru a trimite o notificare la contul de Facebook asociat numărului de telefon pe care l-ai introdus.";
+"com_accountkit_button_start" = "Începe";
+"com_accountkit_button_start_over" = "Încearcă din nou";
+"com_accountkit_button_submit" = "Trimite";
+"com_accountkit_check_email" = "Deschide e-mailul";
+"com_accountkit_confirmation_code_agreement" = "Atinge %1$@ pentru a accepta <a href=\"%2$@\">Condițiile de utilizare</a>, <a href=\"%3$@\">Politica de utilizare a datelor</a> și <a href=\"%4$@\">utilizarea modulelor cookie</a> de la Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Atinge %1$@ pentru a accepta <a href=\"%2$@\">Condițiile de utilizare</a>, <a href=\"%3$@\">Politica de utilizare a datelor</a> și <a href=\"%4$@\">utilizarea modulelor cookie</a> de la Facebook, precum și <a href=\"%5$@\">Politica de confidențialitate</a> de la %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Atinge %1$@ pentru a accepta <a href=\"%2$@\">Condițiile de utilizare</a>, <a href=\"%3$@\">Politica de utilizare a datelor</a> și <a href=\"%4$@\">utilizarea modulelor cookie</a> de la Facebook, precum și <a href=\"%5$@\">Politica de confidențialitate</a> și <a href=\"%6$@\">Condițiile de utilizare</a> de la %7$@.";
+"com_accountkit_confirmation_code_text" = "Retrimite codul";
+"com_accountkit_confirmation_code_title" = "Introdu codul";
+"com_accountkit_country_code_title" = "Selectează țara";
+"com_accountkit_email_invalid" = "Acest e-mail nu este corect. Te rugăm să încerci din nou.";
+"com_accountkit_email_loading_title" = "Se trimite e-mailul\U2026";
+"com_accountkit_email_login_retry_title" = "Confirmă adresa ta de e-mail";
+"com_accountkit_email_login_text" = "Atinge %1$@ pentru a primi un e-mail de confirmare de la Account Kit oferit de Facebook. %2$@ folosește asta pentru a te ajuta să te conectezi, însă nu ai nevoie de un cont de Facebook. <a href=\"%3$@\">Află mai multe.</a>";
+"com_accountkit_email_login_title" = "Introdu adresa ta de e-mail";
+"com_accountkit_email_not_received" = "Retrimite e-mailul";
+"com_accountkit_email_verify_title" = "Deschide e-mailul pe care l-am trimis și confirmă adresa ta";
+"com_accountkit_error_title" = "Ne pare rău, a apărut o problemă.";
+"com_accountkit_facebook_code_entry_title" = "Introdu codul de la Facebook";
+"com_accountkit_phone_loading_title" = "Se trimite codul tău\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Număr";
+"com_accountkit_phone_login_retry_title" = "Confirmă numărul tău de telefon";
+"com_accountkit_phone_login_text" = "Atinge %1$@ pentru a primi un SMS de confirmare de la Account Kit oferit de Facebook. %2$@ folosește asta pentru a te ajuta să te conectezi, însă nu ai nevoie de un cont de Facebook. Este posibil să se aplice tarifele de date și mesaje. <a href=\"%3$@\">Află mai multe.</a>";
+"com_accountkit_phone_login_title" = "Introdu numărul tău de telefon";
+"com_accountkit_resend_email_text" = "Trimite un e-mail nou";
+"com_accountkit_resend_title" = "Ne pare rău. Încearcă aceste opțiuni pentru a continua.";
+"com_accountkit_return_title" = "Te aducem înapoi la %1$@\U2026";
+"com_accountkit_sent_title" = "Trimis!";
+"com_accountkit_success_title" = "Gata!";
+"com_accountkit_toolbar_title" = "Conectează-te la %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Nu a reușit verificarea codului.\nTe rugăm să încerci din nou:";
+"com_accountkit_verify_title" = "Verificăm codul tău\U2026";

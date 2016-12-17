@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "返回";
+"com_accountkit_button_begin" = "开始";
+"com_accountkit_button_cancel" = "取消";
+"com_accountkit_button_confirm" = "确认";
+"com_accountkit_button_continue" = "继续";
+"com_accountkit_button_log_in" = "登录";
+"com_accountkit_button_next" = "下一页";
+"com_accountkit_button_ok" = "确定";
+"com_accountkit_button_resend" = "发送新代码";
+"com_accountkit_button_resend_sms" = "重新发送短信";
+"com_accountkit_button_send" = "发送";
+"com_accountkit_button_send_code_in_fb" = "通过 Facebook 发送代码";
+"com_accountkit_button_send_code_in_fb_disclosure" = "轻触 Facebook 中的“发送验证码”，向与您输入的手机号码相关联的 Facebook 帐户发送通知。";
+"com_accountkit_button_start" = "开始";
+"com_accountkit_button_start_over" = "重试";
+"com_accountkit_button_submit" = "提交";
+"com_accountkit_check_email" = "打开邮件";
+"com_accountkit_confirmation_code_agreement" = "轻触 %1$@ 接受 Facebook 的<a href=\"%2$@\">条款</a>、<a href=\"%3$@\">数据使用政策</a>和允许使用<a href=\"%4$@\">cookie</a>。";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "轻触 %1$@ 接受 Facebook 的<a href=\"%2$@\">条款</a>、<a href=\"%3$@\">数据使用政策</a>和 %6$@ 的<a href=\"%5$@\">隐私权政策</a>，并允许使用 <a href=\"%4$@\">cookie</a>。";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "轻触 %1$@ 接受 Facebook 的<a href=\"%2$@\">条款</a>、<a href=\"%3$@\">数据使用政策</a>和 %7$@ 的<a href=\"%5$@\">隐私权政策</a>及<a href=\"%6$@\">服务条款</a>，并允许使用 <a href=\"%4$@\">cookie</a>。";
+"com_accountkit_confirmation_code_text" = "重新发送代码";
+"com_accountkit_confirmation_code_title" = "输入你的代码";
+"com_accountkit_country_code_title" = "选择国家/地区";
+"com_accountkit_email_invalid" = "电子邮件不正确。请重试。";
+"com_accountkit_email_loading_title" = "正在发送电子邮件\U2026";
+"com_accountkit_email_login_retry_title" = "确认您的邮箱";
+"com_accountkit_email_login_text" = "轻触 %1$@，接收来自 Facebook Account Kit 的确认邮件。%2$@ 利用它帮助您登录，您在这一步不需要 Facebook 帐户。<a href=\"%3$@\">详细了解</a>。";
+"com_accountkit_email_login_title" = "输入你的电子邮箱";
+"com_accountkit_email_not_received" = "重新发送邮件";
+"com_accountkit_email_verify_title" = "打开我们发送的邮件并确认你的地址";
+"com_accountkit_error_title" = "抱歉，出错了。";
+"com_accountkit_facebook_code_entry_title" = "输入从 Facebook 获取的验证码";
+"com_accountkit_phone_loading_title" = "发送代码\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "编号";
+"com_accountkit_phone_login_retry_title" = "确认电话号码";
+"com_accountkit_phone_login_text" = "轻触 %1$@，接收来自 Facebook Account Kit 的确认短信。%2$@ 利用它帮助您登录，您在这一步不需要 Facebook 帐户。可能需支付信息费和流量费。<a href=\"%3$@\">详细了解</a>。";
+"com_accountkit_phone_login_title" = "输入电话号码";
+"com_accountkit_resend_email_text" = "发送新邮件";
+"com_accountkit_resend_title" = "很抱歉。请尝试以下方法继续操作。";
+"com_accountkit_return_title" = "即将回到 %1$@\U2026";
+"com_accountkit_sent_title" = "已发送！";
+"com_accountkit_success_title" = "完成！";
+"com_accountkit_toolbar_title" = "登录 %1$@";
+"com_accountkit_verify_confirmation_code_title" = "我们无法验证你的代码。\n请重试：";
+"com_accountkit_verify_title" = "正在验证你的代码\U2026";

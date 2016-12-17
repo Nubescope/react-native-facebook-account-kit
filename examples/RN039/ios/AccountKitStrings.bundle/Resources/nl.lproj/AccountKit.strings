@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Terug";
+"com_accountkit_button_begin" = "Beginnen";
+"com_accountkit_button_cancel" = "Annuleren";
+"com_accountkit_button_confirm" = "Bevestigen";
+"com_accountkit_button_continue" = "Doorgaan";
+"com_accountkit_button_log_in" = "Aanmelden";
+"com_accountkit_button_next" = "Volgende";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Nieuwe code versturen";
+"com_accountkit_button_resend_sms" = "Sms-bericht opnieuw verzenden";
+"com_accountkit_button_send" = "Verzenden";
+"com_accountkit_button_send_code_in_fb" = "Code verzenden op Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Tik op Code verzenden in Facebook om een melding te verzenden naar het Facebook-account dat is gekoppeld aan het telefoonnummer dat je hebt ingevoerd.";
+"com_accountkit_button_start" = "Starten";
+"com_accountkit_button_start_over" = "Probeer het opnieuw";
+"com_accountkit_button_submit" = "Verzenden";
+"com_accountkit_check_email" = "Open je e-mail";
+"com_accountkit_confirmation_code_agreement" = "Tik op %1$@ om de <a href=\"%2$@\">voorwaarden</a>, het <a href=\"%3$@\">gegevensbeleid</a> en het <a href=\"%4$@\">cookiebeleid</a> van Facebook te accepteren.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Tik op %1$@ om de <a href=\"%2$@\">voorwaarden</a>, het <a href=\"%3$@\">gegevensbeleid</a>, het <a href=\"%4$@\">cookiebeleid</a> van Facebook en het <a href=\"%5$@\">privacybeleid</a> van %6$@ te accepteren.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Tik op %1$@ om de <a href=\"%2$@\">voorwaarden</a>, het <a href=\"%3$@\">gegevensbeleid</a>, het <a href=\"%4$@\">cookiebeleid</a> van Facebook en het <a href=\"%5$@\">privacybeleid</a> en de <a href=\"%6$@\">gebruiksvoorwaarden</a> van %7$@ te accepteren.";
+"com_accountkit_confirmation_code_text" = "Code opnieuw versturen";
+"com_accountkit_confirmation_code_title" = "Voer je code in";
+"com_accountkit_country_code_title" = "Selecteer je land";
+"com_accountkit_email_invalid" = "Dit e-mailadres is onjuist. Probeer het opnieuw.";
+"com_accountkit_email_loading_title" = "E-mail verzenden\U2026";
+"com_accountkit_email_login_retry_title" = "Bevestig je e-mailadres";
+"com_accountkit_email_login_text" = "Tik op %1$@ om een bevestigingsmail te ontvangen van Account Kit mogelijk gemaakt door Facebook. %2$@ gebruikt deze methode om je aan te melden, maar je hebt geen Facebook-account nodig. <a href=\"%3$@\">Meer informatie.</a>";
+"com_accountkit_email_login_title" = "Voer je e-mailadres in";
+"com_accountkit_email_not_received" = "E-mail opnieuw verzenden";
+"com_accountkit_email_verify_title" = "Open de e-mail die we hebben gestuurd en bevestig je e-mailadres";
+"com_accountkit_error_title" = "Er is een fout opgetreden.";
+"com_accountkit_facebook_code_entry_title" = "Voer je code van Facebook in";
+"com_accountkit_phone_loading_title" = "Je code wordt verzenden\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Nummer";
+"com_accountkit_phone_login_retry_title" = "Bevestig je telefoonnummer";
+"com_accountkit_phone_login_text" = "Tik op %1$@ om een sms-bevestiging te ontvangen van Account Kit mogelijk gemaakt door Facebook. %2$@ gebruikt deze methode om je aan te melden, maar je hebt geen Facebook-account nodig. Mogelijk zijn bericht- en datatarieven van toepassing. <a href=\"%3$@\">Meer informatie.</a>";
+"com_accountkit_phone_login_title" = "Voer je telefoonnummer in";
+"com_accountkit_resend_email_text" = "Nieuwe e-mail sturen";
+"com_accountkit_resend_title" = "Helaas. Probeer deze opties om door te gaan.";
+"com_accountkit_return_title" = "Je wordt teruggeleid naar %1$@\U2026";
+"com_accountkit_sent_title" = "Verzonden!";
+"com_accountkit_success_title" = "Klaar!";
+"com_accountkit_toolbar_title" = "Meld je aan bij %1$@";
+"com_accountkit_verify_confirmation_code_title" = "We hebben je code niet kunnen verifiëren.\nProbeer het opnieuw:";
+"com_accountkit_verify_title" = "Je code wordt geverifieerd\U2026";

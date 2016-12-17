@@ -5,4 +5,16 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Bicycle" parent="Theme.AccountKit.Outline">
+        <item name="com_accountkit_primary_color">#ff5a5f</item>
+        <item name="com_accountkit_primary_text_color">@android:color/white</item>
+        <item name="com_accountkit_secondary_text_color">@android:color/white</item>
+
+        <item name="com_accountkit_background">@drawable/bicycle</item>
+        <item name="com_accountkit_background_color">#66000000</item>
+        <item name="com_accountkit_input_accent_color">@android:color/white</item>
+        <item name="com_accountkit_input_background_color">#00000000</item>
+        <item name="com_accountkit_input_border_color">@android:color/white</item>
+    </style>
+
 </resources>
