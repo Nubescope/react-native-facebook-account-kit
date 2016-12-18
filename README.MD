@@ -20,7 +20,7 @@ react-native link react-native-facebook-account-kit
   - Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)
 
 2. Add your Facebook credentials to your project's `Info.plist` file
-  ```
+  ```xml
       <plist version="1.0">
         <dict>
           ...
@@ -48,14 +48,14 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
 ### For Android
 
 1. In `android/app/src/main/res/values/strings.xml`
-   ```
+   ```xml
    ...
    <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
    <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
    ```
 
 2. In `android/app/src/main/AndroidManifest.xml`
-  ```
+  ```xml
   ...
   <application>
 
@@ -72,6 +72,17 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
    </application>
    ...
    ```
+   
+3. Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
+  ```java
+  @Override
+  protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+          new MainReactPackage(),
+          new RNAccountKitPackage() // <-- the package is registered
+      );
+  }
+  ```
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide.
 
