@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <AccountKit/AccountKit.h>
 
-#import "RCTBridge.h"
+#import <React/RCTBridge.h>
 
 @interface RNAccountKitViewController : UIViewController<AKFViewControllerDelegate>
 
