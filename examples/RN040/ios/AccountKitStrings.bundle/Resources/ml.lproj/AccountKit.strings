@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "മടങ്ങുക";
+"com_accountkit_button_begin" = "ആരംഭിക്കുക";
+"com_accountkit_button_cancel" = "റദ്ദാക്കുക";
+"com_accountkit_button_confirm" = "സ്ഥിരീകരിക്കുക";
+"com_accountkit_button_continue" = "തുടരുക";
+"com_accountkit_button_log_in" = "ലോഗിൻ ചെയ്യുക";
+"com_accountkit_button_next" = "അടുത്തത്";
+"com_accountkit_button_ok" = "ശരി";
+"com_accountkit_button_resend" = "പുതിയ കോഡ് അയയ്‌ക്കുക";
+"com_accountkit_button_resend_sms" = "SMS വീണ്ടും അയയ്‌ക്കുക";
+"com_accountkit_button_send" = "അയയ്‌ക്കുക";
+"com_accountkit_button_send_code_in_fb" = "Facebook-ൽ കോഡ് അയയ്ക്കുക";
+"com_accountkit_button_send_code_in_fb_disclosure" = "നിങ്ങൾ നൽകിയ ഫോൺ നമ്പറുമായി ലിങ്കുചെയ്‌തിരിക്കുന്ന Facebook അക്കൗണ്ടിലേക്ക് ഒരു അറിയിപ്പ് അയയ്‌ക്കുന്നതിന് Facebook-ലെ കോഡ് അയയ്‌ക്കുക എന്നത് ടാപ്പുചെയ്യുക.";
+"com_accountkit_button_start" = "തുടങ്ങുക";
+"com_accountkit_button_start_over" = "വീണ്ടും ശ്രമിക്കുക";
+"com_accountkit_button_submit" = "സമർപ്പിക്കുക";
+"com_accountkit_check_email" = "നിങ്ങളുടെ ഇമെയിൽ തുറക്കുക";
+"com_accountkit_confirmation_code_agreement" = "Facebook' <a href=\"%2$@\">നിബന്ധനകൾ</a>, <a href=\"%3$@\">ഡാറ്റ നയം</a>, <a href=\"%4$@\">കുക്കി ഉപയോഗം</a>എന്നിവ അംഗീകരിക്കാൻ %1$@ ടാപ്പ് ചെയ്യുക.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Facebook <a href=\"%2$@\">നിബന്ധനകൾ</a>, <a href=\"%3$@\">ഡാറ്റ നയം</a>, <a href=\"%4$@\">ഉപയോഗിക്കുന്ന കുക്കി</a> %6$@-ന്റെ <a href=\"%5$@\">സ്വകാര്യത നയം </a> എന്നിവ അംഗീകരിക്കാൻ %1$@ ടാപ്പ് ചെയ്യുക.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Facebook-ന്റെ <a href=\"%2$@\">നിബന്ധനകൾ</a>, <a href=\"%3$@\">ഡാറ്റാ നയം</a>, <a href=\"%4$@\">കുക്കി ഉപയോഗം</a> %7$@-ന്റെ <a href=\"%5$@\">സ്വകാര്യത നയം</a>, <a href=\"%6$@\">സേവന നിബന്ധനകൾ</a> എന്നിവ അംഗീകരിക്കുന്നതിന് %1$@ ടാപ്പുചെയ്യുക.";
+"com_accountkit_confirmation_code_text" = "പുതിയ കോഡ് അയയ്‌ക്കുക";
+"com_accountkit_confirmation_code_title" = "നിങ്ങളുടെ കോഡ് നൽകുക";
+"com_accountkit_country_code_title" = "നിങ്ങളുടെ രാജ്യം തിരഞ്ഞെടുക്കൂ";
+"com_accountkit_email_invalid" = "കൊടുത്തിരിക്കുന്ന ഇമെയിൽ തെറ്റാണ് വീണ്ടും ശ്രമിക്കുക.";
+"com_accountkit_email_loading_title" = "ഇമെയിൽ അയയ്ക്കുന്നു\U2026";
+"com_accountkit_email_login_retry_title" = "നിങ്ങളുടെ ഇമെയിൽ സ്ഥിരീകരിക്കുക";
+"com_accountkit_email_login_text" = "Facebook നൽകുന്ന Account Kit-ൽ നിന്ന് ഇമെയിൽ സ്ഥിരീകരണം ലഭിക്കുന്നതിന് %1$@ ടാപ്പുചെയ്യുക. നിങ്ങളെ സൈൻ ഇൻ ചെയ്യാൻ സഹായിക്കുന്നതിന് %2$@ ഇത് ഉപയോഗിക്കുന്നു, എന്നാൽ നിങ്ങൾക്കൊരു Facebook അക്കൗണ്ട് ആവശ്യമില്ല. <a href=\"%3$@\">കൂടുതൽ അറിയുക.</a>";
+"com_accountkit_email_login_title" = "നിങ്ങളുടെ ഇമെയിൽ വിലാസം നൽകുക";
+"com_accountkit_email_not_received" = "ഇമെയിൽ വീണ്ടും അയയ്‌ക്കുക";
+"com_accountkit_email_verify_title" = "ഞങ്ങൾ അയച്ച ഇമെയിൽ തുറന്ന് നിങ്ങളുടെ വിലാസം സ്ഥിരീകരിക്കുക";
+"com_accountkit_error_title" = "ക്ഷമിക്കുക, എന്തോ പിശക് സംഭവിച്ചു.";
+"com_accountkit_facebook_code_entry_title" = "Facebook-ൽ നിന്നുള്ള നിങ്ങളുടെ കോഡ് നൽകുക";
+"com_accountkit_phone_loading_title" = "നിങ്ങളുടെ കോഡ് അയയ്‌ക്കുന്നു\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "നമ്പർ";
+"com_accountkit_phone_login_retry_title" = "നിങ്ങളുടെ ഫോൺ നമ്പർ സ്ഥിരീകരിക്കുക";
+"com_accountkit_phone_login_text" = "Facebook നൽകുന്ന Account Kit-ൽ നിന്ന് SMS സ്ഥിരീകരണം ലഭിക്കുന്നതിന് %1$@ ടാപ്പുചെയ്യുക. നിങ്ങളെ സൈൻ ഇൻ ചെയ്യാൻ സഹായിക്കുന്നതിന് %2$@ ഇത് ഉപയോഗിക്കുന്നു, എന്നാൽ നിങ്ങൾക്കൊരു Facebook അക്കൗണ്ട് ആവശ്യമില്ല. സന്ദേശ, ഡാറ്റ നിരക്കുകൾ ബാധകമായേക്കാം. <a href=\"%3$@\">കൂടുതൽ അറിയുക.</a>";
+"com_accountkit_phone_login_title" = "നിങ്ങളുടെ ഫോൺ നമ്പർ നൽകുക";
+"com_accountkit_resend_email_text" = "പുതിയ ഇമെയിൽ അയയ്‌ക്കുക";
+"com_accountkit_resend_title" = "ക്ഷമിക്കണം. തുടരുന്നതിന് ഈ ഓപ്‌ഷനുകൾ പരീക്ഷിക്കുക.";
+"com_accountkit_return_title" = "നിങ്ങളെ %1$@ എന്നതിലേക്ക് തിരികെ കൊണ്ടുപോകുന്നു\U2026";
+"com_accountkit_sent_title" = "അയച്ചു!";
+"com_accountkit_success_title" = "പൂർത്തിയായി!";
+"com_accountkit_toolbar_title" = "എന്നതിലേക്ക് ലോഗിൻ ചെയ്യുക %1$@";
+"com_accountkit_verify_confirmation_code_title" = "നിങ്ങളുടെ കോഡ് പരിശോധിച്ചുറപ്പിക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക:";
+"com_accountkit_verify_title" = "നിങ്ങളുടെ കോഡ് പരിശോധിച്ചുറപ്പിക്കുന്നു\U2026";

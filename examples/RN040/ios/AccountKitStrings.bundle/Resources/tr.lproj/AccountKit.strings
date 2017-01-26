@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Geri";
+"com_accountkit_button_begin" = "Başla";
+"com_accountkit_button_cancel" = "İptal";
+"com_accountkit_button_confirm" = "Onayla";
+"com_accountkit_button_continue" = "Devam";
+"com_accountkit_button_log_in" = "Giriş Yap";
+"com_accountkit_button_next" = "İleri";
+"com_accountkit_button_ok" = "Tamam";
+"com_accountkit_button_resend" = "Yeni Kod Gönder";
+"com_accountkit_button_resend_sms" = "SMS'i Yeniden Gönder";
+"com_accountkit_button_send" = "Gönder";
+"com_accountkit_button_send_code_in_fb" = "Kodu Facebook'ta Gönder";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Girdiğiniz telefon numarasıyla bağlantılı Facebook hesabına bildirim göndermek için Facebook'ta Kodu Gönder'e dokunun.";
+"com_accountkit_button_start" = "Başlangıç";
+"com_accountkit_button_start_over" = "Tekrar Dene";
+"com_accountkit_button_submit" = "Gönder";
+"com_accountkit_check_email" = "E-postanı aç";
+"com_accountkit_confirmation_code_agreement" = "Facebook <a href=\"%2$@\">Koşulları</a>, <a href=\"%3$@\">Veri İlkesi</a> ve <a href=\"%4$@\">çerez kullanımını</a> kabul etmek için %1$@ düğmesine dokunun.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Facebook <a href=\"%2$@\">Koşulları</a>, <a href=\"%3$@\">Veri İlkesi</a> ve <a href=\"%4$@\">çerez kullanımı</a> ile %6$@ <a href=\"%5$@\">Gizlilik İlkesi</a>'ni kabul etmek için %1$@ düğmesine dokunun.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Facebook <a href=\"%2$@\">Koşulları</a>, <a href=\"%3$@\">Veri İlkesi</a> ve <a href=\"%4$@\">çerez kullanımını</a> ile %7$@ <a href=\"%5$@\">Gizlilik İlkesi</a> ve <a href=\"%6$@\">Hizmet Koşulları</a>'nı kabul etmek için %1$@ düğmesine dokunun.";
+"com_accountkit_confirmation_code_text" = "Kodu Tekrar Gönder";
+"com_accountkit_confirmation_code_title" = "Kodunuzu girin";
+"com_accountkit_country_code_title" = "Ülkeni Seç";
+"com_accountkit_email_invalid" = "Bu e-posta hatalı. Lütfen tekrar dene.";
+"com_accountkit_email_loading_title" = "E-posta gönderiliyor\U2026";
+"com_accountkit_email_login_retry_title" = "E-posta adresinizi onaylayın";
+"com_accountkit_email_login_text" = "Facebook'un desteğiyle Account Kit'ten onay e-postası almak için %1$@ düğmesine dokunun. %2$@, giriş yapmanıza yardımcı olmak için bundan yararlanmaktadır, ancak Facebook hesabı zorunlu değildir. <a href=\"%3$@\">Daha fazla bilgi alın.</a>";
+"com_accountkit_email_login_title" = "E-posta adresini gir";
+"com_accountkit_email_not_received" = "E-postayı Tekrar Gönder";
+"com_accountkit_email_verify_title" = "Gönderdiğimiz e-postayı aç ve adresini onayla";
+"com_accountkit_error_title" = "Üzgünüz, bir sorun oluştu.";
+"com_accountkit_facebook_code_entry_title" = "Facebook'tan gelen kodu girin";
+"com_accountkit_phone_loading_title" = "Kodun gönderiliyor\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Numara";
+"com_accountkit_phone_login_retry_title" = "Telefon numaranı onayla";
+"com_accountkit_phone_login_text" = "Facebook'un desteğiyle Account Kit'ten SMS onayı almak için %1$@ düğmesine dokunun. %2$@, giriş yapmanıza yardımcı olmak için bundan yararlanmaktadır, ancak Facebook hesabı zorunlu değildir. Mesaj ve veri ücretleri geçerli olabilir. <a href=\"%3$@\">Daha fazla bilgi alın.</a>";
+"com_accountkit_phone_login_title" = "Telefon numaranı gir";
+"com_accountkit_resend_email_text" = "Yeni E-posta Gönder";
+"com_accountkit_resend_title" = "Üzgünüz. Devam etmek için bu seçenekleri deneyin.";
+"com_accountkit_return_title" = "Tekrar %1$@ uygulamasına yönlendiriliyorsunuz\U2026";
+"com_accountkit_sent_title" = "Gönderildi!";
+"com_accountkit_success_title" = "Bitti!";
+"com_accountkit_toolbar_title" = "%1$@ Uygulamasına Giriş Yap";
+"com_accountkit_verify_confirmation_code_title" = "Kodunuzu doğrulayamadık.\nLütfen tekrar deneyin:";
+"com_accountkit_verify_title" = "Kodun doğrulanıyor\U2026";

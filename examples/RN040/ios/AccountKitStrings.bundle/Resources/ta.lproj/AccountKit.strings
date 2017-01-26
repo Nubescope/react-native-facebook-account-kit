@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "பின்செல்";
+"com_accountkit_button_begin" = "தொடங்கு";
+"com_accountkit_button_cancel" = "ரத்துசெய்";
+"com_accountkit_button_confirm" = "உறுதிசெய்";
+"com_accountkit_button_continue" = "தொடரவும்";
+"com_accountkit_button_log_in" = "உள்நுழை";
+"com_accountkit_button_next" = "அடுத்து";
+"com_accountkit_button_ok" = "சரி";
+"com_accountkit_button_resend" = "புதிய குறியீட்டை அனுப்பு";
+"com_accountkit_button_resend_sms" = "SMS ஐ மீண்டும் அனுப்பு";
+"com_accountkit_button_send" = "அனுப்பு";
+"com_accountkit_button_send_code_in_fb" = "Facebook இல் குறியீட்டை அனுப்பு";
+"com_accountkit_button_send_code_in_fb_disclosure" = "நீங்கள் உள்ளிட்ட ஃபோன் எண்ணுடன் இணைந்துள்ள Facebook கணக்கிற்கு அறிவிப்பை அனுப்ப, Facebook இல் குறியீட்டை அனுப்பு என்பதைத் தட்டவும்.";
+"com_accountkit_button_start" = "தொடங்கு";
+"com_accountkit_button_start_over" = "மீண்டும் முயற்சிக்கவும்";
+"com_accountkit_button_submit" = "சமர்ப்பி";
+"com_accountkit_check_email" = "மின்னஞ்சலைத் திறக்கவும்";
+"com_accountkit_confirmation_code_agreement" = "Facebook இன் <a href=\"%2$@\">விதிமுறைகள்</a>, <a href=\"%3$@\">தரவுக் கொள்கை</a> மற்றும் <a href=\"%4$@\">குக்கீ பயன்பாட்டை</a> ஏற்க, %1$@ என்பதைத் தட்டவும்.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Facebook இன் <a href=\"%2$@\">விதிமுறைகள்</a>, <a href=\"%3$@\">தரவுக் கொள்கை</a>, <a href=\"%4$@\">குக்கீ பயன்பாடு</a> மற்றும் %6$@ இன் <a href=\"%5$@\">தனியுரிமைக் கொள்கையை</a> ஏற்க, %1$@ என்பதைத் தட்டவும்.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Facebook இன் <a href=\"%2$@\">விதிமுறைகள்</a>, <a href=\"%3$@\">தரவுக் கொள்கை</a>, <a href=\"%4$@\">குக்கீ பயன்பாடு</a> மற்றும் %7$@ இன் <a href=\"%5$@\">தனியுரிமைக் கொள்கை</a>, <a href=\"%6$@\">சேவை விதிமுறைகளை</a> ஏற்க, %1$@ என்பதைத் தட்டவும்.";
+"com_accountkit_confirmation_code_text" = "புதிய குறியீட்டை அனுப்பு";
+"com_accountkit_confirmation_code_title" = "குறியீட்டை உள்ளிடவு்:";
+"com_accountkit_country_code_title" = "நாட்டைத் தேர்ந்தெடுக்கவும்";
+"com_accountkit_email_invalid" = "இந்த மின்னஞ்சல் தவறானது. மீண்டும் முயற்சிக்கவும்.";
+"com_accountkit_email_loading_title" = "மின்னஞ்சலை அனுப்புகிறது\U2026";
+"com_accountkit_email_login_retry_title" = "உங்கள் மின்னஞ்சலை உறுதிப்படுத்தவும்";
+"com_accountkit_email_login_text" = "Facebook வழங்கும் Account Kit இலிருந்து உறுதிப்படுத்தல் மின்னஞ்சலைப் பெற, %1$@ என்பதைத் தட்டவும். உங்களை உள்நுழைய செய்வதற்கு உதவ %2$@ இதைப் பயன்படுத்தினாலும், Facebook கணக்கு இருக்க வேண்டும் என்ற அவசியமில்லை. <a href=\"%3$@\">மேலும் அறிக.</a>";
+"com_accountkit_email_login_title" = "மின்னஞ்சல் முகவரியை உள்ளிடவும்";
+"com_accountkit_email_not_received" = "மின்னஞ்சலை மீண்டும் அனுப்பவும்";
+"com_accountkit_email_verify_title" = "நாங்கள் அனுப்பிய மின்னஞ்சலைத் திறந்து, உங்கள் முகவரியை உறுதிசெய்யவும்";
+"com_accountkit_error_title" = "ஏதோ தவறாகிவிட்டது.";
+"com_accountkit_facebook_code_entry_title" = "Facebook இலிருந்து குறியீட்டை உள்ளிடவும்";
+"com_accountkit_phone_loading_title" = "உங்களுக்கான குறியீட்டை அனுப்புகிறது\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "எண்";
+"com_accountkit_phone_login_retry_title" = "ஃபோன் எண்ணை உறுதிசெய்யவும்";
+"com_accountkit_phone_login_text" = "Facebook வழங்கும் Account Kit இலிருந்து உறுதிப்படுத்தல் SMS ஐப் பெற, %1$@ என்பதைத் தட்டவும். உங்களை உள்நுழைய செய்வதற்கு உதவ %2$@ இதைப் பயன்படுத்தினாலும், Facebook கணக்கு இருக்க வேண்டும் என்ற அவசியமில்லை. செய்தி மற்றும் தரவுக் கட்டணங்கள் விதிக்கப்படலாம். <a href=\"%3$@\">மேலும் அறிக.</a>";
+"com_accountkit_phone_login_title" = "ஃபோன் எண்ணை உள்ளிடவும்";
+"com_accountkit_resend_email_text" = "புதிய மின்னஞ்சலை அனுப்பு";
+"com_accountkit_resend_title" = "வருந்துகிறோம். தொடர, இந்த விருப்பங்களை முயற்சிக்கவும்.";
+"com_accountkit_return_title" = "%1$@ க்குத் திரும்பச்செல்கிறது\U2026";
+"com_accountkit_sent_title" = "அனுப்பப்பட்டது!";
+"com_accountkit_success_title" = "முடிந்தது!";
+"com_accountkit_toolbar_title" = "%1$@ இல் உள்நுழையவும்";
+"com_accountkit_verify_confirmation_code_title" = "குறியீட்டைச் சரிபார்க்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்:";
+"com_accountkit_verify_title" = "குறியீட்டைச் சரிபார்க்கிறது\U2026";
