@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Назад";
+"com_accountkit_button_begin" = "Начать";
+"com_accountkit_button_cancel" = "Отмена";
+"com_accountkit_button_confirm" = "Подтвердить";
+"com_accountkit_button_continue" = "Продолжить";
+"com_accountkit_button_log_in" = "Вход";
+"com_accountkit_button_next" = "Далее";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Отправить новый код";
+"com_accountkit_button_resend_sms" = "Еще раз отправить SMS";
+"com_accountkit_button_send" = "Отправить";
+"com_accountkit_button_send_code_in_fb" = "Отправить код Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Коснитесь Отправить код на Facebook, чтобы отправить уведомление в аккаунт на Facebook, привязанный к номеру телефона, который вы указали.";
+"com_accountkit_button_start" = "Старт";
+"com_accountkit_button_start_over" = "Попробуйте еще раз";
+"com_accountkit_button_submit" = "Отправить";
+"com_accountkit_check_email" = "Откройте эл. письмо";
+"com_accountkit_confirmation_code_agreement" = "Коснитесь %1$@, чтобы принять <a href=\"%2$@\">Условия</a>, <a href=\"%3$@\">Политику использования данных</a> и <a href=\"%4$@\">файлов «cookie»</a> Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Коснитесь %1$@, чтобы принять <a href=\"%2$@\">Условия</a>, <a href=\"%3$@\">Политику использования данных</a> и <a href=\"%4$@\">файлов «cookie»</a> Facebook, а также <a href=\"%5$@\">Политику конфиденциальности</a> %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Коснитесь %1$@, чтобы принять <a href=\"%2$@\">Условия</a>, <a href=\"%3$@\">Политику использования данных</a> и <a href=\"%4$@\">файлов «cookie»</a> Facebook, а также <a href=\"%5$@\">Политику конфиденциальности</a> и <a href=\"%6$@\">Пользовательское соглашение</a> %7$@.";
+"com_accountkit_confirmation_code_text" = "Отправить код повторно";
+"com_accountkit_confirmation_code_title" = "Введите код";
+"com_accountkit_country_code_title" = "Выберите свою страну";
+"com_accountkit_email_invalid" = "Неверный эл. адрес. Попробуйте еще раз.";
+"com_accountkit_email_loading_title" = "Отправка\U2026";
+"com_accountkit_email_login_retry_title" = "Подтвердите правильность своего эл. адреса";
+"com_accountkit_email_login_text" = "Коснитесь %1$@, чтобы получить эл. письмо с подтверждением, отправляемое Account Kit от Facebook. %2$@ использует эту технологию для процедуры входа, но вам не обязательно иметь аккаунт на Facebook. <a href=\"%3$@\">Подробнее.</a>";
+"com_accountkit_email_login_title" = "Введите свой эл. адрес";
+"com_accountkit_email_not_received" = "Повторная отправка эл. письма";
+"com_accountkit_email_verify_title" = "Откройте эл. письмо, которое мы вам отправили, и подтвердите свой эл. адрес";
+"com_accountkit_error_title" = "Извините, что-то пошло не так.";
+"com_accountkit_facebook_code_entry_title" = "Введите код, полученный от Facebook";
+"com_accountkit_phone_loading_title" = "Выполняется отправка кода\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Номер";
+"com_accountkit_phone_login_retry_title" = "Подтвердите свой номер телефона";
+"com_accountkit_phone_login_text" = "Коснитесь %1$@, чтобы получить SMS с подтверждением, отправляемое Account Kit от Facebook. %2$@ использует эту технологию для процедуры входа, но вам не обязательно иметь аккаунт на Facebook. Может взиматься плата за передачу сообщений и данных. <a href=\"%3$@\">Подробнее.</a>";
+"com_accountkit_phone_login_title" = "Введите свой номер телефона";
+"com_accountkit_resend_email_text" = "Отправить письмо заново";
+"com_accountkit_resend_title" = "Приносим извинения. Попробуйте сделать следующее.";
+"com_accountkit_return_title" = "Возврат к %1$@\U2026";
+"com_accountkit_sent_title" = "Отправлено!";
+"com_accountkit_success_title" = "Готово!";
+"com_accountkit_toolbar_title" = "Выполните вход в %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Нам не удалось проверить ваш код.\nПопробуйте еще раз:";
+"com_accountkit_verify_title" = "Выполняется проверка вашего кода\U2026";

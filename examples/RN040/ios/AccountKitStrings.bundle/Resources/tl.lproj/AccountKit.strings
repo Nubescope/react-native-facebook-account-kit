@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Back";
+"com_accountkit_button_begin" = "Umpisahan";
+"com_accountkit_button_cancel" = "Kanselahin";
+"com_accountkit_button_confirm" = "Kumpirmahin";
+"com_accountkit_button_continue" = "Magpatuloy";
+"com_accountkit_button_log_in" = "Mag-log In";
+"com_accountkit_button_next" = "Susunod";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Magpadala ng Bagong Code";
+"com_accountkit_button_resend_sms" = "Ipadala muli ang SMS";
+"com_accountkit_button_send" = "Ipadala";
+"com_accountkit_button_send_code_in_fb" = "Ipadala ang Code sa Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "I-tap ang Ipadala ang Code sa Facebook upang magpadala ng notification sa Facebook account na naka-link sa numero ng teleponong inilagay mo.";
+"com_accountkit_button_start" = "Simulan";
+"com_accountkit_button_start_over" = "Subukang Muli";
+"com_accountkit_button_submit" = "Isumite";
+"com_accountkit_check_email" = "Buksan ang iyong email";
+"com_accountkit_confirmation_code_agreement" = "I-tap ang %1$@ para tanggapin ang <a href=\"%2$@\">Mga Tuntunin</a> ng Facebook, <a href=\"%3$@\">Patakaran ng Data</a> at <a href=\"%4$@\">paggamit ng cookie</a>.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "I-tap ang %1$@ para tanggapin ang <a href=\"%2$@\">Mga Tuntunin</a> ng Facebook, <a href=\"%3$@\">Patakaran ng Data</a>, <a href=\"%4$@\">paggamit ng cookie</a> at ang <a href=\"%5$@\">Patakaran sa Pagkapribado</a> ng %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "I-tap ang %1$@ para tanggapin ang <a href=\"%2$@\">Mga Tuntunin</a> ng Facebook, <a href=\"%3$@\">Patakaran ng Data</a>, <a href=\"%4$@\">paggamit ng cookie</a> at ang <a href=\"%5$@\">Patakaran sa Pagkapribado</a> at <a href=\"%6$@\">Mga Tuntunin ng Serbisyo</a> ng %7$@.";
+"com_accountkit_confirmation_code_text" = "Magpadala ng Bagong Code";
+"com_accountkit_confirmation_code_title" = "Ilagay ang iyong code";
+"com_accountkit_country_code_title" = "Piliin ang Iyong Bansa";
+"com_accountkit_email_invalid" = "Mali ang email na ito. Pakisubukang muli.";
+"com_accountkit_email_loading_title" = "Ipinapadala ang email\U2026";
+"com_accountkit_email_login_retry_title" = "Kumpirmahin ang iyong email";
+"com_accountkit_email_login_text" = "I-tap ang %1$@ para makakuha ng email sa pagkumpirma mula sa Account Kit na pinapagana ng Facebook. Ginagamit ito ng %2$@ para tulungan kang mag-sign in, pero hindi mo kailangan ng isang Facebook account. <a href=\"%3$@\">Alamin pa.</a>";
+"com_accountkit_email_login_title" = "Ilagay ang iyong email address";
+"com_accountkit_email_not_received" = "Ipadala Muli ang Email";
+"com_accountkit_email_verify_title" = "Buksan ang email na ipinadala namin at kumpirmahin ang iyong address";
+"com_accountkit_error_title" = "Humihingi kami ng paumanhin, nagkaroon ng problema.";
+"com_accountkit_facebook_code_entry_title" = "Ilagay ang iyong code mula sa Facebook";
+"com_accountkit_phone_loading_title" = "Ipinapadala ang iyong code\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Numero";
+"com_accountkit_phone_login_retry_title" = "Kumpirmahin ang numero ng iyong telepono";
+"com_accountkit_phone_login_text" = "I-tap ang %1$@ para makakuha ng pagkumpirma sa SMS mula sa Account Kit na pinapagana ng Facebook. Ginagamit ito ng %2$@ para tulungan kang mag-sign in, pero hindi mo kailangan ng isang Facebook account. Maaaring maglapat ng mga singil sa mensahe at data. <a href=\"%3$@\">Alamin pa.</a>";
+"com_accountkit_phone_login_title" = "Ilagay ang numero ng iyong telepono";
+"com_accountkit_resend_email_text" = "Magpadala ng Bagong Email";
+"com_accountkit_resend_title" = "Paumanhin. Subukan ang mga opsyong ito upang magpatuloy.";
+"com_accountkit_return_title" = "Dadalhin ka muli pabalik sa %1$@\U2026";
+"com_accountkit_sent_title" = "Naipadala na!";
+"com_accountkit_success_title" = "Tapos na!";
+"com_accountkit_toolbar_title" = "Mag-log In Sa %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Hindi namin maberipika ang iyong code. Pakisubukang muli:";
+"com_accountkit_verify_title" = "Biniberipika ang iyong code\U2026";

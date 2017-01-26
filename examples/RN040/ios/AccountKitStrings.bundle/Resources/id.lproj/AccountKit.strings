@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Kembali";
+"com_accountkit_button_begin" = "Mulai";
+"com_accountkit_button_cancel" = "Batalkan";
+"com_accountkit_button_confirm" = "Konfirmasi";
+"com_accountkit_button_continue" = "Lanjutkan";
+"com_accountkit_button_log_in" = "Masuk";
+"com_accountkit_button_next" = "Berikutnya";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Kirimkan Kode Baru";
+"com_accountkit_button_resend_sms" = "Kirim ulang SMS";
+"com_accountkit_button_send" = "Kirim";
+"com_accountkit_button_send_code_in_fb" = "Kirim Kode di Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Ketuk Kirim Kode di Facebook untuk mengirimkan pemberitahuan ke akun Facebook yang ditautkan dengan nomor telepon yang Anda masukkan.";
+"com_accountkit_button_start" = "Mulai";
+"com_accountkit_button_start_over" = "Coba Lagi";
+"com_accountkit_button_submit" = "Ajukan";
+"com_accountkit_check_email" = "Buka email Anda";
+"com_accountkit_confirmation_code_agreement" = "Ketuk %1$@ untuk menerima <a href=\"%2$@\">Ketentuan</a>, <a href=\"%3$@\">Kebijakan Data</a>, dan <a href=\"%4$@\">penggunaan kuki</a> Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Ketuk %1$@ untuk menerima <a href=\"%2$@\">Ketentuan</a>, <a href=\"%3$@\">Kebijakan Data</a>, <a href=\"%4$@\">penggunaan kuki</a>, dan <a href=\"%5$@\">Kebijakan Privasi</a> Facebook tentang %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Ketuk %1$@ untuk menerima <a href=\"%2$@\">Ketentuan</a>, <a href=\"%3$@\">Kebijakan Data</a>, <a href=\"%4$@\">penggunaan kuki</a>, dan <a href=\"%5$@\">Kebijakan Privasi</a> serta <a href=\"%6$@\">Ketentuan Layanan</a> Facebook tentang %7$@.";
+"com_accountkit_confirmation_code_text" = "Kirim Ulang Kode";
+"com_accountkit_confirmation_code_title" = "Ketikkan kode Anda";
+"com_accountkit_country_code_title" = "Pilih Negara Anda";
+"com_accountkit_email_invalid" = "Email ini salah. Silakan coba lagi.";
+"com_accountkit_email_loading_title" = "Mengirimkan email\U2026";
+"com_accountkit_email_login_retry_title" = "Konfirmasi email Anda";
+"com_accountkit_email_login_text" = "Ketuk %1$@ untuk mendapatkan email konfirmasi dari Account Kit yang dipersembahkan oleh Facebook. %2$@ menggunakan ini untuk membantu Anda masuk, tetapi Anda tidak memerlukan akun Facebook. <a href=\"%3$@\">Pelajari selengkapnya.</a>";
+"com_accountkit_email_login_title" = "Masukkan alamat email Anda";
+"com_accountkit_email_not_received" = "Kirim Ulang Email";
+"com_accountkit_email_verify_title" = "Buka email yang kami kirimkan dan konfirmasikan alamat Anda";
+"com_accountkit_error_title" = "Mohon maaf, ada masalah.";
+"com_accountkit_facebook_code_entry_title" = "Masukkan kode Anda dari Facebook";
+"com_accountkit_phone_loading_title" = "Mengirimkan kode Anda\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Nomor";
+"com_accountkit_phone_login_retry_title" = "Konfirmasikan nomor telepon Anda";
+"com_accountkit_phone_login_text" = "Ketuk %1$@ untuk mendapatkan SMS konfirmasi dari Account Kit yang dipersembahkan oleh Facebook. %2$@ menggunakan ini untuk membantu Anda masuk, tetapi Anda tidak memerlukan akun Facebook. Mungkin berlaku biaya pengiriman pesan dan data. <a href=\"%3$@\">Pelajari selengkapnya.</a>";
+"com_accountkit_phone_login_title" = "Masukkan nomor telepon Anda";
+"com_accountkit_resend_email_text" = "Kirim Email Baru";
+"com_accountkit_resend_title" = "Kami mohon maaf. Coba opsi ini untuk melanjutkan.";
+"com_accountkit_return_title" = "Mengembalikan Anda ke %1$@\U2026";
+"com_accountkit_sent_title" = "Dikirim!";
+"com_accountkit_success_title" = "Selesai!";
+"com_accountkit_toolbar_title" = "Masuk ke %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Kami tidak dapat memverifikasi kode Anda.\nHarap coba lagi:";
+"com_accountkit_verify_title" = "Memverifikasi kode Anda\U2026";

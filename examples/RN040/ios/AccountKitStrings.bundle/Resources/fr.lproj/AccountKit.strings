@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Retour";
+"com_accountkit_button_begin" = "Commencer";
+"com_accountkit_button_cancel" = "Annuler";
+"com_accountkit_button_confirm" = "Confirmer";
+"com_accountkit_button_continue" = "Continuer";
+"com_accountkit_button_log_in" = "Connexion";
+"com_accountkit_button_next" = "Suivant";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Envoyer un nouveau code";
+"com_accountkit_button_resend_sms" = "Renvoyer le SMS";
+"com_accountkit_button_send" = "Envoyer";
+"com_accountkit_button_send_code_in_fb" = "Envoyer le code dans Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Appuyez sur Envoyer le code dans Facebook pour envoyer une notification au compte Facebook associé au numéro de téléphone que vous avez saisi.";
+"com_accountkit_button_start" = "Démarrer";
+"com_accountkit_button_start_over" = "Réessayer";
+"com_accountkit_button_submit" = "Soumettre";
+"com_accountkit_check_email" = "Ouvrez votre e-mail";
+"com_accountkit_confirmation_code_agreement" = "Appuyez sur %1$@ pour accepter les <a href=\"%2$@\">conditions</a>, la <a href=\"%3$@\">politique d'utilisation des données</a> et d'<a href=\"%4$@\">utilisation des cookies</a> de Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Appuyez sur %1$@ pour accepter les <a href=\"%2$@\">conditions</a>, la <a href=\"%3$@\">politique d'utilisation des données</a> et d'<a href=\"%4$@\">utilisation des cookies</a> de Facebook, ainsi que la <a href=\"%5$@\">politique de confidentialité</a> de %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Appuyez sur %1$@ pour accepter les <a href=\"%2$@\">conditions</a>, la <a href=\"%3$@\">politique d'utilisation des données</a> et d'<a href=\"%4$@\">utilisation des cookies</a>, ainsi que la <a href=\"%5$@\">politique de confidentialité</a> et les <a href=\"%6$@\">conditions d'utilisation</a> de %7$@.";
+"com_accountkit_confirmation_code_text" = "Renvoyer le code";
+"com_accountkit_confirmation_code_title" = "Saisissez votre code";
+"com_accountkit_country_code_title" = "Sélectionnez votre pays";
+"com_accountkit_email_invalid" = "Cette adresse e-mail est incorrecte. Veuillez réessayer.";
+"com_accountkit_email_loading_title" = "Envoi de l'e-mail\U2026";
+"com_accountkit_email_login_retry_title" = "Confirmez votre adresse e-mail";
+"com_accountkit_email_login_text" = "Appuyez sur %1$@ pour recevoir un e-mail de confirmation de la part de Account Kit par Facebook. %2$@ utilise ce système pour vous aider à vous connecter, mais vous n’avez pas besoin d’un compte Facebook. <a href=\"%3$@\">En savoir plus.</a>";
+"com_accountkit_email_login_title" = "Saisissez votre adresse e-mail";
+"com_accountkit_email_not_received" = "Renvoyer l'e-mail";
+"com_accountkit_email_verify_title" = "Ouvrez l'e-mail que nous avons envoyé et confirmez votre adresse";
+"com_accountkit_error_title" = "Désolés, une erreur s'est produite.";
+"com_accountkit_facebook_code_entry_title" = "Saisissez le code envoyé par Facebook";
+"com_accountkit_phone_loading_title" = "Envoi de votre code en cours\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Numéro";
+"com_accountkit_phone_login_retry_title" = "Confirmez votre numéro de téléphone";
+"com_accountkit_phone_login_text" = "Appuyez sur %1$@ pour recevoir une confirmation par SMS de la part de Account Kit par Facebook. %2$@ utilise ce système pour vous aider à vous connecter, mais vous n’avez pas besoin d’un compte Facebook. Des frais de messagerie et de données peuvent s’appliquer. <a href=\"%3$@\">En savoir plus.</a>";
+"com_accountkit_phone_login_title" = "Saisissez votre numéro de téléphone";
+"com_accountkit_resend_email_text" = "Envoyer un e-mail";
+"com_accountkit_resend_title" = "Nous sommes désolés ! Essayez les options ci-dessous pour continuer.";
+"com_accountkit_return_title" = "Retour à %1$@\U2026";
+"com_accountkit_sent_title" = "Envoyé!";
+"com_accountkit_success_title" = "Terminé!";
+"com_accountkit_toolbar_title" = "Se connecter à %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Impossible de vérifier votre code.\nVeuillez réessayer :";
+"com_accountkit_verify_title" = "Vérification de votre code en cours\U2026";

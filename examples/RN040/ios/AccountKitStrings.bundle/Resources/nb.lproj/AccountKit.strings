@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Tilbake";
+"com_accountkit_button_begin" = "Begynn";
+"com_accountkit_button_cancel" = "Avbryt";
+"com_accountkit_button_confirm" = "Bekreft";
+"com_accountkit_button_continue" = "Fortsett";
+"com_accountkit_button_log_in" = "Logg inn";
+"com_accountkit_button_next" = "Neste";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Send ny kode";
+"com_accountkit_button_resend_sms" = "Send SMS på nytt";
+"com_accountkit_button_send" = "Send";
+"com_accountkit_button_send_code_in_fb" = "Send kode i Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Trykk på Send kode i Facebook for å sende et varsel til Facebook-kontoen som er knyttet til telefonnummeret du har oppgitt.";
+"com_accountkit_button_start" = "Start";
+"com_accountkit_button_start_over" = "Prøv på nytt";
+"com_accountkit_button_submit" = "Send inn";
+"com_accountkit_check_email" = "Åpne e-posten din";
+"com_accountkit_confirmation_code_agreement" = "Trykk på %1$@ for å godta Facebooks <a href=\"%2$@\">betingelser</a>, <a href=\"%3$@\">retningslinjer for data</a> og <a href=\"%4$@\">bruk av informasjonskapsler</a>.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Trykk på %1$@ for å godta Facebooks <a href=\"%2$@\">betingelser</a>, <a href=\"%3$@\">retningslinjer for data</a>, <a href=\"%4$@\">bruk av informasjonskapsler</a> og <a href=\"%5$@\">retningslinjer for personvern</a> for %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Trykk på %1$@ for å godta Facebooks <a href=\"%2$@\">betingelser</a>, <a href=\"%3$@\">retningslinjer for data</a>, <a href=\"%4$@\">bruk av informasjonskapsler</a> samt <a href=\"%5$@\">retningslinjer for personvern</a> og <a href=\"%6$@\">betingelsene</a> for %7$@.";
+"com_accountkit_confirmation_code_text" = "Send koden på nytt";
+"com_accountkit_confirmation_code_title" = "Oppgi koden din";
+"com_accountkit_country_code_title" = "Velg landet ditt";
+"com_accountkit_email_invalid" = "Denne e-posten er feil. Prøv på nytt.";
+"com_accountkit_email_loading_title" = "Sender e-post \U2026";
+"com_accountkit_email_login_retry_title" = "Bekreft e-postadressen din";
+"com_accountkit_email_login_text" = "Trykk på %1$@ for å få e-postbekreftelse fra Account Kit levert av Facebook. %2$@ bruker denne teknologien for å hjelpe deg med innlogging, men du trenger ikke en Facebook-konto. <a href=\"%3$@\">Finn ut mer.</a>";
+"com_accountkit_email_login_title" = "Skriv inn e-postadressen din";
+"com_accountkit_email_not_received" = "Send e-post på nytt";
+"com_accountkit_email_verify_title" = "Åpne e-posten vi har sendt, og bekreft adressen din";
+"com_accountkit_error_title" = "Beklager, men det oppstod en feil.";
+"com_accountkit_facebook_code_entry_title" = "Oppgi koden din fra Facebook";
+"com_accountkit_phone_loading_title" = "Sender koden\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Nummer";
+"com_accountkit_phone_login_retry_title" = "Bekreft telefonnummeret ditt";
+"com_accountkit_phone_login_text" = "Trykk på %1$@ for å få SMS-bekreftelse fra Account Kit levert av Facebook. %2$@ bruker denne teknologien for å hjelpe deg med innlogging, men du trenger ikke en Facebook-konto. Meldings- og datakostnader kan påløpe. <a href=\"%3$@\">Finn ut mer.</a>";
+"com_accountkit_phone_login_title" = "Skriv inn telefonnummeret ditt";
+"com_accountkit_resend_email_text" = "Send ny e-post";
+"com_accountkit_resend_title" = "Vi beklager. Prøv disse alternativene for å fortsette.";
+"com_accountkit_return_title" = "Sender deg tilbake til %1$@\U2026";
+"com_accountkit_sent_title" = "Sendt.";
+"com_accountkit_success_title" = "Ferdig!";
+"com_accountkit_toolbar_title" = "Logg inn på %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Vi kunne ikke bekrefte koden din.\nPrøv på nytt:";
+"com_accountkit_verify_title" = "Bekrefter koden\U2026";

@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "رجوع";
+"com_accountkit_button_begin" = "بدء";
+"com_accountkit_button_cancel" = "إلغاء";
+"com_accountkit_button_confirm" = "تأكيد";
+"com_accountkit_button_continue" = "متابعة";
+"com_accountkit_button_log_in" = "تسجيل الدخول";
+"com_accountkit_button_next" = "التالي";
+"com_accountkit_button_ok" = "موافق";
+"com_accountkit_button_resend" = "إرسال رمز جديد";
+"com_accountkit_button_resend_sms" = "إعادة إرسال رسالة SMS";
+"com_accountkit_button_send" = "إرسال";
+"com_accountkit_button_send_code_in_fb" = "إرسال الرمز على فيسبوك";
+"com_accountkit_button_send_code_in_fb_disclosure" = "اضغط على \"إرسال الرمز\" في فيسبوك لإرسال إشعار إلى حساب فيسبوك المرتبط برقم الهاتف الذي أدخلته.";
+"com_accountkit_button_start" = "بدء";
+"com_accountkit_button_start_over" = "حاول مرة أخرى";
+"com_accountkit_button_submit" = "تقديم";
+"com_accountkit_check_email" = "فتح البريد الإلكتروني";
+"com_accountkit_confirmation_code_agreement" = "اضغط على %1$@ لقبول <a href=\"%2$@\">شروط</a> <a href=\"%3$@\">سياسة بيانات</a> و<a href=\"%4$@\">استخدام ملفات تعريف الارتباط</a> لفيسبوك.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "اضغط على %1$@ لقبول <a href=\"%2$@\">شروط</a> <a href=\"%3$@\">خصوصية بيانات</a> و<a href=\"%4$@\">استخدام ملفات تعريف الارتباط</a> لفيسبوك و<a href=\"%5$@\">سياسة خصوصية</a> %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "اضغط على %1$@ لقبول <a href=\"%2$@\">شروط</a> <a href=\"%3$@\">خصوصية بيانات</a> و<a href=\"%4$@\">استخدام ملفات تعريف الارتباط</a> لفيسبوك و<a href=\"%5$@\">سياسة خصوصية</a> و<a href=\"%6$@\">شروط خدمة</a> %7$@.";
+"com_accountkit_confirmation_code_text" = "إعادة إرسال الرمز";
+"com_accountkit_confirmation_code_title" = "أدخل الرمز";
+"com_accountkit_country_code_title" = "حدد بلدك";
+"com_accountkit_email_invalid" = "عنوان البريد الإلكتروني غير صحيح. يرجى المحاولة مرة أخرى.";
+"com_accountkit_email_loading_title" = "جارٍ إرسال بريد إلكتروني\U2026";
+"com_accountkit_email_login_retry_title" = "قم بتأكيد بريدك الإلكتروني";
+"com_accountkit_email_login_text" = "اضغط على %1$@ للحصول على رسالة بريد إلكتروني للتأكيد من Account Kit من Facebook. يستخدم %2$@ هذا لمساعدتك على التسجيل، لكن ليس من الضروري أن يكون لديك حساب على فيسبوك. <a href=\"%3$@\">تعرف على المزيد.</a>";
+"com_accountkit_email_login_title" = "أدخل عنوان بريدك الإلكتروني";
+"com_accountkit_email_not_received" = "إعادة إرسال البريد الإلكتروني";
+"com_accountkit_email_verify_title" = "افتح البريد الإلكتروني الذي تم إرساله وقم بتأكيد عنوانك";
+"com_accountkit_error_title" = "عذراً، حدث خطأ ما.";
+"com_accountkit_facebook_code_entry_title" = "أدخل الرمز الذي تم إرساله من فيسبوك";
+"com_accountkit_phone_loading_title" = "جارٍ إرسال الرمز\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "الرقم";
+"com_accountkit_phone_login_retry_title" = "تأكيد رقم هاتفك";
+"com_accountkit_phone_login_text" = "اضغط على %1$@ للحصول على تأكيد عبر رسالة SMS من Account Kit من Facebook. يستخدم %2$@ هذا لمساعدتك على التسجيل، لكن ليس من الضروري أن يكون لديك حساب على فيسبوك. يتم تطبيق أسعار الرسائل وبيانات الاتصال. <a href=\"%3$@\">تعرف على المزيد.</a>";
+"com_accountkit_phone_login_title" = "أدخل رقم هاتفك";
+"com_accountkit_resend_email_text" = "إرسال بريد إلكتروني جديد";
+"com_accountkit_resend_title" = "نأسف لذلك. جرّب هذه الخيارات للمتابعة.";
+"com_accountkit_return_title" = "عودة إلى %1$@\U2026";
+"com_accountkit_sent_title" = "تم الإرسال!";
+"com_accountkit_success_title" = "تم!";
+"com_accountkit_toolbar_title" = "تسجيل الدخول إلى %1$@";
+"com_accountkit_verify_confirmation_code_title" = "تعذر علينا\ التحقق من رمزك. يرجى إعادة المحاولة:";
+"com_accountkit_verify_title" = "جارٍ التحقق من الرمز\U2026";
