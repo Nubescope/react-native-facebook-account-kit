@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Natrag";
+"com_accountkit_button_begin" = "Počni";
+"com_accountkit_button_cancel" = "Odustani";
+"com_accountkit_button_confirm" = "Potvrdi";
+"com_accountkit_button_continue" = "Nastavi";
+"com_accountkit_button_log_in" = "Prijava";
+"com_accountkit_button_next" = "Dalje";
+"com_accountkit_button_ok" = "U redu";
+"com_accountkit_button_resend" = "Pošalji novi kod";
+"com_accountkit_button_resend_sms" = "Ponovno pošalji SMS";
+"com_accountkit_button_send" = "Pošalji";
+"com_accountkit_button_send_code_in_fb" = "Pošalji kod na Facebooku";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Dodirnite Pošalji kod na Facebooku da biste poslali obavijest na Facebookov račun povezan s telefonskim brojem koji ste unijeli.";
+"com_accountkit_button_start" = "Početak";
+"com_accountkit_button_start_over" = "Pokušajte ponovno";
+"com_accountkit_button_submit" = "Pošalji";
+"com_accountkit_check_email" = "Otvorite e-poštu";
+"com_accountkit_confirmation_code_agreement" = "Dodirnite %1$@ da biste prihvatili Facebookove <a href=\"%2$@\">uvjete</a>, <a href=\"%3$@\">pravilnik o podacima</a> i <a href=\"%4$@\">korištenje kolačića</a>.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Dodirnite %1$@ da biste prihvatili Facebookove <a href=\"%2$@\">uvjete</a>, <a href=\"%3$@\">pravilnik o podacima</a>, <a href=\"%4$@\">korištenje kolačića</a> i <a href=\"%5$@\">pravila zaštite podataka</a> za %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Dodirnite %1$@ da biste prihvatili Facebookove <a href=\"%2$@\">uvjete</a>, <a href=\"%3$@\">pravilnik o podacima</a>, <a href=\"%4$@\">korištenje kolačića</a> i <a href=\"%5$@\">pravila zaštite podataka</a> te <a href=\"%6$@\">uvjete pružanja usluge</a> za %7$@.";
+"com_accountkit_confirmation_code_text" = "Pošalji novi kod";
+"com_accountkit_confirmation_code_title" = "Unesite kod";
+"com_accountkit_country_code_title" = "Odaberite državu";
+"com_accountkit_email_invalid" = "Pogrešna adresa e-pošte. Pokušajte ponovno.";
+"com_accountkit_email_loading_title" = "Slanje e-pošte\U2026";
+"com_accountkit_email_login_retry_title" = "Potvrdite adresu e-pošte";
+"com_accountkit_email_login_text" = "Dodirnite %1$@ da biste od Facebookova kompleta za račune primili poruku e-pošte s potvrdom. %2$@ vam time pojednostavnjuje prijavu, ali nije vam potreban račun na Facebooku. <a href=\"%3$@\">Saznajte više.</a>";
+"com_accountkit_email_login_title" = "Unesite adresu e-pošte";
+"com_accountkit_email_not_received" = "Ponovno pošalji e-poštu";
+"com_accountkit_email_verify_title" = "Otvorite poruku e-pošte koju smo vam poslali i potvrdite svoju adresu";
+"com_accountkit_error_title" = "Nažalost, nešto nije u redu.";
+"com_accountkit_facebook_code_entry_title" = "Unesite kod s Facebooka";
+"com_accountkit_phone_loading_title" = "Slanje koda\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Broj";
+"com_accountkit_phone_login_retry_title" = "Potvrdite telefonski broj";
+"com_accountkit_phone_login_text" = "Dodirnite %1$@ da biste od Facebookova kompleta za račune primili SMS poruku s potvrdom. %2$@ vam time pojednostavnjuje prijavu, ali nije vam potreban račun na Facebooku. Naplaćuju se naknade za poruke i podatkovni promet. <a href=\"%3$@\">Saznajte više.</a>";
+"com_accountkit_phone_login_title" = "Unesite telefonski broj";
+"com_accountkit_resend_email_text" = "Pošalji novu poruku e-pošte";
+"com_accountkit_resend_title" = "Žao nam je. Isprobajte ove mogućnosti da biste nastavili.";
+"com_accountkit_return_title" = "Vraćate se na %1$@\U2026";
+"com_accountkit_sent_title" = "Poslano!";
+"com_accountkit_success_title" = "Gotovo!";
+"com_accountkit_toolbar_title" = "Prijavite se na račun %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Nismo mogli potvrditi vaš kod. Unesite ga ponovno:";
+"com_accountkit_verify_title" = "Potvrđivanje koda\U2026";

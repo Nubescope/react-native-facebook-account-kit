@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "ย้อนกลับ";
+"com_accountkit_button_begin" = "เริ่มต้น";
+"com_accountkit_button_cancel" = "ยกเลิก";
+"com_accountkit_button_confirm" = "ยืนยัน";
+"com_accountkit_button_continue" = "ดำเนินต่อ";
+"com_accountkit_button_log_in" = "เข้าสู่ระบบ";
+"com_accountkit_button_next" = "ถัดไป";
+"com_accountkit_button_ok" = "ตกลง";
+"com_accountkit_button_resend" = "ส่งรหัสใหม่";
+"com_accountkit_button_resend_sms" = "ส่ง SMS อีกครั้ง";
+"com_accountkit_button_send" = "ส่ง";
+"com_accountkit_button_send_code_in_fb" = "ส่งรหัสใน Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "แตะ ส่งรหัส ใน Facebook เพื่อส่งการแจ้งเตือนไปยังบัญชีผู้ใช้ Facebook ที่เชื่อมโยงกับหมายเลขโทรศัพท์ที่คุณป้อน";
+"com_accountkit_button_start" = "เริ่ม";
+"com_accountkit_button_start_over" = "ลองอีกครั้ง";
+"com_accountkit_button_submit" = "ส่ง";
+"com_accountkit_check_email" = "เปิดอีเมลของคุณ";
+"com_accountkit_confirmation_code_agreement" = "แตะ %1$@ เพื่อยอมรับ<a href=\"%2$@\">ข้อกำหนด</a> <a href=\"%3$@\">นโยบายข้อมูล</a> และ <a href=\"%4$@\">การใช้งานคุกกี้</a> ของ Facebook";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "แตะ %1$@ เพื่อยอมรับ<a href=\"%2$@\">ข้อกำหนด</a> <a href=\"%3$@\">นโยบายข้อมูล</a> <a href=\"%4$@\">การใช้งานคุกกี้</a> และ <a href=\"%5$@\">นโยบายความปลอดภัย</a> ของ %6$@ ของ Facebook";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "แตะ %1$@ เพื่อยอมรับ<a href=\"%2$@\">ข้อกำหนด</a> <a href=\"%3$@\">นโยบายข้อมูล</a> <a href=\"%4$@\">การใช้งานคุกกี้</a> และ <a href=\"%5$@\">นโยบายความปลอดภัย</a> และ <a href=\"%6$@\">ข้อกำหนดการให้บริการ</a> ของ %7$@ ของ Facebook";
+"com_accountkit_confirmation_code_text" = "ส่งรหัสอีกครั้ง";
+"com_accountkit_confirmation_code_title" = "ป้อนรหัสของคุณ";
+"com_accountkit_country_code_title" = "เลือกประเทศของคุณ";
+"com_accountkit_email_invalid" = "อีเมลนี้ไม่ถูกต้อง โปรดลองใหม่อีกครั้ง";
+"com_accountkit_email_loading_title" = "กำลังส่งอีเมล";
+"com_accountkit_email_login_retry_title" = "ยืนยันอีเมลของคุณ";
+"com_accountkit_email_login_text" = "แตะ %1$@ เพื่อรับการยืนยันทางอีเมล จากชุดเครื่องมือบัญชีผู้ใช้ของ Facebook %2$S ใช้เพื่อช่วยคุณในการเข้าสู่ระบบ แต่คุณไม่จำเป็นต้องมีบัญชีผู้ใช้ Facebook <a href=\"%3$@\">เรียนรู้เพิ่มเติม</a>";
+"com_accountkit_email_login_title" = "ป้อนที่อยู่อีเมลของคุณ";
+"com_accountkit_email_not_received" = "ส่งอีเมลอีกครั้ง";
+"com_accountkit_email_verify_title" = "เปิดอีเมลที่เราส่งถึงคุณและยืนยันที่อยู่ของคุณ";
+"com_accountkit_error_title" = "ขออภัย มีบางสิ่งผิดพลาด";
+"com_accountkit_facebook_code_entry_title" = "ป้อนรหัสของคุณจาก Facebook";
+"com_accountkit_phone_loading_title" = "กำลังส่งรหัสถึงคุณ\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "หมายเลข";
+"com_accountkit_phone_login_retry_title" = "ยืนยันหมายเลขโทรศัพท์ของคุณ";
+"com_accountkit_phone_login_text" = "แตะ %1$@ เพื่อรับการยืนยันทาง SMS จากชุดเครื่องมือบัญชีผู้ใช้ของ Facebook  %2$S ใช้สิ่งนี้เพื่อช่วยคุณในการเข้าสู่ระบบ แต่คุณไม่จำเป็นต้องมีบัญชีผู้ใช้ Facebook อาจมีค่าบริการข้อความและข้อมูล <a href=\"%3$@\">เรียนรู้เพิ่มเติม</a>";
+"com_accountkit_phone_login_title" = "ป้อนหมายเลขโทรศัพท์ของคุณ";
+"com_accountkit_resend_email_text" = "ส่งอีเมลใหม่";
+"com_accountkit_resend_title" = "ขออภัย ลองตัวเลือกเหล่านี้เพื่อดำเนินการต่อ";
+"com_accountkit_return_title" = "กำลังนำคุณกลับไปที่ %1$@\U2026";
+"com_accountkit_sent_title" = "ส่งแล้ว!";
+"com_accountkit_success_title" = "เรียบร้อย!";
+"com_accountkit_toolbar_title" = "เข้าสู่ระบบ %1$@";
+"com_accountkit_verify_confirmation_code_title" = "เราไม่สามารถยืนยันรหัสของคุณ\nโปรดลองอีกครั้ง:";
+"com_accountkit_verify_title" = "กำลังยืนยันรหัสของคุณ";

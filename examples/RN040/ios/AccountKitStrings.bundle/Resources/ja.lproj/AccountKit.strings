@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "戻る";
+"com_accountkit_button_begin" = "開始";
+"com_accountkit_button_cancel" = "キャンセル";
+"com_accountkit_button_confirm" = "確認";
+"com_accountkit_button_continue" = "続行";
+"com_accountkit_button_log_in" = "ログイン";
+"com_accountkit_button_next" = "次へ";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "新しいコードの送信";
+"com_accountkit_button_resend_sms" = "SMSを再送信";
+"com_accountkit_button_send" = "送信";
+"com_accountkit_button_send_code_in_fb" = "Facebookにコードを送信";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Facebookにコードを送信をタップすると、入力した電話番号に関連付けられているFacebookアカウントにお知らせが送信されます。";
+"com_accountkit_button_start" = "開始";
+"com_accountkit_button_start_over" = "もう一度試す";
+"com_accountkit_button_submit" = "送信";
+"com_accountkit_check_email" = "メールを開く";
+"com_accountkit_confirmation_code_agreement" = "Facebookの<a href=\"%2$@\">利用規約</a>、<a href=\"%3$@\">データに関するポリシー</a>、<a href=\"%4$@\">Cookieの使用</a>に同意する場合は[%1$@]をタップしてください。";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Facebookの<a href=\"%2$@\">利用規約</a>、<a href=\"%3$@\">データに関するポリシー</a>、<a href=\"%4$@\">Cookieの使用</a>、%6$@の<a href=\"%5$@\">プライバシーポリシー</a>に同意する場合は[%1$@]をタップしてください。";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Facebookの<a href=\"%2$@\">利用規約</a>、<a href=\"%3$@\">データに関するポリシー</a>、<a href=\"%4$@\">Cookieの使用</a>、%7$@の<a href=\"%5$@\">プライバシーポリシー</a>と<a href=\"%6$@\">利用規約</a>に同意する場合は[%1$@]をタップしてください。";
+"com_accountkit_confirmation_code_text" = "コードを再送信";
+"com_accountkit_confirmation_code_title" = "コードを入力してください";
+"com_accountkit_country_code_title" = "国を選択";
+"com_accountkit_email_invalid" = "メールに誤りがあります。もう一度お試しください。";
+"com_accountkit_email_loading_title" = "メールを送信中\U2026";
+"com_accountkit_email_login_retry_title" = "メールアドレスを確認";
+"com_accountkit_email_login_text" = "%1$@をタップすると、FacebookのAccount Kitから確認メールが送信されます。%2$@にサインインする際にこのメールを使用しますが、Facebookアカウントは不要です。詳しくは<a href=\"%3$@\">こちら</a>をご覧ください。";
+"com_accountkit_email_login_title" = "メールアドレスを入力";
+"com_accountkit_email_not_received" = "メールを再送信";
+"com_accountkit_email_verify_title" = "Facebookから届いたメールを開き、メールアドレスを確認してください。";
+"com_accountkit_error_title" = "エラーが発生しました。";
+"com_accountkit_facebook_code_entry_title" = "Facebookから送信されたコードを入力してください";
+"com_accountkit_phone_loading_title" = "コードを送信しています\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "電話番号";
+"com_accountkit_phone_login_retry_title" = "電話番号を認証してください";
+"com_accountkit_phone_login_text" = "%1$@をタップすると、FacebookのAccount KitからSMSによる確認メッセージが送信されます。%2$@にサインインする際にこのメッセージを使用しますが、Facebookアカウントは不要です。メッセージとデータの通信料がかかることがあります。詳しくは<a href=\"%3$@\">こちら</a>をご覧ください。";
+"com_accountkit_phone_login_title" = "電話番号を入力してください";
+"com_accountkit_resend_email_text" = "新しいメールを送信";
+"com_accountkit_resend_title" = "申し訳ありません。続行するには、以下の方法を試してください。";
+"com_accountkit_return_title" = "%1$@に戻ります\U2026";
+"com_accountkit_sent_title" = "送信されました";
+"com_accountkit_success_title" = "完了しました";
+"com_accountkit_toolbar_title" = "%1$@にログイン";
+"com_accountkit_verify_confirmation_code_title" = "コードを確認できませんでした。\nもう一度実行してください。";
+"com_accountkit_verify_title" = "コードを認証しています\U2026";
