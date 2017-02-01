@@ -62,6 +62,10 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
     @Override
     public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
         if (requestCode == APP_REQUEST_CODE) {
+            if (data == null) {
+                rejectPromise("error", new Error("Login failed"));
+                return;
+            }
             AccountKitLoginResult loginResult = data.getParcelableExtra(AccountKitLoginResult.RESULT_KEY);
 
             if (loginResult.getError() != null) {
