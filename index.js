@@ -10,6 +10,12 @@ import {
   Platform
 } from 'react-native'
 
+import {
+  assertArray,
+  assertString,
+  assertValidityOfCountryCodes,
+} from './js/utils'
+
 const RNAccountKitNative = NativeModules.RNAccountKit
 
 class RNAccountKit {
@@ -21,7 +27,7 @@ class RNAccountKit {
     facebookNotificationsEnabled: true,
     readPhoneStateEnabled: true,
     receiveSMS: true,
-    theme: {}
+    theme: {},
   }
 
   constructor() {
@@ -29,6 +35,20 @@ class RNAccountKit {
   }
 
   configure(options = {}) {
+    assertArray(options.countryBlacklist, 'countryBlacklist');
+    assertArray(options.countryWhitelist, 'countryWhitelist');
+    assertString(options.defaultCountry, 'defaultCountry');
+    assertValidityOfCountryCodes(options);
+
+    // Remove empty arrays. Empty arrays causes app to crash.
+    if (Array.isArray(options.countryBlacklist) && options.countryBlacklist.length === 0) {
+      options.countryBlacklist = undefined;
+    }
+
+    if (Array.isArray(options.countryWhitelist) && options.countryWhitelist.length === 0) {
+      options.countryWhitelist = undefined;
+    }
+
     for(key of Object.keys(options)) {
       options[key] || delete options[key]
     }
