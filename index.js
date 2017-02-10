@@ -4,10 +4,7 @@ import React, {
 
 import {
   NativeModules,
-  DeviceEventEmitter,
   TouchableOpacity,
-  Text,
-  Platform
 } from 'react-native'
 
 import {
@@ -111,10 +108,6 @@ export class LoginButton extends Component {
           this.props.onError(err)
         }
       })
-  }
-
-  constructor(props) {
-    super(props)
   }
 
   render() {
