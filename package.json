@@ -10,7 +10,8 @@
     "android/gradlew.bat",
     "ios",
     "index.js",
-    "ios/*.xcodeproj"
+    "ios/*.xcodeproj",
+    "js"
   ],
   "keywords": [
     "react",
