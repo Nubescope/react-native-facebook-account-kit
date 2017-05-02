@@ -72,7 +72,7 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
    </application>
    ...
    ```
-   
+
 3. Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
   ```java
   @Override
@@ -213,6 +213,7 @@ RNAccountKit.configure({
   titleType: 'login',
   initialAuthState: '',
   initialEmail: 'some.initial@email.com',
+  initialPhone: '+1-123-456-7890',
   facebookNotificationsEnabled: true|false, // true by default
   readPhoneStateEnabled: true|false, // true by default,
   receiveSMS: true|false, // true by default,
