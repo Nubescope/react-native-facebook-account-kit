@@ -49,11 +49,11 @@
 {
     _resolve = resolve;
     _reject = reject;
+    NSString *prefillPhone - self.initialPhone;
     NSString *inputState = [[NSUUID UUID] UUIDString];
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:nil state:inputState];
-
+        UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:prefillPhone state:inputState];
         [self _prepareLoginViewController:viewController];
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
         [rootViewController presentViewController:viewController animated:YES completion:NULL];
