@@ -21,6 +21,8 @@ class RNAccountKit {
     titleType: 'login',
     initialAuthState: '',
     initialEmail: '',
+    initialCountryCode: '',
+    initialPhone: '',
     facebookNotificationsEnabled: true,
     readPhoneStateEnabled: true,
     receiveSMS: true,

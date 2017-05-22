@@ -65,6 +65,9 @@ class AccountKitSample extends Component {
       //countryWhitelist: [ "AR", "BR", "US" ],
       //countryBlacklist: [ "BR" ],
       //defaultCountry: "AR"
+      initialEmail: 'example.com',
+      initialCountryCode: '+1',
+      initialPhone: '123-456-7890',
     })
   }
 
