@@ -12,6 +12,7 @@
 @property(nonatomic, strong) NSString *defaultCountry;
 @property(nonatomic, strong) NSString *initialEmail;
 @property(nonatomic, strong) NSString *initialPhone;
+@property(nonatomic, strong) NSString *initialCountryCode;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 
