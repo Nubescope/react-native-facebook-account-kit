@@ -49,10 +49,10 @@
 {
     _resolve = resolve;
     _reject = reject;
-    NSString *prefillPhone = self.initialPhone;
-    NSString *prefillCountryCode = self.initialCountryCode;
+    NSString *prefillPhone = self.initialPhoneNumber;
+    NSString *prefillCountryCode = self.initialPhoneCountryPrefix;
     NSString *inputState = [[NSUUID UUID] UUIDString];
-    AKFPhoneNumber * prefillPhoneNumber = [[AKFPhoneNumber alloc] initWithCountryCode: self.prefillCountryCode phoneNumber:self.prefillPhone];
+    AKFPhoneNumber * prefillPhoneNumber = [[AKFPhoneNumber alloc] initWithCountryCode:prefillCountryCode phoneNumber:prefillPhone];
 
     dispatch_async(dispatch_get_main_queue(), ^{
         UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:prefillPhoneNumber state:inputState];
