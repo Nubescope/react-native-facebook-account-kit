@@ -14,6 +14,7 @@ import com.facebook.accountkit.AccountKit;
 import com.facebook.accountkit.AccountKitCallback;
 import com.facebook.accountkit.AccountKitError;
 import com.facebook.accountkit.AccountKitLoginResult;
+import com.facebook.accountkit.PhoneNumber;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
@@ -216,9 +217,11 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
             configurationBuilder.setInitialEmail(initialEmail);
         }
 
-        String initialPhone = this.options.getString("initialPhone");
-        if (initialPhone != null && !initialPhone.isEmpty()) {
-          configurationBuilder.setInitialPhone(initialPhone);
+        String initialPhoneCountryPrefix = this.options.getString("initialPhoneCountryPrefix");
+        String initialPhoneNumber = this.options.getString("initialPhoneNumber");
+        if (initialPhoneCountryPrefix != null && !initialPhoneCountryPrefix.isEmpty() && initialPhoneNumber != null && !initialPhoneNumber.isEmpty()) {
+            PhoneNumber phoneNumber = new PhoneNumber(initialPhoneCountryPrefix, initialPhoneNumber, null);
+            configurationBuilder.setInitialPhoneNumber(phoneNumber);
         }
 
         configurationBuilder.setFacebookNotificationsEnabled(
