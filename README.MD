@@ -213,8 +213,8 @@ RNAccountKit.configure({
   titleType: 'login',
   initialAuthState: '',
   initialEmail: 'some.initial@email.com',
-  initialCountryCode: '+1',
-  initialPhone: '123-456-7890',
+  initialPhoneCountryPrefix: '+1',
+  initialPhoneNumber: '123-456-7890',
   facebookNotificationsEnabled: true|false, // true by default
   readPhoneStateEnabled: true|false, // true by default,
   receiveSMS: true|false, // true by default,
