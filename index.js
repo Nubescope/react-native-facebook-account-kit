@@ -48,7 +48,7 @@ class RNAccountKit {
       options.countryWhitelist = undefined;
     }
 
-    for (key of Object.keys(options)) {
+    for (let key of Object.keys(options)) {
       options[key] || delete options[key]
     }
 
