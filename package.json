@@ -30,5 +30,8 @@
     "url": "https://github.com/underscopeio/react-native-facebook-account-kit.git"
   },
   "author": "Underscope",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
 }
