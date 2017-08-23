@@ -13,6 +13,8 @@ import {
   assertValidityOfCountryCodes,
 } from './js/utils'
 
+import PropTypes from 'prop-types'
+
 const RNAccountKitNative = NativeModules.RNAccountKit
 
 class RNAccountKit {
@@ -85,10 +87,10 @@ const AccountKit = new RNAccountKit()
 
 export class LoginButton extends Component {
   static propTypes = {
-    type: React.PropTypes.string,
-    onLogin: React.PropTypes.func.isRequired,
-    onError: React.PropTypes.func.isRequired,
-    onCancel: React.PropTypes.func
+    type: PropTypes.string,
+    onLogin: PropTypes.func.isRequired,
+    onError: PropTypes.func.isRequired,
+    onCancel: PropTypes.func
   };
 
   static defaultProps = {
