@@ -115,7 +115,9 @@ RCT_EXPORT_METHOD(getCurrentAccount: (RCTPromiseResolveBlock)resolve
                               @"headerBackgroundColor",@"headerTextColor",@"headerButtonTextColor",
                               @"buttonBackgroundColor",@"buttonBorderColor",@"buttonTextColor",
                               @"buttonDisabledBackgroundColor",@"buttonDisabledBorderColor",
-                              @"buttonDisabledTextColor",@"iconColor",@"inputBackgroundColor",
+                              @"buttonDisabledTextColor",@"buttonHighlightedBackgroundColor",
+                              @"buttonHighlightedBorderColor",@"buttonHighlightedTextColor",
+                              @"iconColor",@"inputBackgroundColor",
                               @"inputBorderColor",@"inputTextColor",@"textColor",@"titleColor"];
     for(NSString *key in themeOptions) {
         UIColor *color;
