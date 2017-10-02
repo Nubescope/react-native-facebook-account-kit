@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Takaisin";
+"com_accountkit_button_begin" = "Aloita";
+"com_accountkit_button_cancel" = "Peruuta";
+"com_accountkit_button_confirm" = "Vahvista";
+"com_accountkit_button_continue" = "Jatka";
+"com_accountkit_button_log_in" = "Kirjaudu sisään";
+"com_accountkit_button_next" = "Seuraava";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Lähetä uusi koodi";
+"com_accountkit_button_resend_sms" = "Lähetä tekstiviesti uudelleen";
+"com_accountkit_button_send" = "Lähetä";
+"com_accountkit_button_send_code_in_fb" = "Lähetä koodi Facebookissa";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Napauta Lähetä koodi Facebookissa, niin ilmoitus lähetetään antamaasi puhelinnumeroon linkitettyyn Facebook-käyttäjätiliin.";
+"com_accountkit_button_start" = "Alku";
+"com_accountkit_button_start_over" = "Yritä uudelleen";
+"com_accountkit_button_submit" = "Lähetä";
+"com_accountkit_check_email" = "Avaa sähköpostisi";
+"com_accountkit_confirmation_code_agreement" = "Hyväksy Facebookin <a href=\"%2$@\">käyttöehdot</a>, <a href=\"%3$@\">tietokäytäntö</a> ja <a href=\"%4$@\">evästeiden käyttöä koskeva käytäntö</a> valitsemalla %1$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Hyväksy Facebookin <a href=\"%2$@\">käyttöehdot</a>, <a href=\"%3$@\">tietokäytäntö</a> ja <a href=\"%4$@\">evästeiden käyttöä koskeva käytäntö</a> ja sovelluksen %6$@ <a href=\"%5$@\">yksityisyyskäytäntö</a> valitsemalla %1$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Hyväksy Facebookin <a href=\"%2$@\">käyttöehdot</a>, <a href=\"%3$@\">tietokäytäntö</a> ja <a href=\"%4$@\">evästeiden käyttöä koskeva käytäntö</a> ja sovelluksen %7$@ <a href=\"%5$@\">yksityisyyskäytäntö</a> ja <a href=\"%6$@\">käyttöehdot</a> valitsemalla %1$@.";
+"com_accountkit_confirmation_code_text" = "Lähetä koodi uudelleen";
+"com_accountkit_confirmation_code_title" = "Anna koodi";
+"com_accountkit_country_code_title" = "Valitse maasi";
+"com_accountkit_email_invalid" = "Sähköpostiosoite on virheellinen. Yritä uudelleen.";
+"com_accountkit_email_loading_title" = "Lähetetään sähköpostiviestiä\U2026";
+"com_accountkit_email_login_retry_title" = "Vahvista sähköpostisi";
+"com_accountkit_email_login_text" = "Napauta %1$@, niin saat vahvistuksen Account Kit by Facebookilta sähköpostitse. %2$@ käyttää tätä auttaessaan sinua kirjautumaan sisään, mutta et tarvitse Facebook-tiliä. <a href=\"%3$@\">Lue lisää.</a>";
+"com_accountkit_email_login_title" = "Anna sähköpostiosoitteesi";
+"com_accountkit_email_not_received" = "Lähetä sähköpostiviesti uudelleen";
+"com_accountkit_email_verify_title" = "Avaa lähettämämme sähköpostiviesti ja vahvista osoitteesi";
+"com_accountkit_error_title" = "Valitettavasti tapahtui virhe.";
+"com_accountkit_facebook_code_entry_title" = "Anna Facebookista saamasi koodi";
+"com_accountkit_phone_loading_title" = "Lähetetään koodiasi\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Numero";
+"com_accountkit_phone_login_retry_title" = "Vahvista puhelinnumerosi";
+"com_accountkit_phone_login_text" = "Napauta %1$@, niin saat vahvistuksen Account Kit by Facebookilta tekstiviestitse. %2$@ käyttää tätä auttaessaan sinua kirjautumaan sisään, mutta et tarvitse Facebook-tiliä. Viesteistä ja tiedonsiirrosta saatetaan veloittaa. <a href=\"%3$@\">Lue lisää.</a>";
+"com_accountkit_phone_login_title" = "Anna puhelinnumerosi";
+"com_accountkit_resend_email_text" = "Lähetä uusi sähköposti";
+"com_accountkit_resend_title" = "Pahoittelemme. Jatka kokeilemalla näitä vaihtoehtoja.";
+"com_accountkit_return_title" = "Siirryt takaisin kohteeseen %1$@\U2026";
+"com_accountkit_sent_title" = "Lähetettiin!";
+"com_accountkit_success_title" = "Valmis!";
+"com_accountkit_toolbar_title" = "Kirjaudu sisään kohteeseen %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Koodin vahvistaminen epäonnistui. Yritä uudelleen:";
+"com_accountkit_verify_title" = "Vahvistetaan koodiasi\U2026";
