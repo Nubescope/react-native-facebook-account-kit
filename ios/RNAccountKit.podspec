@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author              = package['author']
   s.source              = { :git => "https://github.com/underscopeio/react-native-facebook-account-kit.git#master" }
   s.platform            = :ios, "7.0"
-  s.source_files        = "ios/**/*.{h,m}"
+  s.source_files        = "*.{h,m}"
   s.preserve_paths      = "*.js"
   s.dependency 'React'
 end
