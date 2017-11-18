@@ -14,6 +14,7 @@ react-native link react-native-facebook-account-kit
 
 ### For iOS
 
+
 #### Cocoa Pods
 
 1. Add `RNAccountKit` Pod to your Podfile
@@ -53,6 +54,7 @@ react-native link react-native-facebook-account-kit
 4. Done! Now run your project from XCode or with `react-native run-ios` from your terminal
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
+
 
 #### Manual
 
