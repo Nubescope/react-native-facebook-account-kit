@@ -18,11 +18,15 @@ react-native link react-native-facebook-account-kit
 
 1. Add `RNAccountKit` Pod to your Podfile
 
-```perl
-  pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit/ios'
-```
+  ```perl
+  target 'MyApp' do
+    ...
+    pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit/ios'
+    ...
+  end
+  ```
 
-2. Run `pod install`
+2. Run `pod install` in your `ios` folder
 
 3. Add your Facebook credentials to your project's `Info.plist` file
   ```xml
@@ -47,6 +51,8 @@ react-native link react-native-facebook-account-kit
       </plist>
   ```
 4. Done! Now run your project from XCode or with `react-native run-ios` from your terminal
+
+This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
 
 #### Manual
 
