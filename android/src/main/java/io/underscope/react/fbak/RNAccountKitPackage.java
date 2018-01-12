@@ -24,4 +24,8 @@ public class RNAccountKitPackage implements ReactPackage {
         modules.add(new RNAccountKitModule(reactContext));
         return modules;
     }
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Collections.emptyList();
+    }
 }
