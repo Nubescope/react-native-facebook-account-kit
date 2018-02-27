@@ -86,6 +86,25 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide.
 
+#### (Optional) Exclude backup for Access Tokens on Android >= 6.0
+As per this [documentation](https://developers.facebook.com/docs/accountkit/accesstokens), Account Kit does not support automated backup (introduced in Android 6.0). The following steps will exclude automated backup
+
+1. Create a file `android/app/src/main/res/xml/backup_config.xml` that contains the follwoing:
+```java
+  <?xml version="1.0" encoding="utf-8"?>
+  <full-backup-content>
+    <exclude domain="sharedpref" path="com.facebook.accountkit.AccessTokenManager.SharedPreferences.xml"/>
+  </full-backup-content>
+```
+
+2. In your `AndroidManifest.xml` add the following to exclude backup of Account Kit's Access Token.
+```java
+  <application
+    //other configurations here
+    android:fullBackupContent="@xml/backup_config" // add this line
+   >
+```
+
 ## Themes
 Regarding the theming, Account Kit way to customize styles differs between platforms.
 ### iOS
