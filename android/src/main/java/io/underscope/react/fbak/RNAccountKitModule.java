@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.CornerPathEffect;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
@@ -18,6 +21,8 @@ import com.facebook.accountkit.PhoneNumber;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
+import com.facebook.accountkit.ui.SkinManager;
+import com.facebook.accountkit.ui.UIManager;
 import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
@@ -88,7 +93,6 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
     }
 
 
-
     /**
      * Exposed React's methods
      */
@@ -110,7 +114,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         final LoginType loginType = LoginType.valueOf(type.toUpperCase());
         final Intent intent = new Intent(this.reactContext.getApplicationContext(), AccountKitActivity.class);
         final AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
-                createAccountKitConfiguration(loginType);
+            createAccountKitConfiguration(loginType);
         intent.putExtra(AccountKitActivity.ACCOUNT_KIT_ACTIVITY_CONFIGURATION, configurationBuilder.build());
         this.reactContext.startActivityForResult(intent, APP_REQUEST_CODE, new Bundle());
     }
@@ -176,15 +180,15 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
      * Validation and defaults values expected to be done in React side.
      *
      * @param options attrs are:
-     *     responseType                 :'CODE|TOKEN'
-     *     titleType                    :'APP_NAME|LOGIN'
-     *     initialAuthState             :String
-     *     facebookNotificationsEnabled :Boolean
-     *     readPhoneStateEnabled        :Boolean
-     *     receiveSMS                   :Boolean
-     *     countryBlacklist             :String[]
-     *     countryWhitelist             :String[]
-     *     defaultCountry               :String
+     *                responseType                 :'CODE|TOKEN'
+     *                titleType                    :'APP_NAME|LOGIN'
+     *                initialAuthState             :String
+     *                facebookNotificationsEnabled :Boolean
+     *                readPhoneStateEnabled        :Boolean
+     *                receiveSMS                   :Boolean
+     *                countryBlacklist             :String[]
+     *                countryWhitelist             :String[]
+     *                defaultCountry               :String
      */
 
     @ReactMethod
@@ -198,14 +202,14 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
      */
 
     private AccountKitConfiguration.AccountKitConfigurationBuilder createAccountKitConfiguration(
-            final LoginType loginType) {
+        final LoginType loginType) {
         AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
-                new AccountKitConfiguration.AccountKitConfigurationBuilder(loginType,
-                        AccountKitActivity.ResponseType.valueOf(
-                                this.options.getString("responseType").toUpperCase()));
+            new AccountKitConfiguration.AccountKitConfigurationBuilder(loginType,
+                AccountKitActivity.ResponseType.valueOf(
+                    this.options.getString("responseType").toUpperCase()));
 
         configurationBuilder.setTitleType(
-                AccountKitActivity.TitleType.valueOf(this.options.getString("titleType").toUpperCase()));
+            AccountKitActivity.TitleType.valueOf(this.options.getString("titleType").toUpperCase()));
 
         String initialAuthState = this.options.getString(("initialAuthState"));
         if (!initialAuthState.isEmpty()) {
@@ -225,11 +229,11 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         }
 
         configurationBuilder.setFacebookNotificationsEnabled(
-                this.options.getBoolean("facebookNotificationsEnabled"));
+            this.options.getBoolean("facebookNotificationsEnabled"));
 
         boolean readPhoneStateEnabled = this.options.getBoolean("readPhoneStateEnabled");
         if (readPhoneStateEnabled && PackageManager.PERMISSION_DENIED == ContextCompat.checkSelfPermission(
-                        reactContext.getApplicationContext(), Manifest.permission.READ_PHONE_STATE)) {
+            reactContext.getApplicationContext(), Manifest.permission.READ_PHONE_STATE)) {
             Log.w(REACT_CLASS, "To allow reading phone number add READ_PHONE_STATE permission in your app's manifest");
             configurationBuilder.setReadPhoneStateEnabled(false);
         } else {
@@ -238,7 +242,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
 
         boolean receiveSMS = this.options.getBoolean("receiveSMS");
         if (receiveSMS && PackageManager.PERMISSION_DENIED == ContextCompat.checkSelfPermission(
-                reactContext.getApplicationContext(), Manifest.permission.RECEIVE_SMS)) {
+            reactContext.getApplicationContext(), Manifest.permission.RECEIVE_SMS)) {
             Log.w(REACT_CLASS, "To allow extracting code from SMS add RECEIVE_SMS permission in your app's manifest");
             configurationBuilder.setReceiveSMS(false);
         } else {
@@ -259,7 +263,68 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
             configurationBuilder.setDefaultCountryCode(this.options.getString("defaultCountry"));
         }
 
+        UIManager manager = getUIManager();
+        if (manager != null) {
+            configurationBuilder.setUIManager(manager);
+        }
+
         return configurationBuilder;
+    }
+
+    @Nullable
+    private UIManager getUIManager() {
+        if (this.options.hasKey("theme")) {
+            ReadableMap theme = this.options.getMap("theme");
+            int primaryColor = Color.WHITE;
+            if (theme.hasKey("primaryColor")) {
+                primaryColor = theme.getInt("primaryColor");
+            }
+
+            int imageIdentifier = -1;
+            if (theme.hasKey("backgroundImage")) {
+                String imageName = theme.getString("backgroundImage");
+
+                imageIdentifier = getCurrentActivity()
+                    .getResources()
+                    .getIdentifier(imageName, "drawable", getCurrentActivity().getPackageName());
+            }
+
+            SkinManager.Skin skin = SkinManager.Skin.CLASSIC;
+            if (theme.hasKey("skin")) {
+                switch (theme.getString("skin")) {
+                    case "CONTEMPORARY":
+                        skin = SkinManager.Skin.CONTEMPORARY;
+                        break;
+                    case "TRANSLUCENT":
+                        skin = SkinManager.Skin.TRANSLUCENT;
+                        break;
+                }
+            }
+
+            SkinManager.Tint tint = SkinManager.Tint.WHITE;
+            if (theme.hasKey("tint")) {
+                switch (theme.getString("tint")) {
+                    case "BLACK":
+                        tint = SkinManager.Tint.BLACK;
+                        break;
+                }
+            }
+
+            int tintIntensity = 65;
+            if (theme.hasKey("tintIntensity")) {
+                tintIntensity = theme.getInt("tintIntensity");
+            }
+
+            return new SkinManager(
+                skin,
+                primaryColor,
+                imageIdentifier,
+                tint,
+                tintIntensity
+            );
+        }
+
+        return null;
     }
 
     private void rejectPromise(String code, Error err) {
@@ -290,7 +355,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
 
     private String[] formatCountryList(ReadableArray list) {
         List<String> pre = new ArrayList<>();
-        for (int i=0,n=list.size();i<n;i++) {
+        for (int i = 0, n = list.size(); i < n; i++) {
             pre.add(list.getString(i));
         }
 
