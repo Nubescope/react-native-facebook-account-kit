@@ -1,6 +1,6 @@
 {
   "name": "react-native-facebook-account-kit",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "A react-native library for Facebook Account Kit",
   "main": "index.js",
   "files": [
