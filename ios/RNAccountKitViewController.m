@@ -7,12 +7,12 @@
 @implementation RNAccountKitViewController
 {
     RNAccountKitViewController *instance;
-
+    
     AKFAccountKit *_accountKit;
     UIViewController<AKFViewController> *_pendingLoginViewController;
     NSString *_authorizationCode;
     BOOL *isUserLoggedIn;
-
+    
     RCTPromiseResolveBlock _resolve;
     RCTPromiseRejectBlock _reject;
 }
@@ -21,10 +21,10 @@
 {
     self = [super init];
     _accountKit = accountKit;
-
+    
     _pendingLoginViewController = [_accountKit viewControllerForLoginResume];
     instance = self;
-
+    
     return self;
 }
 
@@ -41,7 +41,7 @@
         viewController.blacklistedCountryCodes = self.countryBlacklist;
     }
     viewController.defaultCountryCode = self.defaultCountry;
-
+    
 }
 
 - (void)loginWithPhone: (RCTPromiseResolveBlock)resolve
@@ -53,11 +53,11 @@
     NSString *prefillCountryCode = self.initialPhoneCountryPrefix;
     NSString *inputState = [[NSUUID UUID] UUIDString];
     AKFPhoneNumber * prefillPhoneNumber = [[AKFPhoneNumber alloc] initWithCountryCode:prefillCountryCode phoneNumber:prefillPhone];
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:prefillPhoneNumber state:inputState];
+        UIViewController<AKFViewController> *viewController = [self->_accountKit viewControllerForPhoneLoginWithPhoneNumber:prefillPhoneNumber state:inputState];
         [self _prepareLoginViewController:viewController];
-        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        UIViewController *rootViewController = [self topMostViewController];
         [rootViewController presentViewController:viewController animated:YES completion:NULL];
     });
 }
@@ -69,18 +69,26 @@
     _reject = reject;
     NSString *prefillEmail = self.initialEmail;
     NSString *inputState = [[NSUUID UUID] UUIDString];
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:prefillEmail state:inputState];
+        UIViewController<AKFViewController> *viewController = [self->_accountKit viewControllerForEmailLoginWithEmail:prefillEmail state:inputState];
         [self _prepareLoginViewController:viewController];
-        UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        UIViewController *rootViewController = [self topMostViewController];
         [rootViewController presentViewController:viewController animated:YES completion:NULL];
     });
 }
 
+- (UIViewController *)topMostViewController{
+    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    while (rootViewController.presentedViewController != nil) {
+        rootViewController = rootViewController.presentedViewController;
+    }
+    return rootViewController;
+}
+
 - (void)viewController:(UIViewController<AKFViewController> *)viewController
-  didCompleteLoginWithAccessToken:(id<AKFAccessToken>)accessToken
-                            state:(NSString *)state
+didCompleteLoginWithAccessToken:(id<AKFAccessToken>)accessToken
+                 state:(NSString *)state
 {
     if (_resolve) {
         NSMutableDictionary *accessTokenData =[[NSMutableDictionary alloc] init];
@@ -89,20 +97,20 @@
         accessTokenData[@"token"] = [accessToken tokenString];
         accessTokenData[@"lastRefresh"] = [NSNumber numberWithDouble: ([[accessToken lastRefresh] timeIntervalSince1970] * 1000)];
         accessTokenData[@"refreshIntervalSeconds"] = [NSNumber numberWithDouble: [accessToken tokenRefreshInterval]];
-
+        
         _resolve(accessTokenData);
     }
 }
 
 - (void)viewController:(UIViewController<AKFViewController> *)viewController
-  didCompleteLoginWithAuthorizationCode:(NSString *)code
-                                  state:(NSString *)state
+didCompleteLoginWithAuthorizationCode:(NSString *)code
+                 state:(NSString *)state
 {
     if (_resolve) {
         NSMutableDictionary *authorizationCodeData =[[NSMutableDictionary alloc] init];
         authorizationCodeData[@"code"] = code;
         authorizationCodeData[@"state"] = state;
-
+        
         _resolve(authorizationCodeData);
     }
 }
@@ -125,3 +133,4 @@
 }
 
 @end
+
