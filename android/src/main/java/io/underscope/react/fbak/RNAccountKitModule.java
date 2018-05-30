@@ -107,7 +107,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
 
         this.pendingPromise = promise;
 
-        final LoginType loginType = LoginType.valueOf(type.toUpperCase());
+        final LoginType loginType = LoginType.valueOf(safeString(type.toUpperCase()));
         final Intent intent = new Intent(this.reactContext.getApplicationContext(), AccountKitActivity.class);
         final AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
                 createAccountKitConfiguration(loginType);
@@ -202,10 +202,10 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
                 new AccountKitConfiguration.AccountKitConfigurationBuilder(loginType,
                         AccountKitActivity.ResponseType.valueOf(
-                                this.options.getString("responseType").toUpperCase()));
+                                safeString(this.options.getString("responseType").toUpperCase())));
 
         configurationBuilder.setTitleType(
-                AccountKitActivity.TitleType.valueOf(this.options.getString("titleType").toUpperCase()));
+                AccountKitActivity.TitleType.valueOf(safeString(this.options.getString("titleType").toUpperCase())));
 
         String initialAuthState = this.options.getString(("initialAuthState"));
         if (!initialAuthState.isEmpty()) {
@@ -299,5 +299,10 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
     }
 
     public void onNewIntent(Intent intent) {
+    }
+
+    //  Replace Turkish İ and ı with their normalized versions (I and i, respectively)
+    private String safeString (String str) {
+      return str.replace("İ", "I").replace("ı", "i");
     }
 }
