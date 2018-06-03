@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage            = 'https://github.com/underscopeio/react-native-facebook-account-kit.git'
   s.license             = package['license']
   s.author              = package['author']
-  s.source              = { :git => "https://github.com/underscopeio/react-native-facebook-account-kit.git#master" }
+  s.source              = { :git => "https://github.com/jobeso/react-native-facebook-account-kit.git" }
   s.platform            = :ios, "7.0"
   s.source_files        = "*.{h,m}"
   s.preserve_paths      = "*.js"
