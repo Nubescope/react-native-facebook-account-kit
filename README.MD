@@ -5,6 +5,59 @@ A Facebook Account Kit SDK wrapper for react-native.
 
 ## Installation
 
+### With Cocoa Pods
+
+#### iOS
+
+1. Add dependency
+
+```bash
+npm install --save react-native-facebook-account-kit
+```
+
+2. Add `RNAccountKit` Pod to your Podfile
+
+  ```diff
+  target 'MyApp' do
+    ...
+  +  pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit/ios'
+    ...
+  end
+  ```
+
+3. Run `pod install` in your `ios` folder
+
+#### Android
+
+4. In `android/app/build.gradle`
+```diff
+dependencies {
++    compile project(':react-native-facebook-account-kit')
+    compile fileTree(dir: "libs", include: ["*.jar"])
+    compile "com.android.support:appcompat-v7:23.0.1"
+    compile "com.facebook.react:react-native:+"  // From node_modules
+}
+```
+
+
+5. In `android/settings.gradle`
+```diff
+include ':app'
++ include ':react-native-facebook-account-kit'
++ project(':react-native-facebook-account-kit').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-facebook-account-kit/android')
+```
+
+6. In `android/app/src/main/java/com/example/MainApplication.java`
+```diff
+import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactPackage;
+import com.facebook.react.shell.MainReactPackage;
++ import io.underscope.react.fbak.RNAccountKitPackage;                                                                        
+```
+
+### Or with `react-native link`
+(you can´t use this one if you want to use cocoa pods)
+
 ```bash
 npm install --save react-native-facebook-account-kit
 react-native link react-native-facebook-account-kit
@@ -13,6 +66,38 @@ react-native link react-native-facebook-account-kit
 ## Configuration
 
 ### For iOS
+
+
+#### Cocoa Pods
+
+1. Add your Facebook credentials to your project's `Info.plist` file
+  ```xml
+      <plist version="1.0">
+        <dict>
+          ...
+          <key>FacebookAppID</key>
+          <string>{your-app-id}</string>
+          <key>AccountKitClientToken</key>
+          <string>{your-account-kit-client-token}</string>
+          <key>CFBundleURLTypes</key>
+          <array>
+            <dict>
+              <key>CFBundleURLSchemes</key>
+              <array>
+                <string>ak{your-app-id}</string>
+              </array>
+            </dict>
+          </array>
+          ...
+        </dict>
+      </plist>
+  ```
+2. Done! Now run your project from XCode or with `react-native run-ios` from your terminal
+
+This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
+
+
+#### Manual
 
 1. First, link the AccountKit SDK to your project following these steps
   - Open with XCode your project
