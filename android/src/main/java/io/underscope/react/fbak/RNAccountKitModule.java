@@ -219,7 +219,7 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
 
         String initialPhoneCountryPrefix = this.options.getString("initialPhoneCountryPrefix");
         String initialPhoneNumber = this.options.getString("initialPhoneNumber");
-        if (initialPhoneCountryPrefix != null && !initialPhoneCountryPrefix.isEmpty() && initialPhoneNumber != null && !initialPhoneNumber.isEmpty()) {
+        if (initialPhoneNumber != null && !initialPhoneNumber.isEmpty()) {
             PhoneNumber phoneNumber = new PhoneNumber(initialPhoneCountryPrefix, initialPhoneNumber, null);
             configurationBuilder.setInitialPhoneNumber(phoneNumber);
         }
