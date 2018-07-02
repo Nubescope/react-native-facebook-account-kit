@@ -41,7 +41,8 @@
         viewController.blacklistedCountryCodes = self.countryBlacklist;
     }
     viewController.defaultCountryCode = self.defaultCountry;
-    
+    viewController.enableSendToFacebook = YES;
+    viewController.enableGetACall = YES;
 }
 
 - (void)loginWithPhone: (RCTPromiseResolveBlock)resolve
