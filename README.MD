@@ -1,61 +1,83 @@
 # react-native-facebook-account-kit
 
 A Facebook Account Kit SDK wrapper for react-native.
+
 > We will support the latest version of React Native on each release. For older RN versions you may use an older version of this module compatible with that RN version.
 
 ## Installation
 
-```bash
+```shell
 npm install --save react-native-facebook-account-kit
+```
+
+## Linking
+
+### Semi-automatic (suggested)
+
+```shell
 react-native link react-native-facebook-account-kit
 ```
 
-## Configuration
+<details>
+    <summary>Android</summary>
 
-### For iOS
+- _Done!_
 
-1. First, link the AccountKit SDK to your project following these steps
-  - Open with XCode your project
-  - Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder
-  - Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)
+</details>
 
-2. Add your Facebook credentials to your project's `Info.plist` file
-  ```xml
-      <plist version="1.0">
-        <dict>
-          ...
-          <key>FacebookAppID</key>
-          <string>{your-app-id}</string>
-          <key>AccountKitClientToken</key>
-          <string>{your-account-kit-client-token}</string>
-          <key>CFBundleURLTypes</key>
-          <array>
-            <dict>
-              <key>CFBundleURLSchemes</key>
-              <array>
-                <string>ak{your-app-id}</string>
-              </array>
-            </dict>
-          </array>
-          ...
-        </dict>
-      </plist>
-  ```
-3. Done! Now run your project from XCode or with `react-native run-ios` from your terminal
+<details>
+    <summary>iOS (via Cocoapods)</summary>
 
-This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide.
+1.  Undo changes in iOS folder (which were made by `react-native-link`) in order to avoid duplicate compilations
 
-### For Android
+        git checkout ios
 
-1. In `android/app/src/main/res/values/strings.xml`
-   ```xml
-   ...
-   <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
-   <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
-   ```
+2.  Add `RNAccountKit` Pod to your Podfile (if you don't have a podfile follow [these](http://facebook.github.io/react-native/docs/0.51/integration-with-existing-apps.html#configuring-cocoapods-dependencies) instructions)
 
-2. In `android/app/src/main/AndroidManifest.xml`
-  ```xml
+    ```diff
+    target 'MyApp' do
+      ...
+    +  pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit/ios'
+      ...
+    end
+    ```
+
+3.  Run `pod install` in your `ios` folder
+
+</details>
+
+<details>
+    <summary>iOS (without Cocoapods)</summary>
+
+1.  Open your project with XCode
+
+2.  Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder
+
+3.  Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)
+
+</details>
+
+<br/>
+
+or
+
+### Manual
+
+<details>
+    <summary>Android</summary>
+<br/>
+
+1.  In `android/app/src/main/res/values/strings.xml`
+
+```xml
+  ...
+  <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
+  <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
+```
+
+2.  In `android/app/src/main/AndroidManifest.xml`
+
+```xml
   ...
   <application>
 
@@ -71,10 +93,11 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
           android:value="@string/ak_client_token" />
    </application>
    ...
-   ```
+```
 
-3. Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
-  ```java
+3.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
+
+```java
   @Override
   protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
@@ -82,14 +105,104 @@ This is the minimal required configuration. Take a look to the [Account Kit docu
           new RNAccountKitPackage() // <-- the package is registered
       );
   }
-  ```
+```
 
 This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide.
 
+</details>
+
+<details>
+    <summary>iOS</summary>
+
+- _A PR including iOS manual linking instructions is welcome_
+  </details>
+
+## Configuration
+
+<details>
+    <summary>iOS</summary>
+    <br/>
+
+Add your Facebook credentials to your project's `Info.plist` file
+
+```xml
+  <plist version="1.0">
+    <dict>
+      ...
+      <key>FacebookAppID</key>
+      <string>{your-app-id}</string>
+      <key>AccountKitClientToken</key>
+      <string>{your-account-kit-client-token}</string>
+      <key>CFBundleURLTypes</key>
+      <array>
+        <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>ak{your-app-id}</string>
+          </array>
+        </dict>
+      </array>
+      ...
+    </dict>
+  </plist>
+```
+
+_This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide._
+
+</details>
+
+<details>
+    <summary>Android</summary>
+    <br/>
+
+1.  In `android/app/src/main/res/values/strings.xml`
+
+```xml
+...
+<string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
+<string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
+```
+
+2.  In `android/app/src/main/AndroidManifest.xml`
+
+```xml
+...
+<application>
+
+    ...
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/fb_app_id" />
+    <meta-data
+        android:name="com.facebook.accountkit.ApplicationName"
+        android:value="@string/app_name" />
+    <meta-data
+        android:name="com.facebook.accountkit.ClientToken"
+        android:value="@string/ak_client_token" />
+ </application>
+ ...
+```
+
+3.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
+
+```java
+@Override
+protected List<ReactPackage> getPackages() {
+    return Arrays.<ReactPackage>asList(
+        new MainReactPackage(),
+        new RNAccountKitPackage() // <-- the package is registered
+    );
+}
+```
+
+_This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide._
+
 #### (Optional) Exclude backup for Access Tokens on Android >= 6.0
+
 As per this [documentation](https://developers.facebook.com/docs/accountkit/accesstokens), Account Kit does not support automated backup (introduced in Android 6.0). The following steps will exclude automated backup
 
-1. Create a file `android/app/src/main/res/xml/backup_config.xml` that contains the follwoing:
+1.  Create a file `android/app/src/main/res/xml/backup_config.xml` that contains the follwoing:
+
 ```java
   <?xml version="1.0" encoding="utf-8"?>
   <full-backup-content>
@@ -97,7 +210,8 @@ As per this [documentation](https://developers.facebook.com/docs/accountkit/acce
   </full-backup-content>
 ```
 
-2. In your `AndroidManifest.xml` add the following to exclude backup of Account Kit's Access Token.
+2.  In your `AndroidManifest.xml` add the following to exclude backup of Account Kit's Access Token.
+
 ```java
   <application
     //other configurations here
@@ -105,10 +219,15 @@ As per this [documentation](https://developers.facebook.com/docs/accountkit/acce
    >
 ```
 
+</details>
+
 ## Themes
-Regarding the theming, Account Kit way to customize styles differs between platforms.
-### iOS
-For iOS you must use the field `theme` on the configure payload and set the properties you want to overwrite.
+
+<details>
+    <summary>iOS</summary>  
+
+<br/>
+
 ```javascript
 import RNAccountKit, {
   Color,
@@ -146,44 +265,56 @@ RNAccountKit.configure({
   }
 })
 ```
+
 > To see the statusBarStyle reflected you must set the **UIViewControllerBasedStatusBarAppearance** property to **true** on your app's _Info.plist_ file.
 > You can do it from XCode <img width="507" alt="screen shot 2016-08-02 at 11 44 07 am" src="https://cloud.githubusercontent.com/assets/1652196/17332979/0fa632b2-58a7-11e6-9aa3-a669ae44f2e6.png">
 
-### Android
-For Android you need to follow this steps:
+</details>
+
+<details>
+    <summary>Android</summary>
+
+<br/>
+
 > Check [this commit](https://github.com/underscopeio/react-native-facebook-account-kit/commit/77df35ae20f251e7c29285e8820da2ff498d9400) to see how it's done in our sample app
 
-1. In your application _styles.xml_ file (usually located in _android/app/src/main/res/values_ folder) create a **Theme** with the following schema
-  ```xml
-  <style name="LoginThemeYellow" parent="Theme.AccountKit">
-      <item name="com_accountkit_primary_color">#f4bf56</item>
-      <item name="com_accountkit_primary_text_color">@android:color/white</item>
-      <item name="com_accountkit_secondary_text_color">#44566b</item>
-      <item name="com_accountkit_status_bar_color">#ed9d00</item>
+1.  In your application _styles.xml_ file (usually located in _android/app/src/main/res/values_ folder) create a **Theme** with the following schema
 
-      <item name="com_accountkit_input_accent_color">?attr/com_accountkit_primary_color</item>
-      <item name="com_accountkit_input_border_color">?attr/com_accountkit_primary_color</item>
-  </style>
-  ```
-  > See the full set of customizable fields [here](https://developers.facebook.com/docs/accountkit/android/customizing)
+```xml
+<style name="LoginThemeYellow" parent="Theme.AccountKit">
+    <item name="com_accountkit_primary_color">#f4bf56</item>
+    <item name="com_accountkit_primary_text_color">@android:color/white</item>
+    <item name="com_accountkit_secondary_text_color">#44566b</item>
+    <item name="com_accountkit_status_bar_color">#ed9d00</item>
 
-2. In your app _AndroidManifest.xml_ file (usually under _android/app/src/main_ folder) set that **Theme** to the **AccountKitActivity**
-  ```xml
-  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:tools="http://schemas.android.com/tools" <-- Add this line
-      ...>
+    <item name="com_accountkit_input_accent_color">?attr/com_accountkit_primary_color</item>
+    <item name="com_accountkit_input_border_color">?attr/com_accountkit_primary_color</item>
+</style>
+```
 
-      <!-- Set the AccountKitActivity theme -->
-      <activity
-        tools:replace="android:theme"
-        android:name="com.facebook.accountkit.ui.AccountKitActivity"
-        android:theme="@style/LoginThemeYellow" />
+> See the full set of customizable fields [here](https://developers.facebook.com/docs/accountkit/android/customizing)
 
-  </manifest>
-  ```
+2.  In your app _AndroidManifest.xml_ file (usually under _android/app/src/main_ folder) set that **Theme** to the **AccountKitActivity**
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" <-- Add this line
+    ...>
+
+    <!-- Set the AccountKitActivity theme -->
+    <activity
+      tools:replace="android:theme"
+      android:name="com.facebook.accountkit.ui.AccountKitActivity"
+      android:theme="@style/LoginThemeYellow" />
+
+</manifest>
+```
+
+</details>
 
 ## Usage
-> If you have issues with the method signatures you may be using an older version. Check the [Releases Notes]( https://github.com/underscopeio/react-native-facebook-account-kit/releases) for breaking changes
+
+> If you have issues with the method signatures you may be using an older version. Check the [Releases Notes](https://github.com/underscopeio/react-native-facebook-account-kit/releases) for breaking changes
 
 ```javascript
 import RNAccountKit from 'react-native-facebook-account-kit'
