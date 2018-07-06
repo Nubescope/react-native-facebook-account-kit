@@ -1,0 +1,53 @@
+PODS:
+  - AccountKit (4.31.0)
+  - React (0.48.4):
+    - React/Core (= 0.48.4)
+  - React/Core (0.48.4):
+    - Yoga (= 0.48.4.React)
+  - React/DevSupport (0.48.4):
+    - React/Core
+    - React/RCTWebSocket
+  - React/RCTBlob (0.48.4):
+    - React/Core
+  - React/RCTNetwork (0.48.4):
+    - React/Core
+  - React/RCTText (0.48.4):
+    - React/Core
+  - React/RCTWebSocket (0.48.4):
+    - React/Core
+    - React/RCTBlob
+  - RNAccountKit (0.9.3):
+    - AccountKit
+    - React
+  - Yoga (0.48.4.React)
+
+DEPENDENCIES:
+  - React/Core (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNAccountKit (from `../node_modules/react-native-facebook-account-kit/ios`)
+  - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AccountKit
+
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+  RNAccountKit:
+    :path: "../node_modules/react-native-facebook-account-kit/ios"
+  Yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
+SPEC CHECKSUMS:
+  AccountKit: f3e48047e6fb1c433dff37c61158fd32bbc482cf
+  React: 59267c3a5811102116842a84a29efaca58167ee8
+  RNAccountKit: 3dd31fff73c90378ac89dc7611da0dc22b29f84b
+  Yoga: de6cde41559145f06b816e2bab5bfa980447798b
+
+PODFILE CHECKSUM: a6a9014413a3d5179b11e131c79405b5eead51a6
+
+COCOAPODS: 1.5.3
