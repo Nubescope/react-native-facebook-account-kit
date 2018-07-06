@@ -41,3 +41,6 @@ npm-debug.log
 .vscode
 tsconfig.json
 jsconfig.json
+
+# Pods
+Pods/
