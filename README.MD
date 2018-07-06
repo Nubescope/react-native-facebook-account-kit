@@ -387,6 +387,24 @@ npm install
 react-native run-ios # or react-native run-android
 ```
 
+## Troubleshooting
+
+<details>
+    <summary>Running example</summary>
+
+If you have trouble running any example try the following:
+
+1.  Move the example out of the repo
+2.  Remove this package local dependency from `package.json`
+    ```diff
+    -    "react-native-facebook-account-kit": "file:../.."
+    ```
+3.  Run <code>npm install --save react-native-facebook-account-kit</code>
+
+4.  Re-run <code>react-native run-android</code> or <code>react-native run-ios</code>
+
+</details>
+
 ## License
 
 License is MIT
