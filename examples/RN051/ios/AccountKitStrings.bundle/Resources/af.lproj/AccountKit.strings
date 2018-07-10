@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Terug";
+"com_accountkit_button_begin" = "Begin";
+"com_accountkit_button_cancel" = "Kanselleer";
+"com_accountkit_button_confirm" = "Bevestig";
+"com_accountkit_button_continue" = "Gaan voort";
+"com_accountkit_button_log_in" = "Meld aan";
+"com_accountkit_button_next" = "Volgende";
+"com_accountkit_button_ok" = "Goed";
+"com_accountkit_button_resend" = "Stuur nuwe kode";
+"com_accountkit_button_resend_sms" = "Stuur weer SMS";
+"com_accountkit_button_send" = "Stuur";
+"com_accountkit_button_send_code_in_fb" = "Stuur kode in Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Tik Stuur kode in Facebook om 'n kennisgewing na die Facebook-rekening te stuur wat met die foonnommer verbind is wat jy ingevoer het.";
+"com_accountkit_button_start" = "Begin";
+"com_accountkit_button_start_over" = "Probeer weer";
+"com_accountkit_button_submit" = "Dien in";
+"com_accountkit_check_email" = "Maak jou e-pos oop";
+"com_accountkit_confirmation_code_agreement" = "Tik %1$@ om Facebook se <a href=\"%2$@\">Bepalings</a>, <a href=\"%3$@\">Databeleid</a> en <a href=\"%4$@\">koekiegebruik</a> te aanvaar.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Tik %1$@ om Facebook se <a href=\"%2$@\">Bepalings</a>, <a href=\"%3$@\">Databeleid</a>, <a href=\"%4$@\">koekiegebruik</a> en die <a href=\"%5$@\">Privaatheidsbeleid</a> van %6$@ te aanvaar.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Tik %1$@ om Facebook se <a href=\"%2$@\">Bepalings</a>, <a href=\"%3$@\">Databeleid</a>, <a href=\"%4$@\">koekiegebruik</a> en die <a href=\"%5$@\">Privaatheidsbeleid</a> en <a href=\"%6$@\">Diensbepalings</a> van %7$@ te aanvaar.";
+"com_accountkit_confirmation_code_text" = "Stuur nuwe kode";
+"com_accountkit_confirmation_code_title" = "Voer jou kode in";
+"com_accountkit_country_code_title" = "Kies jou land";
+"com_accountkit_email_invalid" = "Hierdie e-pos is verkeerd. Probeer asseblief weer.";
+"com_accountkit_email_loading_title" = "Stuur tans e-pos\U2026";
+"com_accountkit_email_login_retry_title" = "Bevestig jou e-pos";
+"com_accountkit_email_login_text" = "Tik %1$@ om 'n bevestiging-e-pos vanaf Account Kit te kry wat deur Facebook aangedryf is. %2$@ gebruik dit om jou te help om aan te meld, maar jy benodig nie 'n Facebook-rekening nie. <a href=\"%3$@\">Kom meer te wete.</a>";
+"com_accountkit_email_login_title" = "Voer jou e-posadres in";
+"com_accountkit_email_not_received" = "Stuur weer e-pos";
+"com_accountkit_email_verify_title" = "Maak die e-pos oop wat ons gestuur het en bevestig jou adres";
+"com_accountkit_error_title" = "Ons is jammer, iets het verkeerd gegaan.";
+"com_accountkit_facebook_code_entry_title" = "Voer jou kode van Facebook in";
+"com_accountkit_phone_loading_title" = "Stuur tans jou kode\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Nommer";
+"com_accountkit_phone_login_retry_title" = "Bevestig jou foonnommer";
+"com_accountkit_phone_login_text" = "Tik %1$@ om 'n bevestiging-teksboodskap vanaf Account Kit te kry wat deur Facebook aangedryf is. %2$@ gebruik dit om jou te help om aan te meld, maar jy benodig nie 'n Facebook-rekening nie. Boodskap- en datatariewe kan dalk geld. <a href=\"%3$@\">Kom meer te wete.</a>";
+"com_accountkit_phone_login_title" = "Voer jou foonnommer in";
+"com_accountkit_resend_email_text" = "Stuur nuwe e-pos";
+"com_accountkit_resend_title" = "Ons is jammer. Probeer hierdie opsies om voort te gaan.";
+"com_accountkit_return_title" = "Neem jou tans terug na %1$@\U2026";
+"com_accountkit_sent_title" = "Gestuur!";
+"com_accountkit_success_title" = "Klaar!";
+"com_accountkit_toolbar_title" = "Meld by %1$@ aan";
+"com_accountkit_verify_confirmation_code_title" = "Ons kon nie jou kode verifieer nie. Probeer asseblief weer:";
+"com_accountkit_verify_title" = "Verifieer tans jou kode\U2026";
