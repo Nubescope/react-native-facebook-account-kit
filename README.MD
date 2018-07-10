@@ -410,9 +410,9 @@ If you have trouble running any example try the following:
     <summary>"A system issue occured, Please try again" when sending SMS</summary>  
 <br/>
 
-A. Check your `FacebookAppID` and `AccountKitClientToken` on iOS `Info.plist` and Android `strings.xml` is correct  
+A. Check your `FacebookAppID` and `AccountKitClientToken` on iOS `Info.plist` and Android `strings.xml` are correct
 
-B. If you have enabled the **client access token flow in fb account kit dashboard**, then `configure` `responseType` should be set to `code`.
+B. If you have enabled the **client access token flow in fb account kit dashboard**, then `responseType` should be set to `code` when calling `configure`
 
 ```javascript
 // Configures the SDK with some options
