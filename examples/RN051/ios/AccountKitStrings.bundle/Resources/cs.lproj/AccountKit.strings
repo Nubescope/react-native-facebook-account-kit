@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Zpět";
+"com_accountkit_button_begin" = "Začít";
+"com_accountkit_button_cancel" = "Zrušit";
+"com_accountkit_button_confirm" = "Potvrdit";
+"com_accountkit_button_continue" = "Pokračovat";
+"com_accountkit_button_log_in" = "Přihlásit se";
+"com_accountkit_button_next" = "Další";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Poslat nový kód";
+"com_accountkit_button_resend_sms" = "Znovu poslat SMS";
+"com_accountkit_button_send" = "Poslat";
+"com_accountkit_button_send_code_in_fb" = "Poslat kód na Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Klepněte na Facebooku na možnost poslat kód. Tím se odešle upozornění na Facebook účet spojený se zadaným telefonním číslem.";
+"com_accountkit_button_start" = "Spustit";
+"com_accountkit_button_start_over" = "Zkuste to znovu";
+"com_accountkit_button_submit" = "Odeslat";
+"com_accountkit_check_email" = "Otevřete e-mail";
+"com_accountkit_confirmation_code_agreement" = "Klepnutím na %1$@ přijmete <a href=\"%2$@\">podmínky</a>, <a href=\"%3$@\">zásady používání dat</a> a <a href=\"%4$@\">zásady používání souborů cookie</a> Facebooku.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Klepnutím na %1$@ přijmete <a href=\"%2$@\">podmínky</a>, <a href=\"%3$@\">zásady používání dat</a>, <a href=\"%4$@\">zásady používání souborů cookie</a> a <a href=\"%5$@\">zásady soukromí</a> Facebooku služby %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Klepnutím na %1$@ přijmete <a href=\"%2$@\">podmínky</a>, <a href=\"%3$@\">zásady používání dat</a>, <a href=\"%4$@\">zásady používání souborů cookie</a> a <a href=\"%5$@\">zásady soukromí</a> a <a href=\"%6$@\">smluvní podmínky</a> Facebooku služby %7$@.";
+"com_accountkit_confirmation_code_text" = "Znovu poslat kód";
+"com_accountkit_confirmation_code_title" = "Zadejte kód";
+"com_accountkit_country_code_title" = "Vyberte zemi";
+"com_accountkit_email_invalid" = "Tento e-mail není správný. Zkuste to znovu.";
+"com_accountkit_email_loading_title" = "Odesílání e-mailu\U2026";
+"com_accountkit_email_login_retry_title" = "Potvrdit e-mail";
+"com_accountkit_email_login_text" = "Klepněte na %1$@ a dostanete ze služby Account Kit založené na technologii Facebooku potvrzovací e-mail. Služba %2$@ tuto možnost využívá, abyste se mohli přihlásit, vy ale účet na Facebooku nepotřebujete. <a href=\"%3$@\">Další informace.</a>";
+"com_accountkit_email_login_title" = "Zadejte e-mailovou adresu";
+"com_accountkit_email_not_received" = "Poslat e-mail znovu";
+"com_accountkit_email_verify_title" = "Otevřete e-mail, který jsme vám poslali, a svoji adresu potvrďte";
+"com_accountkit_error_title" = "Je nám líto, ale něco se nepovedlo.";
+"com_accountkit_facebook_code_entry_title" = "Zadejte kód z Facebooku";
+"com_accountkit_phone_loading_title" = "Posílání kódu\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Číslo";
+"com_accountkit_phone_login_retry_title" = "Potvrďte telefonní číslo";
+"com_accountkit_phone_login_text" = "Klepněte na %1$@ a dostanete ze služby Account Kit založené na technologii Facebooku potvrzovací SMS. Služba %2$@ tuto možnost využívá, abyste se mohli přihlásit, vy ale účet na Facebooku nepotřebujete. Zprávy a data jsou zpoplatněna podle příslušného tarifu. <a href=\"%3$@\">Další informace.</a>";
+"com_accountkit_phone_login_title" = "Zadejte telefonní číslo";
+"com_accountkit_resend_email_text" = "Poslat nový e-mail";
+"com_accountkit_resend_title" = "Je nám líto. Zkuste tyto možnosti a pokračujte.";
+"com_accountkit_return_title" = "Přesměrování zpět na %1$@\U2026";
+"com_accountkit_sent_title" = "Odesláno!";
+"com_accountkit_success_title" = "Hotovo!";
+"com_accountkit_toolbar_title" = "Přihlaste se k %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Kód jsme nemohli ověřit.\nZkuste to znovu:";
+"com_accountkit_verify_title" = "Ověřování kódu\U2026";

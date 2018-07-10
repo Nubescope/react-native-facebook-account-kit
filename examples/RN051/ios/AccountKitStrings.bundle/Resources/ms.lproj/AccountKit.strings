@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "Undur";
+"com_accountkit_button_begin" = "Mula";
+"com_accountkit_button_cancel" = "Batal";
+"com_accountkit_button_confirm" = "Sahkan";
+"com_accountkit_button_continue" = "Teruskan";
+"com_accountkit_button_log_in" = "Log Masuk";
+"com_accountkit_button_next" = "Seterusnya";
+"com_accountkit_button_ok" = "OK";
+"com_accountkit_button_resend" = "Hantar Kod Baharu";
+"com_accountkit_button_resend_sms" = "Hantar semula SMS";
+"com_accountkit_button_send" = "Hantar";
+"com_accountkit_button_send_code_in_fb" = "Handar Kod dalam Facebook";
+"com_accountkit_button_send_code_in_fb_disclosure" = "Ketik Hantar Kod di Facebook untuk menghantar pemberitahuan ke akaun Facebook yang dikaitkan dengan nombor telefon yang anda masukkan.";
+"com_accountkit_button_start" = "Mula";
+"com_accountkit_button_start_over" = "Cuba Lagi";
+"com_accountkit_button_submit" = "Hantar";
+"com_accountkit_check_email" = "Buka e-mel anda";
+"com_accountkit_confirmation_code_agreement" = "Ketik %1$@ untuk menerima <a href=\"%2$@\">Terma</a>, <a href=\"%3$@\">Dasar Data</a> dan <a href=\"%4$@\">penggunaan kuki</a>Facebook.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Ketik %1$@ untuk menerima <a href=\"%2$@\">Terma</a>, <a href=\"%3$@\">Dasar Data</a>, <a href=\"%4$@\">penggunaan  kuki</a> dan <a href=\"%5$@\">Dasar Privasi</a> Facebook untuk %6$@.";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Ketik %1$@ untuk menerima <a href=\"%2$@\">Terma</a>, <a href=\"%3$@\">Dasar Data</a>, <a href=\"%4$@\">penggunaan  kuki</a> dan <a href=\"%5$@\">Dasar Privasi</a> serta <a href=\"%6$@\">Terma Perkhidmatan</a> Facebook untuk %7$@.";
+"com_accountkit_confirmation_code_text" = "Hantar Kod Baharu";
+"com_accountkit_confirmation_code_title" = "Masukkan kod anda";
+"com_accountkit_country_code_title" = "Pilih Negara Anda";
+"com_accountkit_email_invalid" = "E-mel ini tidak betul. Sila cuba lagi.";
+"com_accountkit_email_loading_title" = "Menghantar e-mel\U2026";
+"com_accountkit_email_login_retry_title" = "Sahkan e-mel anda";
+"com_accountkit_email_login_text" = "Ketik %1$@ untuk mendapatkan e-mel pengesahan daripada Kit Akaun yang dikuasakan oleh Facebook. %2$@ menggunakan ini untuk membantu anda mendaftar masuk, tetapi anda tidak memerlukan akaun Facebook. <a href=\"%3$@\">Ketahui lebih lanjut.</a>";
+"com_accountkit_email_login_title" = "Masukkan alamat e-mel anda";
+"com_accountkit_email_not_received" = "Hantar Semula E-mel";
+"com_accountkit_email_verify_title" = "Buka e-mel yang kami hantar dan sahkan alamat e-mel anda";
+"com_accountkit_error_title" = "Kami mohon maaf, ada kesilapan berlaku.";
+"com_accountkit_facebook_code_entry_title" = "Masukkan kod anda dari Facebook";
+"com_accountkit_phone_loading_title" = "Menghantar kod anda\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "Nombor";
+"com_accountkit_phone_login_retry_title" = "Sahkan nombor telefon anda";
+"com_accountkit_phone_login_text" = "Ketik %1$@ untuk mendapatkan pengesahan SMS daripada Kit Akaun yang dikuasakan oleh Facebook. %2$@ menggunakan ini untuk membantu anda mendaftar masuk, tetapi anda tidak memerlukan akaun Facebook. Kadar mesej dan data boleh dikenakan. <a href=\"%3$@\">Ketahui lebih lanjut.</a>";
+"com_accountkit_phone_login_title" = "Masukkan nombor telefon anda";
+"com_accountkit_resend_email_text" = "Hantar E-mel Baharu";
+"com_accountkit_resend_title" = "Kami meminta maaf. Cuba pilihan ini untuk meneruskan.";
+"com_accountkit_return_title" = "Mengembalikan anda ke %1$@\U2026";
+"com_accountkit_sent_title" = "Sudah dihantar!";
+"com_accountkit_success_title" = "Selesai!";
+"com_accountkit_toolbar_title" = "Log Masuk Ke %1$@";
+"com_accountkit_verify_confirmation_code_title" = "Kami tidak dapat mengesahkan kod anda. Sila cuba lagi:";
+"com_accountkit_verify_title" = "Mengesahkan kod anda\U2026";

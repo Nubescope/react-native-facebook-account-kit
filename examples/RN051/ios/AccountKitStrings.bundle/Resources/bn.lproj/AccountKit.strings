@@ -1,0 +1,66 @@
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+//
+// You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+// copy, modify, and distribute this software in source code or binary form for use
+// in connection with the web services and APIs provided by Facebook.
+//
+// As with any software that integrates with the Facebook platform, your use of
+// this software is subject to the Facebook Developer Principles and Policies
+// [http://developers.facebook.com/policy/]. This copyright notice shall be
+// included in all copies or substantial portions of the software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+// FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+// COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+// IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+// CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+// @generated
+//
+
+"com_accountkit_button_back" = "ফিরুন";
+"com_accountkit_button_begin" = "আরম্ভ করুন";
+"com_accountkit_button_cancel" = "বাতিল করুন";
+"com_accountkit_button_confirm" = "নিশ্চিত করুন";
+"com_accountkit_button_continue" = "অবিরত রাখুন";
+"com_accountkit_button_log_in" = "লগ ইন করুন";
+"com_accountkit_button_next" = "পরবর্তী";
+"com_accountkit_button_ok" = "ঠিক আছে";
+"com_accountkit_button_resend" = "নতুন কোড পাঠান";
+"com_accountkit_button_resend_sms" = "পুনরায় SMS পাঠান";
+"com_accountkit_button_send" = "পাঠান";
+"com_accountkit_button_send_code_in_fb" = "Facebook এ কোড পাঠান";
+"com_accountkit_button_send_code_in_fb_disclosure" = "আপনার প্রবেশ করানো ফোন নম্বরের সাথে লিঙ্ক করা Facebook অ্যাকাউন্টে একটি বিজ্ঞপ্তি পাঠাতে Facebook এ 'কোড পাঠান' এ আলতো চাপুন৷";
+"com_accountkit_button_start" = "শুরু করুন";
+"com_accountkit_button_start_over" = "আবার চেষ্টা করুন";
+"com_accountkit_button_submit" = "জমা দিন";
+"com_accountkit_check_email" = "আপনার ইমেল খুলুন";
+"com_accountkit_confirmation_code_agreement" = "Facebook এর <a href=\"%2$@\">শ্র্তাবলী</a>, <a href=\"%3$@\">ডেটা নীতি</a> এবং <a href=\"%4$@\">কুকির ব্যবহার</a> স্বীকার করার জন্য %1$@ এ আলতো চাপ দিন৷";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy" = "Facebook এর <a href=\"%2$@\">শ্র্তাবলী</a>, <a href=\"%3$@\">ডেটা নীতি</a>, <a href=\"%4$@\">কুকির ব্যবহার</a> এবং %6$@ এর <a href=\"%5$@\">গোপনীয়তা নীতি</a> স্বীকার করার জন্য %1$@ এ আলতো চাপ দিন৷";
+"com_accountkit_confirmation_code_agreement_app_privacy_policy_and_terms" = "Facebook এর <a href=\"%2$@\">শ্র্তাবলী</a>, <a href=\"%3$@\">ডেটা নীতি</a>, <a href=\"%4$@\">কুকির ব্যবহার</a> এবং <a href=\"%5$@\">গোপনীয়তা নীতি</a> এবং %7$@ এর <a href=\"%6$@\">পরিষেবার শ্র্তাবলী</a> স্বীকার করার জন্য %1$@ এ আলতো চাপ দিন৷";
+"com_accountkit_confirmation_code_text" = "নতুন কোড পাঠান";
+"com_accountkit_confirmation_code_title" = "আপনার কোড লিখুন";
+"com_accountkit_country_code_title" = "আপনার দেশ নির্বাচন করুন";
+"com_accountkit_email_invalid" = "এই ইমেলটি অবৈধ৷ অনুগ্রহ করে আবার চেষ্টা করুন৷";
+"com_accountkit_email_loading_title" = "ইমেল পাঠানো হচ্ছে\U2026";
+"com_accountkit_email_login_retry_title" = "আপনার ইমেল নিশ্চিত করুন";
+"com_accountkit_email_login_text" = "Facebook এর Account Kit থেকে একটি নিশ্চিতকরণ ইমেল পেতে %1$@ এ আলতো চাপ দিন৷ %2$@ এটি আপনাকে সাইন ইন করতে সাহায্য করার জন্য ব্যবহার করে, কিন্তু আপনার কোনো Facebook অ্যাকাউণ্টের প্রয়োজন নেই। <a href=\"%3$@\">আরও জানুন। </a>";
+"com_accountkit_email_login_title" = "আপনার ইমেল ঠিকানা লিখুন";
+"com_accountkit_email_not_received" = "ইমেল পুনরায় পাঠান";
+"com_accountkit_email_verify_title" = "আমরা যে ইমেলটি পাঠিয়েছি সেটি খুলুন এবং আপনার ঠিকানা নিশ্চিত করুন";
+"com_accountkit_error_title" = "আমরা দুঃখিত, কিছু ত্রুটি ঘটেছে৷";
+"com_accountkit_facebook_code_entry_title" = "Facebook থেকে আপনার কোড প্রবেশ করান";
+"com_accountkit_phone_loading_title" = "আপনার কোড পাঠানো হচ্ছে\U2026";
+"com_accountkit_phone_login_phone_number_placeholder" = "নম্বর";
+"com_accountkit_phone_login_retry_title" = "আপনার ফোন নম্বর নিশ্চিত করুন";
+"com_accountkit_phone_login_text" = "Facebook এর Account Kit থেকে একটি নিশ্চিতকরণ ইমেল পেতে %1$@ এ আলতো চাপ দিন৷ %2$@ এটি আপনাকে সাইন ইন করতে সাহায্য করার জন্য ব্যবহার করে, কিন্তু আপনার কোনো Facebook অ্যাকাউণ্টের প্রয়োজন নেই। বার্তা ও ডেটা রেটগুলি প্রযোজ্য হবে। <a href=\"%3$@\">আরও জানুন। </a>";
+"com_accountkit_phone_login_title" = "আপনার ফোন নম্বর লিখুন";
+"com_accountkit_resend_email_text" = "নতুন ইমেল পাঠান";
+"com_accountkit_resend_title" = "আমরা দুঃখিত৷ চালিয়ে যেতে এই বিকল্পসমূহ ব্যবহার করার চেষ্টা করুন৷";
+"com_accountkit_return_title" = "আপনাকে আবার %1$@ এ নিয়ে যাচ্ছে\U2026";
+"com_accountkit_sent_title" = "প্রেরিত:";
+"com_accountkit_success_title" = "সম্পন্ন!";
+"com_accountkit_toolbar_title" = "%1$@ এ লগ ইন করুন";
+"com_accountkit_verify_confirmation_code_title" = "আমরা আপনার কোড যাচাই করতে পারি নি। অনুগ্রহ করে পুনরায় চেষ্টা করুন।";
+"com_accountkit_verify_title" = "আপনার কোড যাচাই করা হচ্ছে\U2026";
