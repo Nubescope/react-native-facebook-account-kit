@@ -391,6 +391,7 @@ react-native run-ios # or react-native run-android
 
 <details>
     <summary>I have problems running the example</summary>
+<br/>
 
 If you have trouble running any example try the following:
 
@@ -402,6 +403,26 @@ If you have trouble running any example try the following:
 3.  Run <code>npm install --save react-native-facebook-account-kit</code>
 
 4.  Re-run <code>react-native run-android</code> or <code>react-native run-ios</code>
+
+</details>
+
+<details>
+    <summary>"A system issue occured, Please try again" when sending SMS</summary>  
+<br/>
+
+A. Check your `FacebookAppID` and `AccountKitClientToken` on iOS `Info.plist` and Android `strings.xml` is correct  
+
+B. If you have enabled the **client access token flow in fb account kit dashboard**, then `configure` `responseType` should be set to `code`.
+
+```javascript
+// Configures the SDK with some options
+RNAccountKit.configure({
+    responseType: 'code'
+    ...
+})
+```
+
+Issue: [#68](https://github.com/underscopeio/react-native-facebook-account-kit/issues/68)
 
 </details>
 
