@@ -390,7 +390,7 @@ react-native run-ios # or react-native run-android
 ## Troubleshooting
 
 <details>
-    <summary>Running example</summary>
+    <summary>I have problems running the example</summary>
 
 If you have trouble running any example try the following:
 
