@@ -232,7 +232,7 @@ RNAccountKit.configure({
   titleType: 'login',
   initialAuthState: '',
   initialEmail: 'some.initial@email.com',
-  initialPhoneCountryPrefix: '+1',
+  initialPhoneCountryPrefix: '+1', // autodetected if none is provided
   initialPhoneNumber: '123-456-7890',
   facebookNotificationsEnabled: true|false, // true by default
   readPhoneStateEnabled: true|false, // true by default,
