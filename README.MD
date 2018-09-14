@@ -70,7 +70,7 @@ or
 1.  In `android/app/src/main/res/values/strings.xml`
 
 ```xml
-  ...
+...
   <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
   <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
 ```
@@ -78,21 +78,21 @@ or
 2.  In `android/app/src/main/AndroidManifest.xml`
 
 ```xml
-  ...
-  <application>
-
-      ...
-      <meta-data
-          android:name="com.facebook.sdk.ApplicationId"
-          android:value="@string/fb_app_id" />
-      <meta-data
-          android:name="com.facebook.accountkit.ApplicationName"
-          android:value="@string/app_name" />
-      <meta-data
-          android:name="com.facebook.accountkit.ClientToken"
-          android:value="@string/ak_client_token" />
-   </application>
-   ...
+...
+<application>
+    ...
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/fb_app_id" />
+    <meta-data
+        android:name="com.facebook.accountkit.ApplicationName"
+        android:value="@string/app_name" />
+    <meta-data
+        android:name="com.facebook.accountkit.ClientToken"
+        android:value="@string/ak_client_token" />
+    ...
+</application>
+...
 ```
 
 3.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
@@ -168,7 +168,6 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
 ```xml
 ...
 <application>
-
     ...
     <meta-data
         android:name="com.facebook.sdk.ApplicationId"
@@ -179,8 +178,9 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
     <meta-data
         android:name="com.facebook.accountkit.ClientToken"
         android:value="@string/ak_client_token" />
- </application>
- ...
+    ...
+</application>
+...
 ```
 
 3.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
@@ -204,19 +204,19 @@ As per this [documentation](https://developers.facebook.com/docs/accountkit/acce
 1.  Create a file `android/app/src/main/res/xml/backup_config.xml` that contains the follwoing:
 
 ```java
-  <?xml version="1.0" encoding="utf-8"?>
-  <full-backup-content>
-    <exclude domain="sharedpref" path="com.facebook.accountkit.AccessTokenManager.SharedPreferences.xml"/>
-  </full-backup-content>
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+  <exclude domain="sharedpref" path="com.facebook.accountkit.AccessTokenManager.SharedPreferences.xml"/>
+</full-backup-content>
 ```
 
 2.  In your `AndroidManifest.xml` add the following to exclude backup of Account Kit's Access Token.
 
 ```java
-  <application
-    //other configurations here
-    android:fullBackupContent="@xml/backup_config" // add this line
-   >
+<application
+  //other configurations here
+  android:fullBackupContent="@xml/backup_config" // add this line
+>
 ```
 
 </details>
