@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.4.1",
     "react-native": "0.56.0",
-    "react-native-facebook-account-kit": "file:../.."
+    "react-native-facebook-account-kit": "0.11.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",

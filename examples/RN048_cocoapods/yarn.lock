@@ -3992,9 +3992,9 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-facebook-account-kit@^0.9.3:
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/react-native-facebook-account-kit/-/react-native-facebook-account-kit-0.9.3.tgz#e591772aca903c5648de22982167d3a4170800f1"
+react-native-facebook-account-kit@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/react-native-facebook-account-kit/-/react-native-facebook-account-kit-0.11.0.tgz#c2cd1c2c17b00ac714535ca0fd9ec46625df633e"
   dependencies:
     prop-types "^15.5.10"
 
