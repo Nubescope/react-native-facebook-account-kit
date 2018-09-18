@@ -15,7 +15,7 @@ A Facebook Account Kit SDK wrapper for react-native.
 ## Installation
 
 ```shell
-yarn react-native-facebook-account-kit
+yarn add react-native-facebook-account-kit
 ```
 
 ## Linking
