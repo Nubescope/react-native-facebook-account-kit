@@ -2,15 +2,17 @@
 
 A Facebook Account Kit SDK wrapper for react-native.
 
-> We will support the latest version of React Native on each release. For older RN versions you may use an older version of this module compatible with that RN version.
-
-### Supported versions - React Native / Facebook Account Kit
+## Supported versions - React Native / Facebook Account Kit
 
 > The table below shows the supported versions of React Native and the different versions of `react-native-facebook-account-kit`.
 
-| React Native Facebook Account Kit | < 0.9.x | 0.10.x  | 1.0.x |
-| --------------------------------- | :-----: | :-----: | :---: |
-| React Native                      | 0.48-55 | 0.48-56 | 0.57  |
+| React Native Facebook Account Kit | 0.6.x | 0.10.x  | 1.0.x |
+| --------------------------------- | :---: | :-----: | :---: |
+| React Native                      | <0.48 | 0.48-56 | 0.57  |
+
+> For RN <0.40.0 Check the Troubleshooting Guide
+
+> We will support the latest version of React Native on each release. For older RN versions you may use an older version of this module compatible with that RN version.
 
 ## Installation
 
@@ -431,6 +433,36 @@ RNAccountKit.configure({
 ```
 
 Issue: [#68](https://github.com/underscopeio/react-native-facebook-account-kit/issues/68)
+
+</details>
+
+<details>
+    <summary>I cannot integrate the library with RN 0.40.0</summary>  
+<br/>
+
+A. Modify the `android/build.gradle` file to override the `com.facebook.android:account-kit-sdk` library with `com.facebook.android:account-kit-sdk:4.15.0` and the `compileSdkVersion` and `buildToolsVersion` as depicted below
+
+```java
+subprojects { subproject ->
+    afterEvaluate{
+        dependencies {
+            compile ('com.facebook.android:account-kit-sdk:4.15.0'){
+                force = true
+                exclude group: 'com.parse.bolts', module: 'bolts-android';
+                exclude group: 'com.parse.bolts', module: 'bolts-applinks';
+                exclude group: 'com.parse.bolts', module: 'bolts-tasks';
+            }
+        }
+
+        if(subproject.name == 'react-native-facebook-account-kit') {
+            android {
+                compileSdkVersion 23
+                buildToolsVersion "23.0.3"
+            }
+        }
+    }
+}
+```
 
 </details>
 
