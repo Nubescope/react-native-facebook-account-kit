@@ -35,8 +35,6 @@ subprojects { subproject ->
         }            
 
         if(subproject.name == 'react-native-facebook-account-kit') {
-            println "subproject: $subproject"
-
             android {
                 compileSdkVersion 23
                 buildToolsVersion "23.0.3"
