@@ -12,12 +12,10 @@ A Facebook Account Kit SDK wrapper for react-native.
 
 > For RN <0.40.0 Check the Troubleshooting Guide
 
-> We will support the latest version of React Native on each release. For older RN versions you may use an older version of this module compatible with that RN version.
-
 ## Installation
 
 ```shell
-npm install --save react-native-facebook-account-kit
+yarn react-native-facebook-account-kit
 ```
 
 ## Linking
@@ -68,64 +66,6 @@ react-native link react-native-facebook-account-kit
 </details>
 
 <br/>
-
-or
-
-### Manual
-
-<details>
-    <summary>Android</summary>
-<br/>
-
-1.  In `android/app/src/main/res/values/strings.xml`
-
-```xml
-...
-  <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
-  <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
-```
-
-2.  In `android/app/src/main/AndroidManifest.xml`
-
-```xml
-...
-<application>
-    ...
-    <meta-data
-        android:name="com.facebook.sdk.ApplicationId"
-        android:value="@string/fb_app_id" />
-    <meta-data
-        android:name="com.facebook.accountkit.ApplicationName"
-        android:value="@string/app_name" />
-    <meta-data
-        android:name="com.facebook.accountkit.ClientToken"
-        android:value="@string/ak_client_token" />
-    ...
-</application>
-...
-```
-
-3.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
-
-```java
-  @Override
-  protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-          new RNAccountKitPackage() // <-- the package is registered
-      );
-  }
-```
-
-This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide.
-
-</details>
-
-<details>
-    <summary>iOS</summary>
-
-- _A PR including iOS manual linking instructions is welcome_
-  </details>
 
 ## Configuration
 
@@ -393,7 +333,7 @@ They are related to different React Native versions.
 ```bash
 git clone https://github.com/underscopeio/react-native-facebook-account-kit
 cd react-native-facebook-account-kit/examples/RN033 # or /RN024
-npm install
+yarn
 react-native run-ios # or react-native run-android
 ```
 
@@ -410,7 +350,7 @@ If you have trouble running any example try the following:
     ```diff
     -    "react-native-facebook-account-kit": "file:../.."
     ```
-3.  Run <code>npm install --save react-native-facebook-account-kit</code>
+3.  Run <code>yarn react-native-facebook-account-kit</code>
 
 4.  Re-run <code>react-native run-android</code> or <code>react-native run-ios</code>
 
@@ -437,7 +377,7 @@ Issue: [#68](https://github.com/underscopeio/react-native-facebook-account-kit/i
 </details>
 
 <details>
-    <summary>I cannot integrate the library with RN 0.40.0</summary>  
+    <summary>I cannot integrate the library with RN versions < 0.40.0</summary>
 <br/>
 
 A. Modify the `android/build.gradle` file to override the `com.facebook.android:account-kit-sdk` library with `com.facebook.android:account-kit-sdk:4.15.0` and the `compileSdkVersion` and `buildToolsVersion` as depicted below
