@@ -6,9 +6,9 @@ A Facebook Account Kit SDK wrapper for react-native.
 
 > The table below shows the supported versions of React Native and the different versions of `react-native-facebook-account-kit`.
 
-| React Native Facebook Account Kit | 0.6.x | 0.10.x  | 1.0.x |
-| --------------------------------- | :---: | :-----: | :---: |
-| React Native                      | <0.48 | 0.48-56 | 0.57  |
+| React Native Facebook Account Kit | 0.4.x | 0.6.x | 0.10.x  | 1.0.x |
+| --------------------------------- | :---: | :---: | :-----: | ----- |
+| React Native                      | 0.24  | <0.48 | 0.48-56 | 0.57  |
 
 > For RN <0.40.0 Check the Troubleshooting Guide
 

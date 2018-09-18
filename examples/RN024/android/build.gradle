@@ -22,3 +22,23 @@ allprojects {
         }
     }
 }
+
+subprojects { subproject ->
+    afterEvaluate{
+        dependencies {
+            compile ('com.facebook.android:account-kit-sdk:4.15.0'){
+                force = true
+                exclude group: 'com.parse.bolts', module: 'bolts-android';
+                exclude group: 'com.parse.bolts', module: 'bolts-applinks';
+                exclude group: 'com.parse.bolts', module: 'bolts-tasks';
+            }
+        }            
+
+        if(subproject.name == 'react-native-facebook-account-kit') {
+            android {
+                compileSdkVersion 23
+                buildToolsVersion "23.0.3"
+            }
+        }
+    }
+}
