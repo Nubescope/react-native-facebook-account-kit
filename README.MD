@@ -113,10 +113,12 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
 <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
 ```
 
-2.  In `android/app/src/main/AndroidManifest.xml`
+2.  In `android/app/src/main/AndroidManifest.xml` make sure that you have added following lines
 
 ```xml
 ...
+<uses-permission android:name="android.permission.READ_SMS" />
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
 <application>
     ...
     <meta-data
