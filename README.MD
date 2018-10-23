@@ -113,12 +113,10 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
 <string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
 ```
 
-2.  In `android/app/src/main/AndroidManifest.xml` make sure that you have added following lines
+2.  In `android/app/src/main/AndroidManifest.xml`
 
 ```xml
 ...
-<uses-permission android:name="android.permission.READ_SMS" />
-<uses-permission android:name="android.permission.RECEIVE_SMS" />
 <application>
     ...
     <meta-data
@@ -134,8 +132,16 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
 </application>
 ...
 ```
+3. If you want to automatically autofill the received SMS add the following permissions to the `android/app/src/main/AndroidManifest.xml` file:
 
-3.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
+```xml
+...
+<uses-permission android:name="android.permission.READ_SMS" />
+<uses-permission android:name="android.permission. RECEIVE_SMS" />
+...
+```
+
+4.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
 
 ```java
 @Override
