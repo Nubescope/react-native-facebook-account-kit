@@ -132,12 +132,21 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
 </application>
 ...
 ```
-3. If you want to automatically autofill the received SMS add the following permissions to the `android/app/src/main/AndroidManifest.xml` file:
+
+3. If you want AccountKit to autofill the received SMS add the following permissions to the `android/app/src/main/AndroidManifest.xml` file:
 
 ```xml
 ...
 <uses-permission android:name="android.permission.READ_SMS" />
-<uses-permission android:name="android.permission. RECEIVE_SMS" />
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
+...
+```
+
+additionally you can add the `READ_PHONE_STATE` permission to prefill your phone number:
+
+```xml
+...
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ...
 ```
 
