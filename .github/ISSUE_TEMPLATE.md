@@ -29,3 +29,4 @@ Describe your issue in as much detail as possible. Provide **screenshots** where
 * React Native Account Kit version: [FILL THIS OUT]
 * React Native version: [FILL THIS OUT]
 * Platform(s) (iOS, Android, or both?): [FILL THIS OUT]
+* Platform Version(s): [FILL THIS OUT]
