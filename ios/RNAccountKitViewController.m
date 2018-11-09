@@ -31,8 +31,8 @@
 - (void)_prepareLoginViewController:(UIViewController<AKFViewController> *)viewController
 {
     viewController.delegate = self;
-    if(self.theme != nil) {
-        viewController.theme = self.theme;
+    if (self.advancedUIManager != nil) {
+        viewController.uiManager = self.advancedUIManager;
     }
     if (self.countryWhitelist != nil) {
         viewController.whitelistedCountryCodes = self.countryWhitelist;

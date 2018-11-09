@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3A77F9221374E0900F7D6C5 /* RNAccountKitAdvancedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A77F9121374E0900F7D6C5 /* RNAccountKitAdvancedUIManager.m */; };
 		D252DDFA1CD39E54005BE160 /* RNAccountKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */; };
 		D25ABA461CD84CD100678BA3 /* RNAccountKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D25ABA451CD84CD100678BA3 /* RNAccountKit.m */; };
 /* End PBXBuildFile section */
@@ -24,12 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C3A77F9021374DE300F7D6C5 /* RNAccountKitAdvancedUIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAccountKitAdvancedUIManager.h; sourceTree = "<group>"; };
+		C3A77F9121374E0900F7D6C5 /* RNAccountKitAdvancedUIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAccountKitAdvancedUIManager.m; sourceTree = "<group>"; };
 		D252DDF81CD39E54005BE160 /* RNAccountKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAccountKitViewController.h; sourceTree = "<group>"; };
 		D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAccountKitViewController.m; sourceTree = "<group>"; };
 		D25ABA451CD84CD100678BA3 /* RNAccountKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAccountKit.m; sourceTree = "<group>"; };
 		D2C7C6901CD1552900C9B392 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAccountKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F9099D1CD25E6D009B28E2 /* react-native-facebook-account-kit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "react-native-facebook-account-kit.podspec"; sourceTree = "<group>"; };
-		D2F9099E1CD26033009B28E2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "AccountKit.framework"; sourceTree = "<group>"; };
+		D2F9099E1CD26033009B28E2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
 		D2F909BC1CD28F09009B28E2 /* RNAccountKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAccountKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +58,8 @@
 		D2C7C6871CD1552900C9B392 = {
 			isa = PBXGroup;
 			children = (
+				C3A77F9121374E0900F7D6C5 /* RNAccountKitAdvancedUIManager.m */,
+				C3A77F9021374DE300F7D6C5 /* RNAccountKitAdvancedUIManager.h */,
 				D252DDF81CD39E54005BE160 /* RNAccountKitViewController.h */,
 				D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */,
 				D2F909BC1CD28F09009B28E2 /* RNAccountKit.h */,
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A77F9221374E0900F7D6C5 /* RNAccountKitAdvancedUIManager.m in Sources */,
 				D25ABA461CD84CD100678BA3 /* RNAccountKit.m in Sources */,
 				D252DDFA1CD39E54005BE160 /* RNAccountKitViewController.m in Sources */,
 			);
