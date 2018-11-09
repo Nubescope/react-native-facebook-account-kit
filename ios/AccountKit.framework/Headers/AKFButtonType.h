@@ -18,62 +18,62 @@
 
 #import <UIKit/UIKit.h>
 
-/*!
- @typedef AKFButtonType
+/**
+ AKFButtonType
 
- @abstract The button types that can be used within the Account Kit UI.
+  The button types that can be used within the Account Kit UI.
  */
 typedef NS_ENUM(NSUInteger, AKFButtonType)
 {
-  /*!
-   @abstract The default button text will be used for the current context.
+  /**
+    The default button text will be used for the current context.
    */
   AKFButtonTypeDefault = 0,
 
-  /*!
-   @abstract "Begin" (localized)
+  /**
+    "Begin" (localized)
    */
   AKFButtonTypeBegin,
 
-  /*!
-   @abstract "Confirm" (localized)
+  /**
+    "Confirm" (localized)
    */
   AKFButtonTypeConfirm,
 
-  /*!
-   @abstract "Continue" (localized)
+  /**
+    "Continue" (localized)
    */
   AKFButtonTypeContinue,
 
-  /*!
-   @abstract "Log In" (localized)
+  /**
+    "Log In" (localized)
    */
   AKFButtonTypeLogIn,
 
-  /*!
-   @abstract "Next" (localized)
+  /**
+    "Next" (localized)
    */
   AKFButtonTypeNext,
 
-  /*!
-   @abstract "OK" (localized)
+  /**
+    "OK" (localized)
    */
   AKFButtonTypeOK,
 
-  /*!
-   @abstract "Send" (localized)
+  /**
+    "Send" (localized)
    */
   AKFButtonTypeSend,
 
-  /*!
-   @abstract "Start" (localized)
+  /**
+    "Start" (localized)
    */
   AKFButtonTypeStart,
 
-  /*!
-   @abstract "Submit" (localized)
+  /**
+    "Submit" (localized)
    */
   AKFButtonTypeSubmit,
 };
 
-extern const NSUInteger AKFButtonTypeCount;
+FOUNDATION_EXPORT const NSUInteger AKFButtonTypeCount;

@@ -20,48 +20,65 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*!
- @abstract This class represents a phone number.
+/**
+  This class represents a phone number.
  */
 @interface AKFPhoneNumber : NSObject <NSCopying, NSSecureCoding>
 
-/*!
- @abstract This is the designated initializer.
+/**
+  This is the designated initializer.
 
  @param countryCode the country code for the phone number
  @param phoneNumber the remaining portion of the phone number
 
- @discussion While it is safe to provide any characters for the `countryCode` and `phoneNumber`, the values should only
+
+ While it is safe to provide any characters for the `countryCode` and `phoneNumber`, the values should only
  contain digits.  All other characters will be stripped from this value when it is used.
  */
 - (instancetype)initWithCountryCode:(NSString *)countryCode
                         phoneNumber:(NSString *)phoneNumber
 NS_DESIGNATED_INITIALIZER;
 
+/**
+ This additional initializer stores the corresponding country ISO code
+ to the country code for the phone number
+ */
+- (instancetype)initWithCountryCode:(NSString *)countryCode
+                         countryISO:(NSString *)iso
+                        phoneNumber:(NSString *)phoneNumber;
+
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 
-/*!
- @abstract The country code for the phone number.
+/**
+  The country code for the phone number.
  */
 @property (nonatomic, copy, readonly) NSString *countryCode;
 
-/*!
- @abstract The remaining portion of the phone number after the country code.
+/**
+ The country ISO code for the phone number.
+ The ISO code for the country code can be nil
+ */
+@property (nonatomic, copy, readonly) NSString *countryISO;
+
+
+/**
+  The remaining portion of the phone number after the country code.
  */
 @property (nonatomic, copy, readonly) NSString *phoneNumber;
 
-/*!
- @abstract Compares the receiver to another phone number
+/**
+  Compares the receiver to another phone number
 
  @param phoneNumber the phone number to compare to
  */
 - (BOOL)isEqualToPhoneNumber:(AKFPhoneNumber *)phoneNumber;
 
-/*!
- @abstract Converts the receiver to an `NSString`.
+/**
+  Converts the receiver to an `NSString`.
 
- @discussion All characters that are not digits will be stripped from the phone number and a `+` character will precede
+
+ All characters that are not digits will be stripped from the phone number and a `+` character will precede
  the country code value.
  */
 - (NSString *)stringRepresentation;

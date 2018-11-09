@@ -20,10 +20,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*!
- @typedef AKFHeaderTextType
+/**
+ AKFHeaderTextType
 
- @abstract The type of header text to use within the UI.
+  The type of header text to use within the UI.
  */
 typedef NS_ENUM(NSUInteger, AKFHeaderTextType)
 {
@@ -31,27 +31,51 @@ typedef NS_ENUM(NSUInteger, AKFHeaderTextType)
   AKFHeaderTextTypeAppName,
 };
 
-extern const NSUInteger AKFHeaderTextTypeCount;
+/**
+ AKFInputStyle
 
-/*!
- @abstract A theme for the Account Kit UI
+ The style to use for inputs within the UI.
+ */
+typedef NS_ENUM(NSInteger, AKFInputStyle) {
+  AKFInputStyleDefault,
+  AKFInputStyleUnderline,
+  AKFInputStyleBlurLight,
+  AKFInputStyleBlurDark,
+};
+
+/**
+ AKFButtonTranslucentStyle
+
+ This style will be applied to buttons if `buttonBackgroundColor` is set to `[UIColor clearColor]`
+ */
+typedef NS_ENUM(NSInteger, AKFButtonTranslucentStyle) {
+  AKFButtonTranslucentStyleDefault,
+  AKFButtonTranslucentStyleBlurLight,
+  AKFButtonTranslucentStyleBlurDark,
+};
+
+FOUNDATION_EXPORT const NSUInteger AKFHeaderTextTypeCount;
+
+/**
+  A theme for the Account Kit UI
  */
 @interface AKFTheme : NSObject <NSCopying>
 
-/*!
- @abstract Returns the default theme.
+/**
+  Returns the default theme.
 
- @discussion This theme can be used as a starting point and then updated as desired.
+
+ This theme can be used as a starting point and then updated as desired.
  */
 + (instancetype)defaultTheme;
 
-/*!
- @abstract Returns a default theme that uses an outline style instead of filled in components.
+/**
+  Returns a default theme that uses an outline style instead of filled in components.
  */
 + (instancetype)outlineTheme;
 
-/*!
- @abstract Returns a theme that uses an outline style with simple color groups that will be applied to the theme.
+/**
+  Returns a theme that uses an outline style with simple color groups that will be applied to the theme.
 
  @param primaryColor The color used for `buttonBackgroundColor`, `buttonBorderColor`, `buttonDisabledBorderColor`,
  `buttonDisabledTextColor`, `buttonHighlightedBackgroundColor`, `buttonHighlightedBorderColor`,
@@ -65,8 +89,8 @@ extern const NSUInteger AKFHeaderTextTypeCount;
                           secondaryTextColor:(UIColor *)secondaryTextColor
                               statusBarStyle:(UIStatusBarStyle)statusBarStyle;
 
-/*!
- @abstract Returns a theme with simple color groups that will be applied to the theme.
+/**
+  Returns a theme with simple color groups that will be applied to the theme.
 
  @param primaryColor The color used for `buttonBackgroundColor`, `buttonBorderColor`,
  `buttonHighlightedBackgroundColor`, `buttonHighlightedBorderColor`, `headerBackgroundColor`, `iconColor`.
@@ -93,6 +117,7 @@ extern const NSUInteger AKFHeaderTextTypeCount;
 @property (nonatomic, copy) UIColor *buttonHighlightedBorderColor;
 @property (nonatomic, copy) UIColor *buttonHighlightedTextColor;
 @property (nonatomic, copy) UIColor *buttonTextColor;
+@property (nonatomic, assign) AKFButtonTranslucentStyle buttonTranslucenStyle;
 @property (nonatomic, assign) NSUInteger contentBodyLayoutWeight;
 @property (nonatomic, assign) NSUInteger contentBottomLayoutWeight;
 @property (nonatomic, assign) NSUInteger contentFooterLayoutWeight;
@@ -110,6 +135,7 @@ extern const NSUInteger AKFHeaderTextTypeCount;
 @property (nonatomic, copy) UIColor *iconColor;
 @property (nonatomic, copy) UIColor *inputBackgroundColor;
 @property (nonatomic, copy) UIColor *inputBorderColor;
+@property (nonatomic, assign) AKFInputStyle inputStyle;
 @property (nonatomic, copy) UIColor *inputTextColor;
 @property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 @property (nonatomic, copy) UIColor *textColor;

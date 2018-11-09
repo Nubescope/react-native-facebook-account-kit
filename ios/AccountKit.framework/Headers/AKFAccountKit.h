@@ -20,7 +20,6 @@
 
 #import <AccountKit/AKFAccessToken.h>
 #import <AccountKit/AKFAccount.h>
-#import <AccountKit/AKFAccountPreferences.h>
 #import <AccountKit/AKFResponseType.h>
 #import <AccountKit/AKFViewController.h>
 
@@ -28,68 +27,75 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*!
- @typedef AKFRequestAccountHandler
+/**
+ AKFRequestAccountHandler
 
- @abstract Callback that receives AccountKit account information.
+ Callback that receives AccountKit account information.
  */
 typedef void (^AKFRequestAccountHandler)(id<AKFAccount> _Nullable account, NSError *_Nullable error);
 
-/*!
- @abstract Primary interface for authenticating AccountKit accounts.
+/**
+ AKFLogoutHandler
+
+ Callback that receives result of logout request from server.
+ */
+typedef void (^AKFLogoutHandler)(BOOL success, NSError *_Nullable error);
+
+/**
+  Primary interface for authenticating AccountKit accounts.
  */
 @interface AKFAccountKit : NSObject
 
-/*!
- @abstract The version of the Account Kit Graph API used.
+/**
+  The version of the Account Kit Graph API used.
  */
 + (NSString *)graphVersionString;
 
-/*!
+/**
  #abstract The version of the Account Kit SDK.
  */
 + (NSString *)versionString;
 
-/*!
- @abstract Retrieve the current access token, if any.
+/**
+  Retrieve the current access token, if any.
  */
 @property (nullable, nonatomic, copy, readonly) id<AKFAccessToken> currentAccessToken;
 
-/*!
- @abstract Init Account Kit with a specified response type.
+/**
+  Init Account Kit with a specified response type.
  */
 - (instancetype)initWithResponseType:(AKFResponseType)responseType
 NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
 
-/*!
- @abstract Returns an instance of account preferences for the current access token.
- */
-- (nullable AKFAccountPreferences *)accountPreferences;
-
-/*!
- @abstract Cancels the pending login request.
+/**
+  Cancels the pending login request.
  */
 - (void)cancelLogin;
 
-/*!
- @abstract Logs out currently logged in account.
+/**
+  Logs out currently logged in account.
  */
 - (void)logOut;
 
-/*!
- @abstract Asynchronously returns Account Kit account information
+/**
+  Logs out currently logged in account asynchronously.
+ */
+- (void)logOut:(nullable AKFLogoutHandler)handler;
+
+/**
+  Asynchronously returns Account Kit account information
  */
 - (void)requestAccount:(AKFRequestAccountHandler)handler;
 
-/*!
- @abstract Returns a view controller to be presented to initiate an email login.
+/**
+  Returns a view controller to be presented to initiate an email login.
  */
 - (UIViewController<AKFViewController> *)viewControllerForEmailLogin;
 
-/*!
- @abstract Returns a view controller to be presented to initiate an email login.
+/**
+  Returns a view controller to be presented to initiate an email login.
 
  @param email the email to be used for login.
  @param state the state for the login request.
@@ -97,13 +103,13 @@ NS_DESIGNATED_INITIALIZER;
 - (UIViewController<AKFViewController> *)viewControllerForEmailLoginWithEmail:(nullable NSString *)email
                                                                         state:(nullable NSString *)state;
 
-/*!
- @abstract Returns a view controller to be presented to initiate a phone login.
+/**
+  Returns a view controller to be presented to initiate a phone login.
  */
 - (UIViewController<AKFViewController> *)viewControllerForPhoneLogin;
 
-/*!
- @abstract Returns a view controller to be presented to initiate a phone login.
+/**
+  Returns a view controller to be presented to initiate a phone login.
 
  @param phoneNumber the phone number to be used for login.
  @param state the state for the login request.
@@ -111,10 +117,10 @@ NS_DESIGNATED_INITIALIZER;
 - (UIViewController<AKFViewController> *)viewControllerForPhoneLoginWithPhoneNumber:(nullable AKFPhoneNumber *)phoneNumber
                                                                               state:(nullable NSString *)state;
 
-/*!
- @abstract Returns a view controller to resume a login that was pending when the app shutdown.
+/**
+  Returns a view controller to resume a login that was pending when the app shutdown.
  */
-- (UIViewController<AKFViewController> *)viewControllerForLoginResume;
+- (nullable UIViewController<AKFViewController> *)viewControllerForLoginResume;
 
 @end
 

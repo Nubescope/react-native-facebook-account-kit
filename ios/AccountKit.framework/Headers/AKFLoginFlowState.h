@@ -18,62 +18,72 @@
 
 #import <UIKit/UIKit.h>
 
-/*!
- @typedef AKFLoginFlowState
+/**
+ AKFLoginFlowState
 
- @abstract States for the login flow.
+  States for the login flow.
  */
 typedef NS_ENUM(NSUInteger, AKFLoginFlowState)
 {
-  /*!
-   @abstract No flow state is available.
+  /**
+    No flow state is available.
    */
   AKFLoginFlowStateNone = 0,
 
-  /*!
-   @abstract The phone number is being entered.
+  /**
+    The phone number is being entered.
    */
   AKFLoginFlowStatePhoneNumberInput,
 
-  /*!
-   @abstract The email address is being entered.
+  /**
+    The email address is being entered.
    */
   AKFLoginFlowStateEmailInput,
 
-  /*!
-   @abstract The email is being verified.
+  /**
+    The email is being verified.
    */
   AKFLoginFlowStateEmailVerify,
 
-  /*!
-   @abstract The confirmation code is sending.
+  /**
+    The confirmation code is sending.
    */
   AKFLoginFlowStateSendingCode,
 
-  /*!
-   @abstract The confirmation code is sent.
+  /**
+    The confirmation code is sent.
    */
   AKFLoginFlowStateSentCode,
 
-  /*!
-   @abstract The confirmation code is being entered.
+  /**
+    The confirmation code is being entered.
    */
   AKFLoginFlowStateCodeInput,
 
-  /*!
-   @abstract The confirmation code is being verified.
+  /**
+    The confirmation code is being verified.
    */
   AKFLoginFlowStateVerifyingCode,
 
-  /*!
-   @abstract The confirmation code is verified.
+  /**
+    The confirmation code is verified.
    */
   AKFLoginFlowStateVerified,
 
-  /*!
-   @abstract An error is being presented.
+  /**
+    An error is being presented.
    */
   AKFLoginFlowStateError,
+
+  /**
+    Resend code screen is being entered
+   */
+  AKFLoginFlowStateResendCode,
+
+  /**
+   Country code screen is being entered
+   */
+  AKFLoginFlowStateCountryCode,
 };
 
-extern const NSUInteger AKFLoginFlowStateCount;
+FOUNDATION_EXPORT const NSUInteger AKFLoginFlowStateCount;

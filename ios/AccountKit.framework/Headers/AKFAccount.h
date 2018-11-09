@@ -22,25 +22,25 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*!
+/**
  @protocol
 
- @abstract The protocol that represents an Account.
+  The protocol that represents an Account.
  */
 @protocol AKFAccount <NSObject, NSCopying, NSSecureCoding>
 
-/*!
- @abstract The account kit account ID.
+/**
+  The account kit account ID.
  */
 @property (nonatomic, readonly, copy) NSString *accountID;
 
-/*!
- @abstract The account kit account email address.
+/**
+  The account kit account email address.
  */
 @property (nullable, nonatomic, readonly, copy) NSString *emailAddress;
 
-/*!
- @abstract The account kit account phone number.
+/**
+  The account kit account phone number.
  */
 @property (nullable, nonatomic, readonly, copy) AKFPhoneNumber *phoneNumber;
 

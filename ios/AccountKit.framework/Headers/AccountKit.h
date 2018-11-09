@@ -19,9 +19,6 @@
 #import <AccountKit/AKFAccessToken.h>
 #import <AccountKit/AKFAccount.h>
 #import <AccountKit/AKFAccountKit.h>
-#import <AccountKit/AKFAccountPreferences.h>
-#import <AccountKit/AKFAdvancedUIManager.h>
-#import <AccountKit/AKFAdvancedUIManaging.h>
 #import <AccountKit/AKFButtonType.h>
 #import <AccountKit/AKFConfiguring.h>
 #import <AccountKit/AKFError.h>
@@ -30,7 +27,8 @@
 #import <AccountKit/AKFPhoneNumber.h>
 #import <AccountKit/AKFResponseType.h>
 #import <AccountKit/AKFSettings.h>
+#import <AccountKit/AKFSkinManager.h>
 #import <AccountKit/AKFTextPosition.h>
 #import <AccountKit/AKFTheme.h>
-#import <AccountKit/AKFTheming.h>
+#import <AccountKit/AKFUIManaging.h>
 #import <AccountKit/AKFViewController.h>

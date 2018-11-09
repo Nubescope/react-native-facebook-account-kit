@@ -20,20 +20,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*!
- @abstract AccountKit application settings.
+/**
+  AccountKit application settings.
  */
 @interface AKFSettings : NSObject
 
-/*!
- @abstract Get the Account Kit Client Token used by the SDK.
+/**
+  Get the Account Kit Client Token used by the SDK.
 
- @discussion If not explicitly set, the default will be read from the application's plist (AccountKitClientToken).
+
+ If not explicitly set, the default will be read from the application's plist (AccountKitClientToken).
  */
 + (NSString *)clientToken;
 
-/*!
- @abstract Set the Account Kit Client Token used by the SDK.
+/**
+  Set the Account Kit Client Token used by the SDK.
 
  @param clientToken The Account Kit Client Token to be used by the SDK.
  */
