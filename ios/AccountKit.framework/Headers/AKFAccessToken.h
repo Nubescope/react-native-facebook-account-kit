@@ -20,35 +20,35 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/*!
+/**
  @protocol
 
- @abstract The protocol that represents an Access Token.
+  The protocol that represents an Access Token.
  */
 @protocol AKFAccessToken <NSObject, NSCopying, NSSecureCoding>
 
-/*!
- @abstract The account kit account ID.
+/**
+  The account kit account ID.
  */
 @property (nonatomic, copy, readonly) NSString *accountID;
 
-/*!
- @abstract The Facebook application ID.
+/**
+  The Facebook application ID.
  */
 @property (nonatomic, copy, readonly) NSString *applicationID;
 
-/*!
- @abstract The time the receiver was last refreshed.
+/**
+  The time the receiver was last refreshed.
  */
 @property (nonatomic, copy, readonly) NSDate *lastRefresh;
 
-/*!
- @abstract The interval at which the token should be refreshed.
+/**
+  The interval at which the token should be refreshed.
  */
 @property (nonatomic, readonly, assign) NSTimeInterval tokenRefreshInterval;
 
-/*!
- @abstract The opaque token string.
+/**
+  The opaque token string.
  */
 @property (nonatomic, readonly, copy) NSString *tokenString;
 

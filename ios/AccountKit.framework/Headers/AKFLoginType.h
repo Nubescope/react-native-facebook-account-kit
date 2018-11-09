@@ -18,19 +18,19 @@
 
 #import <Foundation/Foundation.h>
 
-/*!
- @typedef AKFLoginType
+/**
+ AKFLoginType
 
- @abstract The type of login.
+  The type of login.
  */
 typedef NS_ENUM(NSUInteger, AKFLoginType) {
-  /*!
-   @abstract Log in with an email address.
+  /**
+    Log in with an email address.
    */
   AKFLoginTypeEmail = 0,
 
-  /*!
-   @abstract Log in with a phone number.
+  /**
+    Log in with a phone number.
    */
   AKFLoginTypePhone,
 };
