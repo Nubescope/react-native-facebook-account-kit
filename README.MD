@@ -367,7 +367,7 @@ If you have trouble running any example try the following:
     ```diff
     -    "react-native-facebook-account-kit": "file:../.."
     ```
-3.  Run <code>yarn react-native-facebook-account-kit</code>
+3.  Run <code>yarn add react-native-facebook-account-kit</code>
 
 4.  Re-run <code>react-native run-android</code> or <code>react-native run-ios</code>
 
