@@ -58,7 +58,7 @@
         UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:prefillPhoneNumber state:inputState];
         [self _prepareLoginViewController:viewController];
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-        [rootViewController presentViewController:viewController animated:YES completion:NULL];
+        [rootViewController showViewController:viewController sender:nil];
     });
 }
 
@@ -74,7 +74,7 @@
         UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:prefillEmail state:inputState];
         [self _prepareLoginViewController:viewController];
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-        [rootViewController presentViewController:viewController animated:YES completion:NULL];
+        [rootViewController showViewController:viewController sender:nil];
     });
 }
 
