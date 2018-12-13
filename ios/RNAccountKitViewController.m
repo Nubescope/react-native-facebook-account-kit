@@ -58,7 +58,12 @@
         UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForPhoneLoginWithPhoneNumber:prefillPhoneNumber state:inputState];
         [self _prepareLoginViewController:viewController];
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-        [rootViewController showViewController:viewController sender:nil];
+        
+        if([_viewControllerMode isEqualToString:@"present"]) {
+          [rootViewController showDetailViewController:viewController sender:nil];
+        } else if ([_viewControllerMode isEqualToString:@"show"]) {
+          [rootViewController showViewController:viewController sender:nil];
+        }
     });
 }
 
@@ -74,7 +79,12 @@
         UIViewController<AKFViewController> *viewController = [_accountKit viewControllerForEmailLoginWithEmail:prefillEmail state:inputState];
         [self _prepareLoginViewController:viewController];
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-        [rootViewController showViewController:viewController sender:nil];
+        
+        if([_viewControllerMode isEqualToString:@"present"]) {
+          [rootViewController showDetailViewController:viewController sender:nil];
+        } else if ([_viewControllerMode isEqualToString:@"show"]) {
+          [rootViewController showViewController:viewController sender:nil];
+        }
     });
 }
 
