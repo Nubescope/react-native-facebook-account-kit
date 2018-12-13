@@ -13,6 +13,7 @@
 @property(nonatomic, strong) NSString *initialEmail;
 @property(nonatomic, strong) NSString *initialPhoneNumber;
 @property(nonatomic, strong) NSString *initialPhoneCountryPrefix;
+@property(nonatomic, strong) NSString *viewControllerMode;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 

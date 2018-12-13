@@ -30,6 +30,12 @@ RCT_EXPORT_METHOD(login:(NSString *)type
         a.initialPhoneCountryPrefix = [self.options valueForKey:@"initialPhoneCountryPrefix"];
         a.initialPhoneNumber = [self.options valueForKey:@"initialPhoneNumber"];
 
+        if ([self.options valueForKey:@"viewControllerMode"]) {
+          a.viewControllerMode = [self.options valueForKey:@"viewControllerMode"];
+        } else {
+          a.viewControllerMode = @"present";
+        }
+        
         if ([type isEqual: @"phone"]) {
             [a loginWithPhone: resolve rejecter: reject];
         } else {

@@ -29,6 +29,7 @@ class RNAccountKit {
     readPhoneStateEnabled: true,
     receiveSMS: true,
     theme: {},
+    viewControllerMode: 'present' // for iOS only
   }
 
   constructor() {
