@@ -60,7 +60,7 @@
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
         
         if([_viewControllerMode isEqualToString:@"present"]) {
-          [rootViewController showDetailViewController:viewController sender:nil];
+          [rootViewController presentViewController:viewController animated:YES completion:nil];
         } else if ([_viewControllerMode isEqualToString:@"show"]) {
           [rootViewController showViewController:viewController sender:nil];
         }
@@ -81,7 +81,7 @@
         UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
         
         if([_viewControllerMode isEqualToString:@"present"]) {
-          [rootViewController showDetailViewController:viewController sender:nil];
+          [rootViewController presentViewController:viewController animated:YES completion:nil];
         } else if ([_viewControllerMode isEqualToString:@"show"]) {
           [rootViewController showViewController:viewController sender:nil];
         }
