@@ -40,6 +40,12 @@
     if (self.countryBlacklist != nil) {
         viewController.blacklistedCountryCodes = self.countryBlacklist;
     }
+    if (self.facebookNotificationsEnabled == YES) {
+        viewController.enableSendToFacebook = self.facebookNotificationsEnabled;
+    }
+    if (self.getACallEnabled == YES) {
+        viewController.enableGetACall = self.getACallEnabled;
+    }
     viewController.defaultCountryCode = self.defaultCountry;
 
 }
