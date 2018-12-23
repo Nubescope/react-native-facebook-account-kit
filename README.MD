@@ -340,6 +340,7 @@ RNAccountKit.configure({
   defaultCountry: 'AR',
   theme: {...}, // for iOS only, see the Theme section
   viewControllerMode: 'show'|'present' // for iOS only, 'present' by default
+  getACallEnabled: true|false
 })
 ```
 

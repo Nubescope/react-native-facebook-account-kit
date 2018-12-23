@@ -36,6 +36,18 @@ RCT_EXPORT_METHOD(login:(NSString *)type
           a.viewControllerMode = @"present";
         }
         
+        if ([[self.options valueForKey:@"facebookNotificationsEnabled"] boolValue] == YES) {
+            a.facebookNotificationsEnabled = YES;
+        } else {
+            a.facebookNotificationsEnabled = NO;
+        }
+        
+        if ([[self.options valueForKey:@"getACallEnabled"] boolValue] == YES) {
+            a.getACallEnabled = YES;
+        } else {
+            a.getACallEnabled = NO;
+        }
+        
         if ([type isEqual: @"phone"]) {
             [a loginWithPhone: resolve rejecter: reject];
         } else {

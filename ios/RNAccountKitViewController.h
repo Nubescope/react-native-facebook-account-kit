@@ -14,6 +14,8 @@
 @property(nonatomic, strong) NSString *initialPhoneNumber;
 @property(nonatomic, strong) NSString *initialPhoneCountryPrefix;
 @property(nonatomic, strong) NSString *viewControllerMode;
+@property(nonatomic, assign) BOOL facebookNotificationsEnabled;
+@property(nonatomic, assign) BOOL getACallEnabled;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 
