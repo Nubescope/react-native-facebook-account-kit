@@ -344,6 +344,8 @@ RNAccountKit.configure({
 })
 ```
 
+[@MahbbRah](https://github.com/MahbbRah) put together a [video tutorial](https://youtu.be/R-HSmuVHkIM) of how to integrate the library you might find useful.
+
 ## Examples
 
 Try the [examples](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/examples).
