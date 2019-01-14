@@ -4071,8 +4071,10 @@ react-is@^16.5.0:
   version "16.5.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.5.1.tgz#c6e8734fd548a22e1cef4fd0833afbeb433b85ee"
 
-"react-native-facebook-account-kit@file:../..":
-  version "0.11.0"
+react-native-facebook-account-kit@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-facebook-account-kit/-/react-native-facebook-account-kit-1.0.1.tgz#7d36cab610f678ac04c87d4a92ef0de81c81b336"
+  integrity sha512-lJ7OdNKju2ijFq2vXuEKffNd8e7/n+emIQ7JCruLIDDkKx3w4wb76GaEeRkkBBBu5CM0dY1wOxcIg6uufrf2eA==
   dependencies:
     prop-types "^15.5.10"
 
