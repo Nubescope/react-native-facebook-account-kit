@@ -6,7 +6,7 @@ A Facebook Account Kit SDK wrapper for react-native.
 
 > The table below shows the supported versions of React Native and the different versions of `react-native-facebook-account-kit`.
 
-| React Native Facebook Account Kit | 0.4.x | 0.6.x | 0.10.x  | 1.0.x |
+| React Native Facebook Account Kit | 0.4.x | 0.6.x | 0.10.x  | 1.x.x |
 | --------------------------------- | :---: | :---: | :-----: | ----- |
 | React Native                      | 0.24  | <0.48 | 0.48-56 | 0.57  |
 
@@ -28,7 +28,7 @@ react-native link react-native-facebook-account-kit
 
 **That's it!** you don't need to perform any manual step.
 
-### iOS (without Cocoapods)
+### iOS without Cocoapods (Not recomended)
 
 1. Open your project with XCode
 
@@ -40,7 +40,7 @@ react-native link react-native-facebook-account-kit
      $(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios
    ```
 
-### iOS (via Cocoapods)
+### iOS using Cocoapods (Recomended)
 
 1.  Undo changes in iOS folder (which were made by `react-native-link`) in order to avoid duplicate compilations
 
