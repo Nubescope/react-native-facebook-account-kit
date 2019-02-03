@@ -20,21 +20,27 @@ yarn add react-native-facebook-account-kit
 
 ## Linking
 
-### Semi-automatic (suggested)
-
 ```shell
 react-native link react-native-facebook-account-kit
 ```
 
-<details>
-    <summary>Android</summary>
+### Android
 
-- _Done!_
+**That's it!** you don't need to perform any manual step.
 
-</details>
+### iOS (without Cocoapods)
 
-<details>
-    <summary>iOS (via Cocoapods)</summary>
+1. Open your project with XCode
+
+2. Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder
+
+3. Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: **unselect** the **"Copy items if needed"** option)
+4. Select you app target on XCode and click the `Build Settings` tab. Go to the `Framework Search Paths` section and add this new entry
+   ```bash
+     $(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios
+   ```
+
+### iOS (via Cocoapods)
 
 1.  Undo changes in iOS folder (which were made by `react-native-link`) in order to avoid duplicate compilations
 
@@ -52,26 +58,9 @@ react-native link react-native-facebook-account-kit
 
 3.  Run `pod install` in your `ios` folder
 
-</details>
-
-<details>
-    <summary>iOS (without Cocoapods)</summary>
-
-1.  Open your project with XCode
-
-2.  Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder
-
-3.  Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: select the **"Copy items if needed"** option)
-
-</details>
-
-<br/>
-
 ## Configuration
 
-<details>
-    <summary>iOS</summary>
-    <br/>
+### iOS
 
 Add your Facebook credentials to your project's `Info.plist` file
 
@@ -99,11 +88,7 @@ Add your Facebook credentials to your project's `Info.plist` file
 
 _This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide._
 
-</details>
-
-<details>
-    <summary>Android</summary>
-    <br/>
+### Android
 
 1.  In `android/app/src/main/res/values/strings.xml`
 
@@ -186,14 +171,9 @@ As per this [documentation](https://developers.facebook.com/docs/accountkit/acce
 >
 ```
 
-</details>
-
 ## Themes
 
-<details>
-    <summary>iOS</summary>
-
-<br/>
+### iOS
 
 ```javascript
 import RNAccountKit, {
@@ -236,12 +216,7 @@ RNAccountKit.configure({
 > To see the statusBarStyle reflected you must set the **UIViewControllerBasedStatusBarAppearance** property to **true** on your app's _Info.plist_ file.
 > You can do it from XCode <img width="507" alt="screen shot 2016-08-02 at 11 44 07 am" src="https://cloud.githubusercontent.com/assets/1652196/17332979/0fa632b2-58a7-11e6-9aa3-a669ae44f2e6.png">
 
-</details>
-
-<details>
-    <summary>Android</summary>
-
-<br/>
+### Android
 
 > Check [this commit](https://github.com/underscopeio/react-native-facebook-account-kit/commit/77df35ae20f251e7c29285e8820da2ff498d9400) to see how it's done in our sample app
 
@@ -276,8 +251,6 @@ RNAccountKit.configure({
 
 </manifest>
 ```
-
-</details>
 
 ## Usage
 
@@ -360,9 +333,7 @@ react-native run-ios # or react-native run-android
 
 ## Troubleshooting
 
-<details>
-    <summary>I have problems running the example</summary>
-<br/>
+### I have problems running the example</summary>
 
 If you have trouble running any example try the following:
 
@@ -375,15 +346,11 @@ If you have trouble running any example try the following:
 
 4.  Re-run <code>react-native run-android</code> or <code>react-native run-ios</code>
 
-</details>
+### A system issue occured, Please try again" when sending SMS
 
-<details>
-    <summary>"A system issue occured, Please try again" when sending SMS</summary>  
-<br/>
+1. Check your `FacebookAppID` and `AccountKitClientToken` on iOS `Info.plist` and Android `strings.xml` are correct
 
-A. Check your `FacebookAppID` and `AccountKitClientToken` on iOS `Info.plist` and Android `strings.xml` are correct
-
-B. If you have enabled the **client access token flow in fb account kit dashboard**, then `responseType` should be set to `code` when calling `configure`
+2. If you have enabled the **client access token flow in fb account kit dashboard**, then `responseType` should be set to `code` when calling `configure`
 
 ```javascript
 // Configures the SDK with some options
@@ -395,11 +362,7 @@ RNAccountKit.configure({
 
 Issue: [#68](https://github.com/underscopeio/react-native-facebook-account-kit/issues/68)
 
-</details>
-
-<details>
-    <summary>iOS only: Login screen doesn't show up</summary>
-<br/>
+### iOS only: Login screen doesn't show up
 
 In some cases, if you implement the Login button in a presented Modal screen, you need to add `viewControllerMode: 'show'` into the configuration.
 
@@ -410,15 +373,12 @@ RNAccountKit.configure({
     ...
 })
 ```
+
 Issue: [#167](https://github.com/underscopeio/react-native-facebook-account-kit/issues/167)
 
-</details>
+### I cannot integrate the library with RN versions < 0.40.0
 
-<details>
-    <summary>I cannot integrate the library with RN versions < 0.40.0</summary>
-<br/>
-
-A. Modify the `android/build.gradle` file to override the `com.facebook.android:account-kit-sdk` library with `com.facebook.android:account-kit-sdk:4.15.0` and the `compileSdkVersion` and `buildToolsVersion` as depicted below
+Modify the `android/build.gradle` file to override the `com.facebook.android:account-kit-sdk` library with `com.facebook.android:account-kit-sdk:4.15.0` and the `compileSdkVersion` and `buildToolsVersion` as depicted below
 
 ```java
 subprojects { subproject ->
@@ -441,8 +401,6 @@ subprojects { subproject ->
     }
 }
 ```
-
-</details>
 
 ## License
 
