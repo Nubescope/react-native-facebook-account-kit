@@ -243,9 +243,9 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         if (receiveSMS && PackageManager.PERMISSION_DENIED == ContextCompat.checkSelfPermission(
                 reactContext.getApplicationContext(), Manifest.permission.RECEIVE_SMS)) {
             Log.w(REACT_CLASS, "To allow extracting code from SMS add RECEIVE_SMS permission in your app's manifest");
-            configurationBuilder.setReceiveSMS(false);
+            configurationBuilder.setEnableInitialSmsButton(false);
         } else {
-            configurationBuilder.setReceiveSMS(receiveSMS);
+            configurationBuilder.setEnableInitialSmsButton(receiveSMS);
         }
 
         if (this.options.hasKey("countryBlacklist")) {
