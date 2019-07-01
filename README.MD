@@ -8,7 +8,7 @@ A Facebook Account Kit SDK wrapper for react-native.
 
 | React Native Facebook Account Kit | 0.4.x | 0.6.x | 0.10.x  | 1.x.x |
 | --------------------------------- | :---: | :---: | :-----: | ----- |
-| React Native                      | 0.24  | <0.48 | 0.48-56 | 0.57  |
+| React Native                      | 0.24  | <0.48 | 0.48-56 | >0.57 |
 
 > For RN <0.40.0 Check the Troubleshooting Guide
 
@@ -39,6 +39,9 @@ react-native link react-native-facebook-account-kit
    ```bash
      $(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios
    ```
+
+> NOTE: We strongly recomend using **cocoapods** that's why on version **1.2.0** we removed the `AccountKit.framework` / `AccountKitStrings.bundle` files from the project. If you don't want to use **cocoapods** you can still download the framework and the bundle [from here](https://github.com/facebook/facebook-objc-sdk/releases/download/v5.0.1/AccountKit.zip) and add it to your project by yourself.
+
 
 ### iOS using Cocoapods (Recomended)
 
@@ -307,13 +310,13 @@ RNAccountKit.configure({
   initialPhoneNumber: '123-456-7890',
   facebookNotificationsEnabled: true|false, // true by default
   readPhoneStateEnabled: true|false, // true by default,
-  receiveSMS: true|false, // true by default,
   countryWhitelist: ['AR'], // [] by default
   countryBlacklist: ['US'], // [] by default
   defaultCountry: 'AR',
   theme: {...}, // for iOS only, see the Theme section
   viewControllerMode: 'show'|'present' // for iOS only, 'present' by default
-  getACallEnabled: true|false
+  getACallEnabled: true|false,
+  setEnableInitialSmsButton: true|false, // true by default
 })
 ```
 

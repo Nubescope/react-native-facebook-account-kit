@@ -1,17 +1,8 @@
-import React, {
-  Component
-} from 'react'
+import React, { Component } from 'react'
 
-import {
-  NativeModules,
-  TouchableOpacity,
-} from 'react-native'
+import { NativeModules, TouchableOpacity } from 'react-native'
 
-import {
-  assertArray,
-  assertString,
-  assertValidityOfCountryCodes,
-} from './js/utils'
+import { assertArray, assertString, assertValidityOfCountryCodes } from './js/utils'
 
 import PropTypes from 'prop-types'
 
@@ -27,10 +18,10 @@ class RNAccountKit {
     initialPhoneNumber: '',
     facebookNotificationsEnabled: true,
     readPhoneStateEnabled: true,
-    receiveSMS: true,
     theme: {},
     viewControllerMode: 'present', // for iOS only
-    getACallEnabled: true
+    getACallEnabled: true,
+    setEnableInitialSmsButton: true,
   }
 
   constructor() {
@@ -38,18 +29,18 @@ class RNAccountKit {
   }
 
   configure(options = {}) {
-    assertArray(options.countryBlacklist, 'countryBlacklist');
-    assertArray(options.countryWhitelist, 'countryWhitelist');
-    assertString(options.defaultCountry, 'defaultCountry');
-    assertValidityOfCountryCodes(options);
+    assertArray(options.countryBlacklist, 'countryBlacklist')
+    assertArray(options.countryWhitelist, 'countryWhitelist')
+    assertString(options.defaultCountry, 'defaultCountry')
+    assertValidityOfCountryCodes(options)
 
     // Remove empty arrays. Empty arrays causes app to crash.
     if (Array.isArray(options.countryBlacklist) && options.countryBlacklist.length === 0) {
-      options.countryBlacklist = undefined;
+      options.countryBlacklist = undefined
     }
 
     if (Array.isArray(options.countryWhitelist) && options.countryWhitelist.length === 0) {
-      options.countryWhitelist = undefined;
+      options.countryWhitelist = undefined
     }
 
     for (let key of Object.keys(options)) {
@@ -92,22 +83,21 @@ export class LoginButton extends Component {
     type: PropTypes.string,
     onLogin: PropTypes.func.isRequired,
     onError: PropTypes.func.isRequired,
-    onCancel: PropTypes.func
-  };
+    onCancel: PropTypes.func,
+  }
 
   static defaultProps = {
-    type: 'phone'
-  };
+    type: 'phone',
+  }
 
   onPress() {
-    const login = this.props.type.toLowerCase() == 'email' ?
-      AccountKit.loginWithEmail : AccountKit.loginWithPhone
+    const login = this.props.type.toLowerCase() == 'email' ? AccountKit.loginWithEmail : AccountKit.loginWithPhone
 
     login()
-      .then((data) => {
+      .then(data => {
         this.props.onLogin(data)
       })
-      .catch((err) => {
+      .catch(err => {
         if (err.code == 'cancel') {
           this.props.onCancel && this.props.onCancel(err)
         } else {
@@ -118,7 +108,12 @@ export class LoginButton extends Component {
 
   render() {
     return (
-      <TouchableOpacity style={this.props.style} onPress={() => { this.onPress() }}>
+      <TouchableOpacity
+        style={this.props.style}
+        onPress={() => {
+          this.onPress()
+        }}
+      >
         {this.props.children}
       </TouchableOpacity>
     )
@@ -130,15 +125,15 @@ export class Color {
     return { r: r / 255, g: g / 255, b: b / 255, a }
   }
   static rgb(r, g, b) {
-    return this.rgba(r, g, b, 1);
+    return this.rgba(r, g, b, 1)
   }
   static hex(hex) {
-    hex = hex.replace(/^#/, '');
+    hex = hex.replace(/^#/, '')
     if (hex.length === 3) {
-      hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+      hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2]
     }
-    var num = parseInt(hex, 16);
-    return this.rgba(num >> 16, num >> 8 & 255, num & 255, 1);
+    var num = parseInt(hex, 16)
+    return this.rgba(num >> 16, (num >> 8) & 255, num & 255, 1)
   }
 }
 
