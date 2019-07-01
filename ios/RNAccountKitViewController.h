@@ -17,6 +17,7 @@
 @property(nonatomic, strong) NSString *viewControllerMode;
 @property(nonatomic, assign) BOOL facebookNotificationsEnabled;
 @property(nonatomic, assign) BOOL getACallEnabled;
+@property(nonatomic, assign) BOOL setEnableInitialSmsButton;
 
 - (instancetype) initWithAccountKit: (AKFAccountKit *)accountKit;
 

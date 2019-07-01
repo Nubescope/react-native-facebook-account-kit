@@ -49,6 +49,12 @@ RCT_EXPORT_METHOD(login:(NSString *)type
             a.getACallEnabled = NO;
         }
         
+        if ([[self.options valueForKey:@"setEnableInitialSmsButton"] boolValue] == YES) {
+            a.setEnableInitialSmsButton = YES;
+        } else {
+            a.setEnableInitialSmsButton = NO;
+        }
+
         if ([type isEqual: @"phone"]) {
             [a loginWithPhone: resolve rejecter: reject];
         } else {

@@ -34,18 +34,25 @@
     if (self.advancedUIManager != nil) {
         viewController.uiManager = self.advancedUIManager;
     }
+    
     if (self.countryWhitelist != nil) {
         viewController.whitelistedCountryCodes = self.countryWhitelist;
     }
+
     if (self.countryBlacklist != nil) {
         viewController.blacklistedCountryCodes = self.countryBlacklist;
     }
+
     if (self.facebookNotificationsEnabled == YES) {
         viewController.enableSendToFacebook = self.facebookNotificationsEnabled;
     }
+
     if (self.getACallEnabled == YES) {
         viewController.enableGetACall = self.getACallEnabled;
     }
+
+    viewController.enableInitialSMSButton = self.setEnableInitialSmsButton;
+
     viewController.defaultCountryCode = self.defaultCountry;
 
 }
