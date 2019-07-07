@@ -3,7 +3,6 @@
 A Facebook Account Kit SDK wrapper for react-native.
 
 [![version](https://img.shields.io/npm/v/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
-[![minzipped size](https://img.shields.io/bundlephobia/minzip/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
 [![downloads](https://img.shields.io/npm/dt/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
 
 

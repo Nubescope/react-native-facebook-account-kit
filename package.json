@@ -1,18 +1,18 @@
 {
   "name": "react-native-facebook-account-kit",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "A react-native library for Facebook Account Kit",
   "main": "index.js",
-  "files": [
-    "android/src/main",
-    "android/build.gradle",
-    "android/gradlew",
-    "android/gradlew.bat",
-    "ios",
-    "index.js",
-    "ios/*.xcodeproj",
-    "js"
-  ],
+  "files": [	
+    "android/src/main",	
+    "android/build.gradle",	
+    "android/gradlew",	
+    "android/gradlew.bat",	
+    "ios",	
+    "index.js",	
+    "ios/*.xcodeproj",	
+    "js"	
+  ],  
   "keywords": [
     "react",
     "native",
@@ -23,16 +23,26 @@
     "account-kit",
     "sdk",
     "ios",
-    "android"
+    "android",
+    "authentication"
   ],
+  "homepage": "https://github.com/underscopeio/react-native-facebook-account-kit",
+  "readme": "https://github.com/underscopeio/react-native-facebook-account-kit#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/underscopeio/react-native-facebook-account-kit.git"
   },
+  "bugs": {
+    "url": "https://github.com/underscopeio/react-native-facebook-account-kit/issues"
+  },
   "author": "Underscope",
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "15.x.x"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
