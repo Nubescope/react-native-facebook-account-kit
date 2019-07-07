@@ -1,107 +1,87 @@
-# react-native-facebook-account-kit
+# React Native Facebook Account Kit
 
 A Facebook Account Kit SDK wrapper for react-native.
 
+[![version](https://img.shields.io/npm/v/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
+[![minzipped size](https://img.shields.io/bundlephobia/minzip/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
+[![downloads](https://img.shields.io/npm/dt/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
+
+
 ## Supported versions - React Native / Facebook Account Kit
 
-> The table below shows the supported versions of React Native and the different versions of `react-native-facebook-account-kit`.
+The table below shows the supported versions of React Native and the different versions of `react-native-facebook-account-kit`.
 
-| React Native Facebook Account Kit | 0.4.x | 0.6.x | 0.10.x  | 1.x.x |
-| --------------------------------- | :---: | :---: | :-----: | ----- |
-| React Native                      | 0.24  | <0.48 | 0.48-56 | >0.57 |
+| RN Facebook Account Kit | 0.4.x | 0.6.x | 0.10.x  |  1.x.x   |  2.x.x   |
+| ----------------------- | :---: | :---: | :-----: | :------: | :------: |
+| React Native            | 0.24  | <0.48 | 0.48-56 | >=0.57.x | >=0.60.x |
 
-> For RN <0.40.0 Check the Troubleshooting Guide
 
-## Installation
+## Installation  
+
+> For RN < **0.40.0** Check the [Troubleshooting Guide](#troubleshooting)
+
+> For RN < **0.60.x** Follow the installation steps described [in this document](docs/Legacy-Instalation-Steps.md)
 
 ```shell
 yarn add react-native-facebook-account-kit
+cd ios && pod install && cd ..
 ```
 
 ## Linking
 
-```shell
-react-native link react-native-facebook-account-kit
-```
+Not necessary 🎉 [Check out the RN 0.60 release blog post](https://facebook.github.io/react-native/blog/2019/07/03/version-60)
 
-### Android
-
-**That's it!** you don't need to perform any manual step.
-
-### iOS without Cocoapods (Not recomended)
-
-1. Open your project with XCode
-
-2. Open with Finder the `node_modules/react-native-facebook-account-kit/ios` folder
-
-3. Drag and drop `AccountKit.framework` and `AccountKitStrings.bundle` from Finder to your project in XCode (**IMPORTANT**: **unselect** the **"Copy items if needed"** option)
-4. Select you app target on XCode and click the `Build Settings` tab. Go to the `Framework Search Paths` section and add this new entry
-   ```bash
-     $(SRCROOT)/../node_modules/react-native-facebook-account-kit/ios
-   ```
-
-> NOTE: We strongly recomend using **cocoapods** that's why on version **1.2.0** we removed the `AccountKit.framework` / `AccountKitStrings.bundle` files from the project. If you don't want to use **cocoapods** you can still download the framework and the bundle [from here](https://github.com/facebook/facebook-objc-sdk/releases/download/v5.0.1/AccountKit.zip) and add it to your project by yourself.
-
-
-### iOS using Cocoapods (Recomended)
-
-1.  Undo changes in iOS folder (which were made by `react-native-link`) in order to avoid duplicate compilations
-
-        git checkout ios
-
-2.  Add `RNAccountKit` Pod to your Podfile (if you don't have a podfile follow [these](http://facebook.github.io/react-native/docs/0.51/integration-with-existing-apps.html#configuring-cocoapods-dependencies) instructions)
-
-    ```diff
-    target 'MyApp' do
-      ...
-    +  pod 'RNAccountKit', :path => '../node_modules/react-native-facebook-account-kit/ios'
-      ...
-    end
-    ```
-
-3.  Run `pod install` in your `ios` folder
 
 ## Configuration
 
-### iOS
+### Obtaining secret and token to configure the library
 
-Add your Facebook credentials to your project's `Info.plist` file
+First of all you must obtain an **Account App Id** and an **Account Kit Client Token**. To obtain them you must create a Facebook application using [facebook developer's website](https://developers.facebook.com/apps/). 
+
+In the [part 1]((https://medium.com/react-native-training/passwordless-authentication-in-react-native-using-facebook-account-kit-part-1-8d83e92077e9)) of the following blog post series you will find detailed steps about how to create and configura a **Facebook Account Kit** application:
+
+- [Passwordless Authentication in React Native Using Facebook Account Kit (Part 1)](https://medium.com/react-native-training/passwordless-authentication-in-react-native-using-facebook-account-kit-part-1-8d83e92077e9)
+- [Passwordless Authentication in React Native Using Facebook Account Kit (Part 2)](https://medium.com/react-native-training/passwordless-authentication-in-react-native-using-facebook-account-kit-part-2-367a820f269c)
+- [Passwordless Authentication in React Native Using Facebook Account Kit (Part 3)](https://medium.com/react-native-training/passwordless-authentication-in-react-native-using-facebook-account-kit-part-3-ddf44d81beb5)
+
+
+### IOS Configuration
+
+Add your **Account App Id** and an **Account Kit Client Token** to your project's `Info.plist` file
 
 ```xml
-  <plist version="1.0">
-    <dict>
-      ...
-      <key>FacebookAppID</key>
-      <string>{your-app-id}</string>
-      <key>AccountKitClientToken</key>
-      <string>{your-account-kit-client-token}</string>
-      <key>CFBundleURLTypes</key>
-      <array>
-        <dict>
-          <key>CFBundleURLSchemes</key>
-          <array>
-            <string>ak{your-app-id}</string>
-          </array>
-        </dict>
-      </array>
-      ...
-    </dict>
-  </plist>
+<plist version="1.0">
+  <dict>
+    ...
+    <key>FacebookAppID</key>
+    <string>{YOUR_FACEBOOK_APP_ID}</string>
+    <key>AccountKitClientToken</key>
+    <string>{YOUR_ACCOUNT_KIT_CLIENT_TOKEN}</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>ak{YOUR_FACEBOOK_APP_ID}</string>
+        </array>
+      </dict>
+    </array>
+    ...
+  </dict>
+</plist>
 ```
 
-_This is the minimal required configuration. Take a look to the [Account Kit documentation for iOS](https://developers.facebook.com/docs/accountkit/ios) for a more detailed guide._
+### Android Configuration
 
-### Android
-
-1.  In `android/app/src/main/res/values/strings.xml`
+Add your **Account App Id** and the **Account Kit Client Token** to the `android/app/src/main/res/values/strings.xml`:
 
 ```xml
 ...
 <string name="fb_app_id">YOUR_FACEBOOK_APP_ID</string>
-<string name="ak_client_token">YOUR_CLIENT_TOKEN</string>
+<string name="ak_client_token">YOUR_ACCOUNT_KIT_CLIENT_TOKEN</string>
 ```
 
-2.  In `android/app/src/main/AndroidManifest.xml`
+Then update set your app metadata by editing the `android/app/src/main/AndroidManifest.xml` file:
 
 ```xml
 ...
@@ -121,57 +101,119 @@ _This is the minimal required configuration. Take a look to the [Account Kit doc
 ...
 ```
 
-3. If you want AccountKit to autofill the received SMS add the following permissions to the `android/app/src/main/AndroidManifest.xml` file:
+3. If you want AccountKit to prefill your phone number add the `READ_PHONE_STATE` permission to the `android/app/src/main/AndroidManifest.xml` file:
 
 ```xml
 ...
-<uses-permission android:name="android.permission.READ_SMS" />
-<uses-permission android:name="android.permission.RECEIVE_SMS" />
-...
+<manifest ...>
+  ...
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  ...
+</manifest>  
 ```
 
-additionally you can add the `READ_PHONE_STATE` permission to prefill your phone number:
+4. *(Optional)* Exclude backup for Access Tokens on Android >= 6.0
 
-```xml
-...
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-...
+    As per this [documentation](https://developers.facebook.com/docs/accountkit/accesstokens), Account Kit does not support automated backup (introduced in Android 6.0). The following steps will exclude automated backup
+
+    1.  Create a file `android/app/src/main/res/xml/backup_config.xml` that contains the follwoing:
+
+    ```java
+    <?xml version="1.0" encoding="utf-8"?>
+    <full-backup-content>
+      <exclude domain="sharedpref" path="com.facebook.accountkit.AccessTokenManager.SharedPreferences.xml"/>
+    </full-backup-content>
+    ```
+
+    2.  In your `AndroidManifest.xml` add the following to exclude backup of Account Kit's Access Token.
+
+    ```java
+    <application
+      //other configurations here
+      android:fullBackupContent="@xml/backup_config" // add this line
+    >
+    ```
+
+## Usage
+
+> If you have issues with the method signatures you may be using an older version. Check the [Releases Notes](https://github.com/underscopeio/react-native-facebook-account-kit/releases) for breaking changes
+
+```javascript
+import RNAccountKit from 'react-native-facebook-account-kit'
+
+// Configures the SDK with some options
+RNAccountKit.configure({
+  responseType: 'token'|'code', // 'token' by default,
+  titleType: 'login',
+  initialAuthState: '',
+  initialEmail: 'some.initial@email.com',
+  initialPhoneCountryPrefix: '+1', // autodetected if none is provided
+  initialPhoneNumber: '123-456-7890',
+  facebookNotificationsEnabled: true|false, // true by default
+  readPhoneStateEnabled: true|false, // true by default,
+  countryWhitelist: ['AR'], // [] by default
+  countryBlacklist: ['US'], // [] by default
+  defaultCountry: 'AR',
+  theme: {
+    // for iOS only, see the Theme section
+  },
+  viewControllerMode: 'show'|'present', // for iOS only, 'present' by default
+  getACallEnabled: true|false,
+  setEnableInitialSmsButton: true|false, // true by default
+})
+
+// Shows the Facebook Account Kit view for login via SMS
+RNAccountKit.loginWithPhone()
+  .then((token) => {
+    if (!token) {
+      console.log('Login cancelled')
+    } else {
+      console.log(`Logged with phone. Token: ${token}`)
+    }
+  })
+
+// Shows the Facebook Account Kit view for login via email
+RNAccountKit.loginWithEmail()
+  .then((token) => {
+    if (!token) {
+      console.log('Login cancelled')
+    } else {
+      console.log(`Logged with email. Token: ${token}`)
+    }
+  })
+
+// Logouts the user, so getCurrentAccessToken() will retrieve null
+RNAccountKit.logout()
+  .then(() => {
+    console.log('Logged out')
+  })
+
+// Retrieves the logged user access token, if any user is logged
+RNAccountKit.getCurrentAccessToken()
+  .then((token) => {
+    console.log(`Current access token: ${token}`)
+  })
+
+// Retrieves the logged user account info, if any user is logged
+RNAccountKit.getCurrentAccount()
+  .then((account) => {
+    console.log(`Current account: ${account}`)
+  })
 ```
 
-4.  Check the `RNAccountKitPackage` is registered in your `MainApplication.java` file. This should be done by `react-native link` but sometimes it doesn't. You should see something like the following
+[@MahbbRah](https://github.com/MahbbRah) put together a [video tutorial](https://youtu.be/R-HSmuVHkIM) of how to integrate the library you might find useful.
 
-```java
-@Override
-protected List<ReactPackage> getPackages() {
-    return Arrays.<ReactPackage>asList(
-        new MainReactPackage(),
-        new RNAccountKitPackage() // <-- the package is registered
-    );
-}
-```
+## Examples
 
-_This is the minimal required configuration. Take a look to the [Account Kit documentation for Android](https://developers.facebook.com/docs/accountkit/android) for a more detailed guide._
+Try the [examples](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/examples).
+They are related to different React Native versions.
 
-#### (Optional) Exclude backup for Access Tokens on Android >= 6.0
-
-As per this [documentation](https://developers.facebook.com/docs/accountkit/accesstokens), Account Kit does not support automated backup (introduced in Android 6.0). The following steps will exclude automated backup
-
-1.  Create a file `android/app/src/main/res/xml/backup_config.xml` that contains the follwoing:
-
-```java
-<?xml version="1.0" encoding="utf-8"?>
-<full-backup-content>
-  <exclude domain="sharedpref" path="com.facebook.accountkit.AccessTokenManager.SharedPreferences.xml"/>
-</full-backup-content>
-```
-
-2.  In your `AndroidManifest.xml` add the following to exclude backup of Account Kit's Access Token.
-
-```java
-<application
-  //other configurations here
-  android:fullBackupContent="@xml/backup_config" // add this line
->
+```bash
+git clone https://github.com/underscopeio/react-native-facebook-account-kit
+cd react-native-facebook-account-kit/examples/RN0XX
+yarn
+react-native run-ios
+react-native run-android
 ```
 
 ## Themes
@@ -255,86 +297,21 @@ RNAccountKit.configure({
 </manifest>
 ```
 
-## Usage
+## Troubleshooting
 
-> If you have issues with the method signatures you may be using an older version. Check the [Releases Notes](https://github.com/underscopeio/react-native-facebook-account-kit/releases) for breaking changes
-
-```javascript
-import RNAccountKit from 'react-native-facebook-account-kit'
-
-// Shows the Facebook Account Kit view for login via SMS
-RNAccountKit.loginWithPhone()
-  .then((token) => {
-    if (!token) {
-      console.log('Login cancelled')
-    } else {
-      console.log(`Logged with phone. Token: ${token}`)
-    }
-  })
-
-// Shows the Facebook Account Kit view for login via email
-RNAccountKit.loginWithEmail()
-  .then((token) => {
-    if (!token) {
-      console.log('Login cancelled')
-    } else {
-      console.log(`Logged with email. Token: ${token}`)
-    }
-  })
-
-// Logouts the user, so getCurrentAccessToken() will retrieve null
-RNAccountKit.logout()
-  .then(() => {
-    console.log('Logged out')
-  })
-
-// Retrieves the logged user access token, if any user is logged
-RNAccountKit.getCurrentAccessToken()
-  .then((token) => {
-    console.log(`Current access token: ${token}`)
-  })
-
-// Retrieves the logged user account info, if any user is logged
-RNAccountKit.getCurrentAccount()
-  .then((account) => {
-    console.log(`Current account: ${account}`)
-  })
-
-// Configures the SDK with some options
-RNAccountKit.configure({
-  responseType: 'token'|'code' // 'token' by default,
-  titleType: 'login',
-  initialAuthState: '',
-  initialEmail: 'some.initial@email.com',
-  initialPhoneCountryPrefix: '+1', // autodetected if none is provided
-  initialPhoneNumber: '123-456-7890',
-  facebookNotificationsEnabled: true|false, // true by default
-  readPhoneStateEnabled: true|false, // true by default,
-  countryWhitelist: ['AR'], // [] by default
-  countryBlacklist: ['US'], // [] by default
-  defaultCountry: 'AR',
-  theme: {...}, // for iOS only, see the Theme section
-  viewControllerMode: 'show'|'present' // for iOS only, 'present' by default
-  getACallEnabled: true|false,
-  setEnableInitialSmsButton: true|false, // true by default
-})
-```
-
-[@MahbbRah](https://github.com/MahbbRah) put together a [video tutorial](https://youtu.be/R-HSmuVHkIM) of how to integrate the library you might find useful.
-
-## Examples
-
-Try the [examples](https://github.com/underscopeio/react-native-facebook-account-kit/tree/master/examples).
-They are related to different React Native versions.
+### Missing android.support.v4.content
 
 ```bash
-git clone https://github.com/underscopeio/react-native-facebook-account-kit
-cd react-native-facebook-account-kit/examples/RN033 # or /RN024
-yarn
-react-native run-ios # or react-native run-android
+error: package android.support.v4.content does not exist
+import android.support.v4.content.ContextCompat;
 ```
 
-## Troubleshooting
+This is because of the breaking change introduced in react-native **0.60.0** and therefore in our **2.0.0**.
+
+In order to fix the issue you should either upgrade to react-native **0.60.0** of use the **1.2.0** of this library
+
+Issue: [#196](https://github.com/underscopeio/react-native-facebook-account-kit/issues/167)
+
 
 ### I have problems running the example</summary>
 
