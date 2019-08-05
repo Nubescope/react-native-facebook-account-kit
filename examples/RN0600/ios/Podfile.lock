@@ -82,8 +82,8 @@ PODS:
   - React-RCTWebSocket (0.60.0):
     - React-Core (= 0.60.0)
     - React-fishhook (= 0.60.0)
-  - RNAccountKit (2.0.0):
-    - AccountKit (~> 5.0)
+  - RNAccountKit (2.1.0):
+    - AccountKit (= 5.0.1)
     - React
   - yoga (0.60.0.React)
 
@@ -189,9 +189,9 @@ SPEC CHECKSUMS:
   React-RCTText: 685fca2e13b024271048e7e247ef24476f28a41e
   React-RCTVibration: 4ee1cf208ab17a50fafb1c16ffe28fe594a64e4f
   React-RCTWebSocket: fca087d583724aa0e5fef7d911f0f2a28d0f2736
-  RNAccountKit: 9050daeda557f51a0cb25db818ecfe7cb040aa69
+  RNAccountKit: 67ef232dfe7dda545e605630169ae245ac4dae3e
   yoga: 616fde658be980aa60a2158835170f3f9c2d04b4
 
 PODFILE CHECKSUM: 855c8cb4c7f1f9c5965255549cc521ae283c1ddf
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.7.4

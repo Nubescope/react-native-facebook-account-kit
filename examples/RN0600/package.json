@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.8.6",
     "react-native": "0.60.0",
-    "react-native-facebook-account-kit": "2.0.0"
+    "react-native-facebook-account-kit": "2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
