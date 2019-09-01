@@ -17,14 +17,13 @@ The table below shows the supported versions of React Native and the different v
 
 ## Installation  
 
-> For RN < **0.40.0** Check the [Troubleshooting Guide](#troubleshooting)
-
-> For RN < **0.60.x** Follow the installation steps described [in this document](docs/Legacy-Instalation-Steps.md)
-
 ```shell
 yarn add react-native-facebook-account-kit
 cd ios && pod install && cd ..
 ```
+
+> For RN < **0.60.x** Follow the installation steps described [in this document](docs/Legacy-Instalation-Steps.md)
+> For RN < **0.40.0** Check the [Troubleshooting Guide](#troubleshooting)
 
 ## Linking
 
