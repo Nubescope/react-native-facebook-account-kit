@@ -23,6 +23,7 @@ cd ios && pod install && cd ..
 ```
 
 > For RN < **0.60.x** Follow the installation steps described [in this document](docs/Legacy-Instalation-Steps.md)
+
 > For RN < **0.40.0** Check the [Troubleshooting Guide](#troubleshooting)
 
 ## Linking
