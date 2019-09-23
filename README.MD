@@ -5,6 +5,10 @@ A Facebook Account Kit SDK wrapper for react-native.
 [![version](https://img.shields.io/npm/v/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
 [![downloads](https://img.shields.io/npm/dt/react-native-facebook-account-kit.svg)](https://www.npmjs.com/package/react-native-facebook-account-kit)
 
+> ## IMPORTANT: Deprecation Notice
+> As announced by **Facebook** the **Account Kit** is being deprecated meaning that this library will no longer be maintained 😢
+
+![](images/deprecation-notice.png)
 
 ## Supported versions - React Native / Facebook Account Kit
 
