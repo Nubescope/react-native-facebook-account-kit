@@ -376,7 +376,7 @@ babel-helpers@^6.24.1:
 
 babel-jest@18.0.0, babel-jest@^18.0.0:
   version "18.0.0"
-  resolved "http://registry.npmjs.org/babel-jest/-/babel-jest-18.0.0.tgz#17ebba8cb3285c906d859e8707e4e79795fb65e3"
+  resolved "https://registry.npmjs.org/babel-jest/-/babel-jest-18.0.0.tgz#17ebba8cb3285c906d859e8707e4e79795fb65e3"
   dependencies:
     babel-core "^6.0.0"
     babel-plugin-istanbul "^3.0.0"
@@ -408,7 +408,7 @@ babel-plugin-external-helpers@^6.18.0:
 
 babel-plugin-istanbul@^3.0.0:
   version "3.1.2"
-  resolved "http://registry.npmjs.org/babel-plugin-istanbul/-/babel-plugin-istanbul-3.1.2.tgz#11d5abde18425ec24b5d648c7e0b5d25cd354a22"
+  resolved "https://registry.npmjs.org/babel-plugin-istanbul/-/babel-plugin-istanbul-3.1.2.tgz#11d5abde18425ec24b5d648c7e0b5d25cd354a22"
   dependencies:
     find-up "^1.1.2"
     istanbul-lib-instrument "^1.4.2"
@@ -2189,7 +2189,7 @@ jest-changed-files@^17.0.2:
 
 jest-cli@^18.0.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-cli/-/jest-cli-18.1.0.tgz#5ead36ecad420817c2c9baa2aa7574f63257b3d6"
+  resolved "https://registry.npmjs.org/jest-cli/-/jest-cli-18.1.0.tgz#5ead36ecad420817c2c9baa2aa7574f63257b3d6"
   dependencies:
     ansi-escapes "^1.4.0"
     callsites "^2.0.0"
@@ -2222,7 +2222,7 @@ jest-cli@^18.0.0:
 
 jest-config@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-config/-/jest-config-18.1.0.tgz#6111740a6d48aab86ff5a9e6ab0b98bd993b6ff4"
+  resolved "https://registry.npmjs.org/jest-config/-/jest-config-18.1.0.tgz#6111740a6d48aab86ff5a9e6ab0b98bd993b6ff4"
   dependencies:
     chalk "^1.1.1"
     jest-environment-jsdom "^18.1.0"
@@ -2235,7 +2235,7 @@ jest-config@^18.1.0:
 
 jest-diff@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-diff/-/jest-diff-18.1.0.tgz#4ff79e74dd988c139195b365dc65d87f606f4803"
+  resolved "https://registry.npmjs.org/jest-diff/-/jest-diff-18.1.0.tgz#4ff79e74dd988c139195b365dc65d87f606f4803"
   dependencies:
     chalk "^1.1.3"
     diff "^3.0.0"
@@ -2273,7 +2273,7 @@ jest-haste-map@17.0.3:
 
 jest-haste-map@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-haste-map/-/jest-haste-map-18.1.0.tgz#06839c74b770a40c1a106968851df8d281c08375"
+  resolved "https://registry.npmjs.org/jest-haste-map/-/jest-haste-map-18.1.0.tgz#06839c74b770a40c1a106968851df8d281c08375"
   dependencies:
     fb-watchman "^1.9.0"
     graceful-fs "^4.1.6"
@@ -2283,7 +2283,7 @@ jest-haste-map@^18.1.0:
 
 jest-jasmine2@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-jasmine2/-/jest-jasmine2-18.1.0.tgz#094e104c2c189708766c77263bb2aecb5860a80b"
+  resolved "https://registry.npmjs.org/jest-jasmine2/-/jest-jasmine2-18.1.0.tgz#094e104c2c189708766c77263bb2aecb5860a80b"
   dependencies:
     graceful-fs "^4.1.6"
     jest-matcher-utils "^18.1.0"
@@ -2293,7 +2293,7 @@ jest-jasmine2@^18.1.0:
 
 jest-matcher-utils@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-matcher-utils/-/jest-matcher-utils-18.1.0.tgz#1ac4651955ee2a60cef1e7fcc98cdfd773c0f932"
+  resolved "https://registry.npmjs.org/jest-matcher-utils/-/jest-matcher-utils-18.1.0.tgz#1ac4651955ee2a60cef1e7fcc98cdfd773c0f932"
   dependencies:
     chalk "^1.1.3"
     pretty-format "^18.1.0"
@@ -2313,14 +2313,14 @@ jest-mock@^18.0.0:
 
 jest-resolve-dependencies@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-resolve-dependencies/-/jest-resolve-dependencies-18.1.0.tgz#8134fb5caf59c9ed842fe0152ab01c52711f1bbb"
+  resolved "https://registry.npmjs.org/jest-resolve-dependencies/-/jest-resolve-dependencies-18.1.0.tgz#8134fb5caf59c9ed842fe0152ab01c52711f1bbb"
   dependencies:
     jest-file-exists "^17.0.0"
     jest-resolve "^18.1.0"
 
 jest-resolve@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-resolve/-/jest-resolve-18.1.0.tgz#6800accb536658c906cd5e29de412b1ab9ac249b"
+  resolved "https://registry.npmjs.org/jest-resolve/-/jest-resolve-18.1.0.tgz#6800accb536658c906cd5e29de412b1ab9ac249b"
   dependencies:
     browser-resolve "^1.11.2"
     jest-file-exists "^17.0.0"
@@ -2329,7 +2329,7 @@ jest-resolve@^18.1.0:
 
 jest-runtime@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-runtime/-/jest-runtime-18.1.0.tgz#3abfd687175b21fc3b85a2b8064399e997859922"
+  resolved "https://registry.npmjs.org/jest-runtime/-/jest-runtime-18.1.0.tgz#3abfd687175b21fc3b85a2b8064399e997859922"
   dependencies:
     babel-core "^6.0.0"
     babel-jest "^18.0.0"
@@ -2349,7 +2349,7 @@ jest-runtime@^18.1.0:
 
 jest-snapshot@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/jest-snapshot/-/jest-snapshot-18.1.0.tgz#55b96d2ee639c9bce76f87f2a3fd40b71c7a5916"
+  resolved "https://registry.npmjs.org/jest-snapshot/-/jest-snapshot-18.1.0.tgz#55b96d2ee639c9bce76f87f2a3fd40b71c7a5916"
   dependencies:
     jest-diff "^18.1.0"
     jest-file-exists "^17.0.0"
@@ -2371,7 +2371,7 @@ jest-util@^18.1.0:
 
 jest@18.0.0:
   version "18.0.0"
-  resolved "http://registry.npmjs.org/jest/-/jest-18.0.0.tgz#ef12f70befe0fcb30f1c61c0ae58748706267d4b"
+  resolved "https://registry.npmjs.org/jest/-/jest-18.0.0.tgz#ef12f70befe0fcb30f1c61c0ae58748706267d4b"
   dependencies:
     jest-cli "^18.0.0"
 
@@ -2862,8 +2862,8 @@ mkdirp@^0.5.1:
     minimist "0.0.8"
 
 moment@2.x.x:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
 
 morgan@~1.6.1:
   version "1.6.1"
@@ -3164,7 +3164,7 @@ preserve@^0.2.0:
 
 pretty-format@^18.1.0:
   version "18.1.0"
-  resolved "http://registry.npmjs.org/pretty-format/-/pretty-format-18.1.0.tgz#fb65a86f7a7f9194963eee91865c1bcf1039e284"
+  resolved "https://registry.npmjs.org/pretty-format/-/pretty-format-18.1.0.tgz#fb65a86f7a7f9194963eee91865c1bcf1039e284"
   dependencies:
     ansi-styles "^2.2.1"
 
@@ -3252,7 +3252,7 @@ react-deep-force-update@^1.0.0:
 
 react-native-facebook-account-kit@^0.5.2:
   version "0.5.2"
-  resolved "http://registry.npmjs.org/react-native-facebook-account-kit/-/react-native-facebook-account-kit-0.5.2.tgz#93f851b9df07dbd49d403bd9251a9535a5c6d1e4"
+  resolved "https://registry.npmjs.org/react-native-facebook-account-kit/-/react-native-facebook-account-kit-0.5.2.tgz#93f851b9df07dbd49d403bd9251a9535a5c6d1e4"
 
 react-native@0.39.2:
   version "0.39.2"
@@ -3342,7 +3342,7 @@ react-proxy@^1.1.7:
 
 react-test-renderer@15.4.1:
   version "15.4.1"
-  resolved "http://registry.npmjs.org/react-test-renderer/-/react-test-renderer-15.4.1.tgz#e38cd7057868d4a655d3764689735b4b97260706"
+  resolved "https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-15.4.1.tgz#e38cd7057868d4a655d3764689735b4b97260706"
 
 react-timer-mixin@^0.13.2:
   version "0.13.3"
@@ -3357,7 +3357,7 @@ react-transform-hmr@^1.0.4:
 
 react@15.4.1:
   version "15.4.1"
-  resolved "http://registry.npmjs.org/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
+  resolved "https://registry.npmjs.org/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
   dependencies:
     fbjs "^0.8.4"
     loose-envify "^1.1.0"
@@ -3851,7 +3851,7 @@ temp@0.8.3:
 
 test-exclude@^3.3.0:
   version "3.3.0"
-  resolved "http://registry.npmjs.org/test-exclude/-/test-exclude-3.3.0.tgz#7a17ca1239988c98367b0621456dbb7d4bc38977"
+  resolved "https://registry.npmjs.org/test-exclude/-/test-exclude-3.3.0.tgz#7a17ca1239988c98367b0621456dbb7d4bc38977"
   dependencies:
     arrify "^1.0.1"
     micromatch "^2.3.11"
@@ -4190,7 +4190,7 @@ yargs-parser@^4.2.0:
 
 yargs@^6.3.0:
   version "6.6.0"
-  resolved "http://registry.npmjs.org/yargs/-/yargs-6.6.0.tgz#782ec21ef403345f830a808ca3d513af56065208"
+  resolved "https://registry.npmjs.org/yargs/-/yargs-6.6.0.tgz#782ec21ef403345f830a808ca3d513af56065208"
   dependencies:
     camelcase "^3.0.0"
     cliui "^3.2.0"
