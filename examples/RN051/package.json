@@ -8,13 +8,13 @@
   },
   "dependencies": {
     "react": "16.0.0",
-    "react-native": "0.51.0",
+    "react-native": "0.70.6",
     "react-native-facebook-account-kit": "0.11.0"
   },
   "devDependencies": {
-    "babel-jest": "23.2.0",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "23.3.0",
+    "babel-jest": "29.3.1",
+    "babel-preset-react-native": "5.0.2",
+    "jest": "29.3.1",
     "react-test-renderer": "16.0.0"
   },
   "jest": {
